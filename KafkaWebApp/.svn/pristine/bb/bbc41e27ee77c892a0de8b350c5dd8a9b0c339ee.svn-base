@@ -1,0 +1,108 @@
+https://github.com/confluentinc/confluent-kafka-dotnet/issues/854
+
+https://www.veribilimiokulu.com/blog/windows-10-uzerine-kafka-kurmak/
+
+https://medium.com/devopsturkiye/apache-kafkaya-giri%C5%9F-3399e5f33f8e
+
+
+Kafka-server-start.bat %KAFKA_HOME%\config\server.properties
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 3 --partitions 1200 --topic RequestTicket
+
+
+kafka-topics.bat --list --zookeeper localhost:2181
+
+kafka-topics.bat --zookeeper localhost:2181 --delete --topic deneme
+
+kafka-console-producer.bat --broker-list localhost:9092 --topic deneme
+
+kafka-console-producer.bat --broker-list localhost:9092 --topic deneme
+
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic RequestTicket --from-beginning
+
+Broker ların kendine özgü kimlik numarası var
+lifr ortamda birden çok broker ve zookeeeper olmalı
+qouram  askari üte sayısı futbolda 7 kişi  server/2 +1
+life ortamda en az 3 server mümkünse 5 serverla çalışılmalı
+broker da topic var
+veri okuma ve yazma ii topic kullanılır
+topic lerin içinde de partionlar var
+partionda ki herveriye offset tanımlanır
+topiclerin pationları brokerlara dağıtılıyor
+mesahlara key eklediğimizde  mesaj aynı partiona yazılır
+mesela catagory key tanımlarsak  vy bunlara sport ,culture ,tecnology dersek  ,üçüde atrı partionlara yazılacak
+customerId ile key tanımlarsak her müşteri için ayeı bir partion kullanılıyor
+bir partiondan aynı anda aynı kimlipe ait bir cnsumer okuyabilir
+repkication sayısı kadar partitionlar brokerlara yazılır
+Mesala 3 broker varsa  jer bir partion bu 3 broker a yazılır 
+bir partion leader seçilir  ve ona yazılır kafak diper kopyalar kendi yazar
+acks 
+acks =0 en hızlı ama en eiskli
+ack =1  gelen mesaj kafkada leader partiona yazılıması garentilenir
+ack=2  en güvenli olan lider partitiona yazılır ve kopya partionlarada yazıldığı garanti edilir.Ama en yavaşı
+
+Okuma seçenekleri
+At most ones  en fazla bir kere mesajın kaybolma riski büyk .Çünkü okur okumaz commit ediyoruz.
+
+At least ones En zaz bir kere 
+burda işelem bitince commit ediliyor.Rper işlem sırasında bir hata olursa tekrar okuma sırasında aynı offsetli veri okunur en çok uygulanan   yöntem
+exactly ones
+transaction oluşturuluyor transaction içinde veri tutuluyor  performansı kötü etkiliyor.tam anlamadım
+
+consumer group içindeki aynı partionı okuyamazlar.Birden fazla consumer group olursa aynı partionı okuyabilirlerYani aynı consumer group içindeki consumer1 ve consumer 2 aynı partion ı okuyamaz
+
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1200  --topic RequestTicket
+
+
+
+kafka-console-producer.bat --broker-list localhost:9092 --topic RequestTicket
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic RequestTicket--from-beginning
+
+
+delete all topic
+Connect to zookeeper CLI.
+zookeeper-shell.bat localhost:2181
+
+You will get a message - "Welcome to zookeeper!"
+
+Then type the below command and all the topics will get deleted.
+deleteall /brokers/topics
+
+Kafka-server-start.bat %KAFKA_HOME%\config\server2.properties
+Kafka-server-start.bat %KAFKA_HOME%\config\server1.properties
+Kafka-server-start.bat %KAFKA_HOME%\config\server.properties
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 3 --partitions 1200 --topic RequestTicket
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
