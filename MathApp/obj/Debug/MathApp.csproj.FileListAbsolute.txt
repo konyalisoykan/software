@@ -1,0 +1,13 @@
+C:\Users\skonyali\source\repos\MathApp\obj\Debug\MathApp.csprojAssemblyReference.cache
+C:\Users\skonyali\source\repos\MathApp\obj\Debug\MathApp.Form1.resources
+C:\Users\skonyali\source\repos\MathApp\obj\Debug\MathApp.Properties.Resources.resources
+C:\Users\skonyali\source\repos\MathApp\obj\Debug\MathApp.csproj.GenerateResource.cache
+C:\Users\skonyali\source\repos\MathApp\obj\Debug\MathApp.csproj.CoreCompileInputs.cache
+C:\Users\skonyali\source\repos\MathApp\bin\Debug\MathApp.exe.config
+C:\Users\skonyali\source\repos\MathApp\bin\Debug\MathApp.exe
+C:\Users\skonyali\source\repos\MathApp\bin\Debug\MathApp.pdb
+C:\Users\skonyali\source\repos\MathApp\bin\Debug\MathNet.Numerics.dll
+C:\Users\skonyali\source\repos\MathApp\bin\Debug\MathNet.Numerics.xml
+C:\Users\skonyali\source\repos\MathApp\obj\Debug\MathApp.csproj.CopyComplete
+C:\Users\skonyali\source\repos\MathApp\obj\Debug\MathApp.exe
+C:\Users\skonyali\source\repos\MathApp\obj\Debug\MathApp.pdb

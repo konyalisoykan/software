@@ -1,0 +1,29 @@
+﻿Satı/0 dikey asimtod
+0/0 delik var
+
+brim çember formülü y=x^2+y^2
+x==r*cos@
+y=r*sin@ 
+irim çemberde r =1
+
+sin formülü
+y=A(sinB(x-C/B)
+A= genlik büyüklük
+B = frekans
+c=kayma açısı faz aöısı
+
+Limit
+delik olmamlı 
+sağdan ve soldan yaklaşılınca aynı değeri vermeli
+Türev
+türev akınabilmesi için sürekli olması gerek
+y=|x| 0 noktasında türevi yok çünkü grafik "V"
+şeklinde
+TÜREV DEMEK DEĞİŞİM DEMEK ivmesi  artış hızı vb
+lim=f(x)-f(x-h)
+h->0--------
+      h
+
+
+
+
