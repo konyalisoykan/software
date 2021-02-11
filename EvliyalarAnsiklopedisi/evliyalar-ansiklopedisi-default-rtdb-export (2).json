@@ -1,0 +1,54 @@
+{
+  "Evliyalar": {
+    "1": {
+      "name": "Hüseyin Hilmi Işık",
+      "DT": "08.03.1911",
+      "OT": "26.10.2001",
+      "Kabri": "istanbul",
+      "Resim": "img/HuseyinHilmiIsık",
+      "Detaylar": {
+        "1": {
+          "Hayati": "sssssssssssss",
+          "Eserler": {
+            "1": "Saadeti Ebediye",
+            "2": "Mektubat"
+          },
+          "Sözler": {
+            "1": ""
+          }
+        }
+
+      }
+
+    },
+    "2": {
+      "name": "Abdulhakim Arvasi",
+      "DT": "1860",
+      "OT": "27 Kasım 1943",
+      "Kabri": "Ankara",
+      "Resim": "img/AbdulhakimArvasi.jğeg",
+      "Detaylar": {
+        "1": {
+          "Hayati": "ttttttt",
+          "Eserler": {
+            "1": "Saadeti Ebediye",
+            "2": "Mektubat"
+          },
+          "Sözler": {
+            "1": ""
+          }
+        }
+
+      }
+
+
+
+
+    }
+  },
+  "Sehirler": {
+    "1": "Ankara",
+    "2": "istanbul"
+
+  }
+}
