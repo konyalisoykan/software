@@ -1,0 +1,42 @@
+﻿@page
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-2">Şube Kodu</div>
+        <div class="col-4"><input type="text" id="BranchCodeInput" /></div>
+    </div>
+    <div class="row">
+        <div class="col-2">Sorgu sayısı </div>
+        <div class="col-4"><input type="text" id="RequestCount" /></div>
+    </div>
+
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-6">
+            <input type="button" id="sendButton" value="Send Message" />
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <hr />
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <ul id="messagesList"></ul>
+    </div>
+</div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/Ticket.js"></script>
+<script defer src="/__/firebase/8.2.3/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="/__/firebase/8.2.3/firebase-auth.js"></script>
+<script defer src="/__/firebase/8.2.3/firebase-database.js"></script>
+<script defer src="/__/firebase/8.2.3/firebase-firestore.js"></script>
+<script defer src="/__/firebase/8.2.3/firebase-functions.js"></script>
+<script defer src="/__/firebase/8.2.3/firebase-messaging.js"></script>
+<script defer src="/__/firebase/8.2.3/firebase-storage.js"></script>
+<script defer src="/__/firebase/8.2.3/firebase-analytics.js"></script>
+<script defer src="/__/firebase/8.2.3/firebase-remote-config.js"></script>
+<script defer src="/__/firebase/8.2.3/firebase-performance.js"></script>
