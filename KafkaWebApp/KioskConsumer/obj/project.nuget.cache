@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PiPXYbOcLZG4ZhrLH+FGCxxrVjCmjKTzJZ3of9P0oqpAl2ausBfYC36m+dqmfB9LSudHN0QHod+sjuYaQlSTsw==",
+  "dgSpecHash": "kknautNqTqZHgPnSPu2sSzS+nGPXMCC9lbCKAH0w4qMDTEHAgWccVR13wH9dtHNDIgrvf6ywWhSHrzyogWxbnQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\skonyali\\source\\repos\\KafkaWebApp\\KioskConsumer\\KioskConsumer.csproj",
+  "projectFilePath": "C:\\SoykanData\\repos\\yazilim\\software\\KafkaWebApp\\KioskConsumer\\KioskConsumer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\skonyali\\.nuget\\packages\\confluent.kafka\\1.5.3\\confluent.kafka.1.5.3.nupkg.sha512",
     "C:\\Users\\skonyali\\.nuget\\packages\\librdkafka.redist\\1.5.3\\librdkafka.redist.1.5.3.nupkg.sha512",

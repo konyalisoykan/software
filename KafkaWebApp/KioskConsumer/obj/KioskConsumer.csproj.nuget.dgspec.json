@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\skonyali\\source\\repos\\KafkaWebApp\\KioskConsumer\\KioskConsumer.csproj": {}
+    "C:\\SoykanData\\repos\\yazilim\\software\\KafkaWebApp\\KioskConsumer\\KioskConsumer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\skonyali\\source\\repos\\KafkaWebApp\\KioskConsumer\\KioskConsumer.csproj": {
+    "C:\\SoykanData\\repos\\yazilim\\software\\KafkaWebApp\\KioskConsumer\\KioskConsumer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\skonyali\\source\\repos\\KafkaWebApp\\KioskConsumer\\KioskConsumer.csproj",
+        "projectUniqueName": "C:\\SoykanData\\repos\\yazilim\\software\\KafkaWebApp\\KioskConsumer\\KioskConsumer.csproj",
         "projectName": "KioskConsumer",
-        "projectPath": "C:\\Users\\skonyali\\source\\repos\\KafkaWebApp\\KioskConsumer\\KioskConsumer.csproj",
+        "projectPath": "C:\\SoykanData\\repos\\yazilim\\software\\KafkaWebApp\\KioskConsumer\\KioskConsumer.csproj",
         "packagesPath": "C:\\Users\\skonyali\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\skonyali\\source\\repos\\KafkaWebApp\\KioskConsumer\\obj\\",
+        "outputPath": "C:\\SoykanData\\repos\\yazilim\\software\\KafkaWebApp\\KioskConsumer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

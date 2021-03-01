@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\skonyali\\source\\repos\\KafkaWebApp\\KafkaWebApp\\KafkaWebApp.csproj": {}
+    "C:\\SoykanData\\repos\\yazilim\\software\\KafkaWebApp\\KafkaWebApp\\KafkaWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\skonyali\\source\\repos\\KafkaWebApp\\KafkaWebApp\\KafkaWebApp.csproj": {
+    "C:\\SoykanData\\repos\\yazilim\\software\\KafkaWebApp\\KafkaWebApp\\KafkaWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\skonyali\\source\\repos\\KafkaWebApp\\KafkaWebApp\\KafkaWebApp.csproj",
+        "projectUniqueName": "C:\\SoykanData\\repos\\yazilim\\software\\KafkaWebApp\\KafkaWebApp\\KafkaWebApp.csproj",
         "projectName": "KafkaWebApp",
-        "projectPath": "C:\\Users\\skonyali\\source\\repos\\KafkaWebApp\\KafkaWebApp\\KafkaWebApp.csproj",
+        "projectPath": "C:\\SoykanData\\repos\\yazilim\\software\\KafkaWebApp\\KafkaWebApp\\KafkaWebApp.csproj",
         "packagesPath": "C:\\Users\\skonyali\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\skonyali\\source\\repos\\KafkaWebApp\\KafkaWebApp\\obj\\",
+        "outputPath": "C:\\SoykanData\\repos\\yazilim\\software\\KafkaWebApp\\KafkaWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -66,6 +66,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.0.5, )"
             }
           },
           "imports": [

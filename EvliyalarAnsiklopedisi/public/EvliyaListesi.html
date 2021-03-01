@@ -50,6 +50,11 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
+        #dialogInfo {
+            /*max-width: 11920px;
+            min-width: 600px;*/
+            background-color: powderblue;
+        }
         body {
             background: #ECEFF1;
             color: rgba(0,0,0,0.87);
@@ -153,15 +158,13 @@
 
 
     <dialog class="mdl-dialog">
-        <h4 class="mdl-dialog__title">Allow data collection?</h4>
-        <div class="mdl-dialog__content">
-            <p>
-                Allowing us to collect data will let us get you the information you want faster.
-            </p>
+       
+        <div id="dialogInfo" class="mdl-dialog__content">
+            
         </div>
         <div class="mdl-dialog__actions">
-            <button type="button" class="mdl-button">Agree</button>
-            <button type="button" class="mdl-button close">Disagree</button>
+            
+            <button type="button" class="mdl-button close">Kapat</button>
         </div>
     </dialog>
 
@@ -393,7 +396,7 @@
             </footer>
         </main>
     </div>
-    <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/text-only/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
+    <a href="index.html" target="_self" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">İl Seç</a>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -402,27 +405,29 @@
             // // The Firebase SDK is initialized and available here!
             //
             // firebase.auth().onAuthStateChanged(user => { });
+            var urlParams = new URLSearchParams(window.location.search);
+            var myParam = urlParams.get('Sehir')
+            document.getElementById('EvliyaSehri').innerText = myParam + ' Evliyaları';
 
+            var dialog = document.querySelector('dialog');
             var query = firebase.database().ref("Evliyalar").orderByKey();
-            query.once("value")
+             query.once("value")
                 .then(function (snapshot) {
                     snapshot.forEach(function (childSnapshot) {
 
 
-
-
+                        var MySehir = childSnapshot.child("Sehir").val();
+                       
+                        if (myParam == MySehir) {
+                          
                         var key = childSnapshot.key; // "ada"
-                        var name = childSnapshot.child("name").val(); // {first:"Ada",la
+                        var name = childSnapshot.child("name").val();
+                        var DT = childSnapshot.child("DT").val();
+                        var OT = childSnapshot.child("OT").val();
 
-                        var urlParams = new URLSearchParams(window.location.search);
-                        var myParam = urlParams.get('Sehir')
-
-
-
-
-
-
-
+                            var Ilce = childSnapshot.child("Ilce").val();
+                        var Resim = childSnapshot.child("Resim").val();
+                        var Bilgi = childSnapshot.child("Bilgi").val();
 
                         //  document.getElementById('EviliyaConteiner').appendChild(button)
                         var divInfo = document.createElement("div");
@@ -436,29 +441,68 @@
                         title.textContent = name;
                         divInfo.appendChild(title);
 
-                        var shortInfo = document.createElement("p");
-                        shortInfo.textContent = "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";
-                        divInfo.appendChild(shortInfo);
+                            var shortInfo = document.createElement("div");
+                         
+                            var tn1 = document.createTextNode("Doğum Tarihi :" + DT + " Vefat Tarihi :" + OT +"\n\r");
+                           var tn2= document.createTextNode( "Kabrinn bulunduğu ilçe :" + Ilce);
+                           
+                            var tn3 = document.createTextNode(Bilgi);
+                          
+                            shortInfo.appendChild(tn1);
+                            var br = document.createElement("br");
+                            shortInfo.appendChild(br);
+
+                            shortInfo.appendChild(tn2);
+                            var br = document.createElement("br");
+                            shortInfo.appendChild(br);
+                            var br = document.createElement("br");
+                            shortInfo.appendChild(br);
+                            shortInfo.appendChild(tn3);
+                         //   shortInfo.appendChild(satir1);
+                         //   shortInfo.appendChild(satir2);
+                         //   shortInfo.appendChild(satir3);
+                            //  shortInfo.innerHTML =_info;
+                                   
+                                    divInfo.appendChild(shortInfo);
 
 
-                        var button = document.createElement("buton");
-                        var textNode = document.createTextNode("Detay");
-                        button.appendChild(textNode);
-                        button.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
-                        button.id = 'show-dialog' + key;
+                                    var button = document.createElement("buton");
+                                    var textNode = document.createTextNode("Detay");
+                                    button.appendChild(textNode);
+                                    button.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
+                                    button.id = 'show-dialog' + key;
 
-                        button.addEventListener("click", function () {
+                            button.addEventListener("click", function () {
+                                var query = firebase.database().ref("Detaylar").orderByKey();
+                                query.once("value")
+                                    .then(function (snapshot) {
+                                        snapshot.forEach(function (childSnapshot) {
+                                            var key = childSnapshot.key;
+                                            
+                                            if (button.id == "show-dialog" + key) {
+                                                var baslik = childSnapshot.child("Baslik").val();
+                                                var hayati = childSnapshot.child("Hayati").val();
+                                                var tn1 = document.createTextNode(baslik);
+                                                var tn2 = document.createTextNode(hayati);
+                                                var shortInfo = document.getElementById('dialogInfo');
+                                                shortInfo.textContent = hayati;
+                                                //shortInfo.appendChild(tn1);
+                                                //var br = document.createElement("br");
+                                                //shortInfo.appendChild(br);
+                                                //shortInfo.appendChild(tn2);
+                                          
+                                            };
+                                           
+                                        })});
+                            dialog.showModal();
 
-                            var dialog = document.querySelector('dialog');
-                            var showDialogButton = document.querySelector('#show-dialog' + key);
-                            if (!dialog.showModal) {
-                                dialogPolyfill.registerDialog(dialog);
-                            }
-                            showDialogButton.addEventListener('click', function () {
+                            //var showDialogButton = document.querySelector('#show-dialog' + key);
 
-                                ;
-                                dialog.showModal();
-                            });
+                            //showDialogButton.addEventListener('click', function () {
+
+
+
+                            //});
                             dialog.querySelector('.close').addEventListener('click', function () {
                                 dialog.close();
                             });;
@@ -485,7 +529,7 @@
 
                         // Cancel enumeration
                         //return true;
-                    });
+                    }});
                 });
 
             // firebase.firestore().doc('/foo/bar').get().then(() => { });

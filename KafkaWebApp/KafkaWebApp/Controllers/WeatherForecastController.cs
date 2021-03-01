@@ -36,12 +36,14 @@ namespace KafkaWebApp.Controllers
         public async Task< IActionResult > Get()
         {
             string _text = "";
+           
            Task< DeliveryResult<string, string>> result = _kafkaClient.Send("2","2222222222");
             _text = result.Result.Key + " " + result.Result.Partition.Value.ToString() +" "+ result.Result.Offset.Value.ToString() + " " + result.Result.Status.ToString()+Environment.NewLine;
               result =  _kafkaClient.Send("1", "111111111111");
             _text += result.Result.Key + " " + result.Result.Partition.Value.ToString() + " " + result.Result.Offset.Value.ToString() + " " + result.Result.Status.ToString() + Environment.NewLine;
             result =  _kafkaClient.Send("3", "3333333333333");
             _text += result.Result.Key + " " + result.Result.Partition.Value.ToString() + " " + result.Result.Offset.Value.ToString() + " " + result.Result.Status.ToString() + Environment.NewLine;
+           
             /*
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast

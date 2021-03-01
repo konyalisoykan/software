@@ -4,51 +4,56 @@
       "name": "Hüseyin Hilmi Işık",
       "DT": "08.03.1911",
       "OT": "26.10.2001",
-      "Kabri": "istanbul",
+      "Sehir": "istanbul",
+      "Ilce": "Eyüp Sultan",
       "Resim": "img/HuseyinHilmiIsık",
-      "Detaylar": {
-        "1": {
-          "Hayati": "sssssssssssss",
-          "Eserler": {
-            "1": "Saadeti Ebediye",
-            "2": "Mektubat"
-          },
-          "Sözler": {
-            "1": ""
-          }
-        }
-
-      }
-
+      "Bilgi": "Din bilgilerinde derin âlim ve tasavvuf marifetlerinde kâmil ve mükemmil olan kerametler, harikalar sahibi Seyyid Abdülhakim Arvasi hazretlerinin yetiştirdiği yetkili bir âlimdir. Kitapları bütün ülkelerde okunmaktadır. Tam İlmihal Seadet-i Ebediyye başta olmak üzere, 14 Türkçe, 60 Arapça ve 25 Farsça ve bunlardan tercüme edilen, Fransızca, İngilizce, Almanca, Rusça ve diğer dillerdeki yüzlerce kitabı hazırlayandır.",
+      "Detaylar": "1"
     },
     "2": {
       "name": "Abdulhakim Arvasi",
       "DT": "1860",
       "OT": "27 Kasım 1943",
-      "Kabri": "Ankara",
+      "Sehir": "Ankara",
+      "Ilce": "Bağlum",
       "Resim": "img/AbdulhakimArvasi.jğeg",
-      "Detaylar": {
-        "1": {
-          "Hayati": "ttttttt",
-          "Eserler": {
-            "1": "Saadeti Ebediye",
-            "2": "Mektubat"
-          },
-          "Sözler": {
-            "1": ""
-          }
-        }
-
-      }
-
-
-
+      "Bilgi": "Efendi  Hazretleri",
+      "Detaylar": "2"
 
     }
+
+
+
+
+    
   },
   "Sehirler": {
     "1": "Ankara",
     "2": "istanbul"
 
+  },
+  "Detaylar": {
+    "1": {
+      "Baslik": "Saadet Güneşi",
+      "Hayati": "Von Mises’den yüksek matematik, Prager’den mekanik, Dember’den fizik, Goss’dan teknik kimya okudu. Kimya profesörü Arndt’ın yanında çalıştı, takdirlerini kazandı. Arndt’ın yanında altı ay travay yaptı ve İstanbul Üniversitesi’nde çalışarak, Phenyl-cyan-nitromethan cisminin sentezini yaptı ve formülünü tespit etti. 1936 senesi sonunda 1/1 sayılı Kimya Yüksek Mühendisliği diplomasını aldı. Albaylığa kadar Türk ordusunda zehirli gazlar mütehassıslığı ve kimya öğretmenliği yapmıştır.\nSiyasete hiç karışmadı, hiçbir partiye bağlanmadı. Bölücülüğe ve kanunlara karşı gelmeye karşı idi. Bunu eserlerinde açıkça bildirmiştir. Dünyanın her yerine gönderdiği çeşitli dillerdeki kitaplarında, İslam dininin doğru olarak anlaşılması, İslam ahkâmının ve ahlakının yayılması için çalıştı. Bunun için, dini dünya çıkarlarına alet edenlerin ve mezhepsizlerin iftira oklarına hedef oldu. (Eczacı, kimyager, dinden ne anlar? O mesleğinde çalışsın, bizim işimize karışmasın) diyenler oldu. Evet, bu zat, eczacı ve kimya yüksek mühendisi olarak milletine 30 yıldan fazla hizmet etti. Fakat din tahsili de yaparak ve geceli gündüzlü çalışarak, büyük İslam âliminden icazet almakla da şereflendi. Hiçbir zaman kendi görüşünü, kendi fikrini yazmayıp, daima Ehl-i sünnet âlimlerinin, anlayabilenleri hayran eden kıymetli yazılarını Arapça ve Farsça’dan tercüme ederek kitaplarında yayınlamıştır.\nSeyyid Ahmet Mekki Efendi, Tam İlmihal Seadet-i Ebediyye kitabına yazdığı takrizde buyuruyor ki:\n(Asrımızın fadıllarından, zamanımızın bir tanesinin yazmış olduğu Seadet-i Ebediyye kitabına göz gezdirdim. Bu kitapta, kelâm, fıkıh ve tasavvuf bilgilerini buldum. Bunların hepsinin, bilgilerini nübüvvet kaynağından almış olanların kitaplarından toplanmış olduğunu gördüm. Bu kitapta, Ehl-i sünnet itikadına uygun olmayan hiçbir bilgi, hiçbir söz yoktur. Ey Temiz gençler, dini ve milli bilgilerinizi, bu latif, benzeri bulunmayan, belki de, ileride bir benzeri yazılamayacak olan, bu kitaptan alın!)",
+      "Eserler": {
+        "1": "Saadeti Ebediye",
+        "2": "Mektubat"
+      },
+      "Sözler": {
+        "1": ""
+      }
+    },
+    "2": {
+      "Baslik": "Saadet Güneşi",
+      "Hayati": "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
+      "Eserler": {
+        "1": "Saadeti Ebediye",
+        "2": "Mektubat"
+      },
+      "Sözler": {
+        "1": ""
+      }
+    }
   }
 }

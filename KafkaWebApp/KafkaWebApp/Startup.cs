@@ -29,10 +29,10 @@ namespace KafkaWebApp
         {
 
             services.AddControllers();
-            //services.AddSwaggerGen(c =>
-            //{
-            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "KafkaWebApp", Version = "v1" });
-            //});
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "KafkaWebApp", Version = "v1" });
+           });
             services.AddSingleton<IKafkaClient, KafkaClient>();
         }
 
@@ -42,8 +42,8 @@ namespace KafkaWebApp
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-             //   app.UseSwagger();
-               // app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "KafkaWebApp v1"));
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "KafkaWebApp v1"));
             }
 
             app.UseHttpsRedirection();
