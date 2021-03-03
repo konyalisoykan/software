@@ -51,9 +51,11 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         #dialogInfo {
-            /*max-width: 11920px;
-            min-width: 600px;*/
+            /* max-width: 11920px;
+            min-width: 600px;
             background-color: powderblue;
+          */
+            white-space: pre-wrap;
         }
         body {
             background: #ECEFF1;
@@ -133,6 +135,7 @@
             margin-bottom: 40px;
             z-index: 900;
         }
+
     </style>
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/8.2.6/firebase-app.js"></script>
@@ -156,19 +159,42 @@
 </head>
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
 
-
     <dialog class="mdl-dialog">
-       
+
         <div id="dialogInfo" class="mdl-dialog__content">
-            
+
         </div>
         <div class="mdl-dialog__actions">
-            
+
             <button type="button" class="mdl-button close">Kapat</button>
         </div>
     </dialog>
+    <dialog  id ="mapDialog" class="mdl-dialog">
 
+        <div iclass="mdl-dialog__content">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="347" height="478" id="gmap_canvas"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+            <style>
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 478px;
+                    width: 347px;
+                }
+            </style>
+            <style>
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 478px;
+                    width: 347px;
+                }
+            </style></div></div>
+        </div>
+        <div class="mdl-dialog__actions">
 
+            <button type="button" class="mdl-button close">Kapat</button>
+        </div>
+    </dialog>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
             <div class="mdl-layout--large-screen-only mdl-layout__header-row">
@@ -218,7 +244,6 @@
                     <div class="mdl-card mdl-cell mdl-cell--12-col">
                         <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing" id="EviliyaConteiner">
                             <h4 Id="EvliyaSehri" class="mdl-cell mdl-cell--12-col">Details</h4>
-
                             <!--<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                                 <div class="section__circle-container__circle mdl-color--primary"></div>
                             </div>
@@ -234,7 +259,6 @@
                                 Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
                             </div>-->
                         </div>
-
                         <div class="mdl-card__actions">
                             <a href="#" class="mdl-button">Read our features</a>
                         </div>
@@ -285,7 +309,6 @@
                     </div>
                 </section>
             </div>
-
             <div class="mdl-layout__tab-panel" id="features">
                 <section class="section--center mdl-grid mdl-grid--no-spacing">
                     <div class="mdl-cell mdl-cell--12-col">
@@ -299,7 +322,6 @@
                             <a href="#lorem4">Lorem ipsum</a>
                             <a href="#lorem5">Lorem ipsum</a>
                         </ul>
-
                         <h5 id="lorem1">Lorem ipsum dolor sit amet</h5>
                         Excepteur et pariatur officia veniam anim culpa cupidatat consequat ad velit culpa est non.
                         <ul>
@@ -307,7 +329,6 @@
                             <li>Dolor consectetur incididunt in ipsum laborum non et irure pariatur excepteur anim occaecat officia sint.</li>
                             <li>Lorem labore proident officia excepteur do.</li>
                         </ul>
-
                         <p>
                             Sit qui est voluptate proident minim cillum in aliquip cupidatat labore pariatur id tempor id. Proident occaecat occaecat sint mollit tempor duis dolor cillum anim. Dolore sunt ea mollit fugiat in aliqua consequat nostrud aliqua ut irure in dolore. Proident aliqua culpa sint sint exercitation. Non proident occaecat reprehenderit veniam et proident dolor id culpa ea tempor do dolor. Nulla adipisicing qui fugiat id dolor. Nostrud magna voluptate irure veniam veniam labore ipsum deserunt adipisicing laboris amet eu irure. Sunt dolore nisi velit sit id. Nostrud voluptate labore proident cupidatat enim amet Lorem officia magna excepteur occaecat eu qui. Exercitation culpa deserunt non et tempor et non.
                         </p>
@@ -323,9 +344,7 @@
                         <p>
                             Id occaecat velit non ipsum occaecat aliqua quis ut. Eiusmod est magna non esse est ex incididunt aute ullamco. Cillum excepteur sint ipsum qui quis velit incididunt amet. Qui deserunt anim enim laborum cillum reprehenderit duis mollit amet ad officia enim. Minim sint et quis aliqua aliqua do minim officia dolor deserunt ipsum laboris. Nulla nisi voluptate consectetur est voluptate et amet. Occaecat ut quis adipisicing ad enim. Magna est magna sit duis proident veniam reprehenderit fugiat reprehenderit enim velit ex. Ullamco laboris culpa irure aliquip ad Lorem consequat veniam ad ipsum eu. Ipsum culpa dolore sunt officia laborum quis.
                         </p>
-
                         <h5 id="lorem3">Lorem ipsum dolor sit amet</h5>
-
                         <p id="lorem4">
                             Eiusmod nulla aliquip ipsum reprehenderit nostrud non excepteur mollit amet esse est est dolor. Dolore quis pariatur sit consectetur veniam esse ullamco duis Lorem qui enim ut veniam. Officia deserunt minim duis laborum dolor in velit pariatur commodo ullamco eu. Aute adipisicing ad duis labore laboris do mollit dolor cillum sunt aliqua ullamco. Esse tempor quis cillum consequat reprehenderit. Adipisicing proident anim eu sint elit aliqua anim dolore cupidatat fugiat aliquip qui.
                         </p>
@@ -410,67 +429,70 @@
             document.getElementById('EvliyaSehri').innerText = myParam + ' Evliyaları';
 
             var dialog = document.querySelector('dialog');
+            var dialogmap =document.getElementById("mapDialog");
+          //  var dialogmap= document.querySelector('dialog');
             var query = firebase.database().ref("Evliyalar").orderByKey();
-             query.once("value")
+            query.once("value")
                 .then(function (snapshot) {
                     snapshot.forEach(function (childSnapshot) {
 
 
                         var MySehir = childSnapshot.child("Sehir").val();
-                       
+
                         if (myParam == MySehir) {
-                          
-                        var key = childSnapshot.key; // "ada"
-                        var name = childSnapshot.child("name").val();
-                        var DT = childSnapshot.child("DT").val();
-                        var OT = childSnapshot.child("OT").val();
+
+                            var key = childSnapshot.key; // "ada"
+                            var name = childSnapshot.child("name").val();
+                            var DT = childSnapshot.child("DT").val();
+                            var OT = childSnapshot.child("OT").val();
 
                             var Ilce = childSnapshot.child("Ilce").val();
-                        var Resim = childSnapshot.child("Resim").val();
-                        var Bilgi = childSnapshot.child("Bilgi").val();
+                            var Resim = childSnapshot.child("Resim").val();
+                            var Bilgi = childSnapshot.child("Bilgi").val();
 
-                        //  document.getElementById('EviliyaConteiner').appendChild(button)
-                        var divInfo = document.createElement("div");
+                            //  document.getElementById('EviliyaConteiner').appendChild(button)
+                            var divInfo = document.createElement("div");
 
-                        divInfo.className = "section__text mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone";
-
-
+                            divInfo.className = "section__text mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone";
 
 
-                        var title = document.createElement("h5");
-                        title.textContent = name;
-                        divInfo.appendChild(title);
+
+
+                            var title = document.createElement("h5");
+                            title.textContent = name;
+                            divInfo.appendChild(title);
 
                             var shortInfo = document.createElement("div");
-                         
-                            var tn1 = document.createTextNode("Doğum Tarihi :" + DT + " Vefat Tarihi :" + OT +"\n\r");
-                           var tn2= document.createTextNode( "Kabrinn bulunduğu ilçe :" + Ilce);
-                           
+
+                            var tn1 = document.createTextNode("Doğum Tarihi :" + DT + " Vefat Tarihi :" + OT + "\n\r");
+                            var tn2 = document.createTextNode("Kabrinn bulunduğu ilçe :" + Ilce);
+
                             var tn3 = document.createTextNode(Bilgi);
-                          
+
                             shortInfo.appendChild(tn1);
                             var br = document.createElement("br");
                             shortInfo.appendChild(br);
-
+                            var br = document.createElement("br");
+                            shortInfo.appendChild(br);
                             shortInfo.appendChild(tn2);
                             var br = document.createElement("br");
                             shortInfo.appendChild(br);
                             var br = document.createElement("br");
                             shortInfo.appendChild(br);
                             shortInfo.appendChild(tn3);
-                         //   shortInfo.appendChild(satir1);
-                         //   shortInfo.appendChild(satir2);
-                         //   shortInfo.appendChild(satir3);
+                            //   shortInfo.appendChild(satir1);
+                            //   shortInfo.appendChild(satir2);
+                            //   shortInfo.appendChild(satir3);
                             //  shortInfo.innerHTML =_info;
-                                   
-                                    divInfo.appendChild(shortInfo);
+
+                            divInfo.appendChild(shortInfo);
 
 
-                                    var button = document.createElement("buton");
-                                    var textNode = document.createTextNode("Detay");
-                                    button.appendChild(textNode);
-                                    button.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
-                                    button.id = 'show-dialog' + key;
+                            var button = document.createElement("buton");
+                            var textNode = document.createTextNode("Detay");
+                            button.appendChild(textNode);
+                            button.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
+                            button.id = 'show-dialog' + key;
 
                             button.addEventListener("click", function () {
                                 var query = firebase.database().ref("Detaylar").orderByKey();
@@ -478,58 +500,85 @@
                                     .then(function (snapshot) {
                                         snapshot.forEach(function (childSnapshot) {
                                             var key = childSnapshot.key;
-                                            
+
                                             if (button.id == "show-dialog" + key) {
                                                 var baslik = childSnapshot.child("Baslik").val();
                                                 var hayati = childSnapshot.child("Hayati").val();
-                                                var tn1 = document.createTextNode(baslik);
-                                                var tn2 = document.createTextNode(hayati);
+
+                                             
                                                 var shortInfo = document.getElementById('dialogInfo');
+                                                shortInfo.textConten = "";
                                                 shortInfo.textContent = hayati;
-                                                //shortInfo.appendChild(tn1);
-                                                //var br = document.createElement("br");
-                                                //shortInfo.appendChild(br);
-                                                //shortInfo.appendChild(tn2);
-                                          
+                                                shortInfo.scrollTop = 0;
+                                                shortInfo.  scrollIntoView();
                                             };
+
+                                        })
+                                    });
+                               dialog.showModal();
+
+                                //var showDialogButton = document.querySelector('#show-dialog' + key);
+
+                                //showDialogButton.addEventListener('click', function () {
+
+
+
+                                //});
+                                dialog.querySelector('.close').addEventListener('click', function () {
+                                    dialog.close();
+                                });;
+
+                            });
+
+
+                            componentHandler.upgradeElement(button);
+
+                            var button1 = document.createElement("buton");
+                            var textNode = document.createTextNode("Harita");
+                            button1.appendChild(textNode);
+                            button1.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
+                            button1.id = 'show-map' + key;
+                            componentHandler.upgradeElement(button1);
+                            button1.addEventListener("click", function () {
+                              
+                                document.getElementById('gmap_canvas').src = "";
+                                var query = firebase.database().ref("Detaylar").orderByKey();
+                                query.once("value")
+                                    .then(function (snapshot) {
+                                        snapshot.forEach(function (childSnapshot) {
+                                            var key = childSnapshot.key;
                                            
-                                        })});
-                            dialog.showModal();
+                                            if (button1.id == "show-map" + key) {
+                                                var harita = childSnapshot.child("Harita").val();
+                                                document.getElementById('gmap_canvas').src = harita;
+                                              
+                                                
+                                               
 
-                            //var showDialogButton = document.querySelector('#show-dialog' + key);
+                                            };
 
-                            //showDialogButton.addEventListener('click', function () {
+                                        })
+                                    });
+                                dialogmap.showModal();
 
+                                
+                                dialogmap.querySelector('.close').addEventListener('click', function () {
+                                    dialogmap.close();
+                                });;
+                                
+                            });
 
+                            divInfo.appendChild(button);
+                            divInfo.appendChild(button1);
 
-                            //});
-                            dialog.querySelector('.close').addEventListener('click', function () {
-                                dialog.close();
-                            });;
-
-                        });
-
-
-                        componentHandler.upgradeElement(button);
-
-                        var button1 = document.createElement("buton");
-                        var textNode = document.createTextNode("Harita");
-                        button1.appendChild(textNode);
-                        button1.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
-                        componentHandler.upgradeElement(button1);
-
-                        divInfo.appendChild(button);
-                        divInfo.appendChild(button1);
-
-                        document.getElementById('EviliyaConteiner').appendChild(divInfo)
+                            document.getElementById('EviliyaConteiner').appendChild(divInfo)
 
 
 
 
 
-                        // Cancel enumeration
-                        //return true;
-                    }});
+                        }
+                    });
                 });
 
             // firebase.firestore().doc('/foo/bar').get().then(() => { });
