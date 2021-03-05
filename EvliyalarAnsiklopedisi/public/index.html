@@ -1,9 +1,33 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <meta charset="iso-8859-1">
+    <title>Evliyalar Ansiklopedisi Türkiye Haritası</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
+    <link rel="stylesheet" href="styles.css">
 
-  
-   
+
     <style media="screen">
 
         body {
@@ -16,8 +40,8 @@
 
         #message {
             background: white;
-            max-width: 360px;
-            margin: 100px auto 16px;
+            max-width: 600px;
+            margin: 0px auto 16px;
             padding: 32px 24px;
             border-radius: 3px;
         }
@@ -86,19 +110,78 @@
         $(function () {
             $("#map svg path").hover(
                 function () {
-                    var id = $(this).attr("id");
-                    $("#sehir").text(id);
+                    //  var id = $(this).attr("id");
+                    // $("#sehir").text(id);
                 });
         })
         $(function () {
             $("#map svg path").click(
                 function () {
                     var id = $(this).attr("id");
+                    $("#sehir").text(id);
+                    // window.location = "EvliyaListesi.html?Sehir=" + id;
+                });
+        })
+        $(function () {
+            $("#Devam").click(
+                function () {
+                    var id = $("#sehir").text();
                     window.location = "EvliyaListesi.html?Sehir=" + id;
                 });
         })
     </script>
     <style type="text/css">
+        body {
+            background: #ECEFF1;
+            color: rgba(0,0,0,0.87);
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #message {
+            background: white;
+            max-width: 1050px;
+            /*margin: 100px auto 16px;
+            padding: 32px 24px;*/
+            border-radius: 3px;
+            /*margin: 1px;
+                padding: 0;*/
+        }
+
+            #message h2 {
+                color: #ffa100;
+                font-weight: bold;
+                font-size: 16px;
+                margin: 0 0 8px;
+            }
+
+            #message h1 {
+                font-size: 22px;
+                font-weight: bold;
+                color: rgba(0,0,0,0.6);
+                /*margin: 0 0 16px;*/
+            }
+
+            #message p {
+                line-height: 140%;
+                margin: 16px 0 24px;
+                font-size: 14px;
+            }
+
+
+
+        #load {
+            color: rgba(0,0,0,0.4);
+            text-align: center;
+            font-size: 13px;
+        }
+
+
+
+        .wrapper {
+            text-align: right;
+        }
 
         body {
             background: #fff;
@@ -107,14 +190,14 @@
         #map {
             width: 1050px;
             height: 620px;
-            position: relative;
+            position: center;
             margin: auto;
         }
 
             #map svg {
                 position: relative;
-                top: -100px;
-                left: 0px;
+                /*top: -100px;
+                left: 0px;*/
             }
 
         svg > a {
@@ -129,19 +212,27 @@
             color: #666;
         }
     </style>
-</head>
-<body>
-    <div id="sehir"></div>
+    <div id="message">
+        <h2>Hoş geldiniz</h2>
+        <h1>Allâhü Teâlânın dostlarını tanıyalım ve ziyaret edelim.</h1>
+        <h1>
+        tesini görmek için lütfen haritadan il seçiniz  sonra "Devam" tuşuna basınız.</h1>
+        <div id="sehir"></div>
+        <div class="wrapper">
+            <button id="Devam" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                Devam
+            </button>
 
-    <div id="map"></div>
-    <!--<div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+        </div>
+        <div id="map"></div>
+
+
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>-->
-
+    
    
+</head>
+
+<body>
+  
 </body>
 </html>
