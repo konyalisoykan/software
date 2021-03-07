@@ -1,7 +1,7 @@
 {
   "Evliyalar": {
     "1": {
-      "name": "Ebû Eyyûb-el Ensârî",
+      "Ad": "Ebû Eyyûb-el Ensârî",
       "DT": "--",
       "OT": "49/669",
       "Sehir": "istanbul",
@@ -10,7 +10,7 @@
       "Detaylar": "1"
     },
     "2": {
-      "name": "Abdulhakim Arvasi",
+      "Ad": "Abdulhakim Arvasi",
       "DT": "1860",
       "OT": "27 Kasım 1943",
       "Sehir": "Ankara",
@@ -19,7 +19,7 @@
       "Detaylar": "2"
     },
     "3": {
-      "name": "Hüseyin Hilmi Işık",
+      "Ad": "Hüseyin Hilmi Işık",
       "DT": "08.03.1911",
       "OT": "26.10.2001",
       "Sehir": "istanbul",
@@ -28,7 +28,7 @@
       "Detaylar": "3"
     },
     "4": {
-      "name": "Yuşa Hazretleri",
+      "Ad": "Yuşa Hazretleri",
       "DT": "--",
       "OT": "--",
       "Sehir": "istanbul",

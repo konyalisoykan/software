@@ -1,12 +1,26 @@
-﻿<!DOCTYPE HTML>
-<html lang="en-US">
+﻿
+
+﻿<!DOCTYPE html>
+<html>
 <head>
     <meta charset="iso-8859-1">
-    <title>İnteraktif Türkiye Haritası</title>
+    <title>Evliyalar Ansiklopedisi Türkiye Haritası</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    
+
+
 
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.qtip.min.css">
-
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="js/raphael-min.js"></script>
     <script type="text/javascript" src="js/paths.js"></script>
@@ -36,6 +50,24 @@
                 });
         })
     </script>
+  
+    <div >
+        <h2>Hoş geldiniz</h2>
+        <h1>Allâhü Teâlânın dostlarını tanıyalım ve ziyaret edelim.</h1>
+        <h1>
+            tesini görmek için lütfen haritadan il seçiniz  sonra "Devam" tuşuna basınız.
+        </h1>
+        <div id="sehir"></div>
+        <div class="wrapper">
+            <button id="Devam" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                Devam
+            </button>
+
+        </div>
+       
+
+
+    </div>
     <style type="text/css">
         body {
             background: #fff;
@@ -65,27 +97,12 @@
             margin-top: 25px;
             color: #666;
         }
-
-        .wrapper {
-            text-align: center;
-            font-size: 45px;
-        }
     </style>
+
 </head>
+
 <body>
-
-
-    <div class="wrapper">
-        Lütfen Şehir seçip "Devam" tuşuna basınız
-    </div>
-    <div lass="wrapper" id="sehir"></div>
     <div id="map"></div>
-
-    <div class="wrapper">
-        <button id="Devam">
-            Devam
-        </button>
-
-    </div>
 </body>
 </html>
+

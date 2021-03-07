@@ -130,6 +130,31 @@
             margin-bottom: 40px;
             z-index: 900;
         }
+
+
+        #Hadis {
+            color: wheat;
+            font-weight: bold;
+            font-size: 15px;
+            margin: 0px 0 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #PeygamberimzinIsmi {
+            font-size: 12px;
+            font-weight: bold;
+            color: rgb(100, 255, 50);
+            margin: 0 30px 0px;
+        }
+
+            #message p {
+                line-height: 140%;
+                margin: 16px 0 24px;
+                font-size: 14px;
+            }
+        .wrapper {
+            text-align: center;
+        }
     </style>
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/8.2.6/firebase-app.js"></script>
@@ -153,9 +178,7 @@
 
     <dialog class="mdl-dialog">
 
-        <div id="dialogInfo" class="mdl-dialog__content">
-
-        </div>
+   
         <div class="mdl-dialog__actions">
 
             <button type="button" class="mdl-button close">Kapat</button>
@@ -189,19 +212,24 @@
     </dialog>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-            </div>
-            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-                <h3>Evliya Listesi</h3>
-            </div>
-            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-            </div>
+
+    
+                <div class="section__text mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                    <h1 id="Hadis">Kişi sevdiği ile beaberdir.</h1>
+
+                    <h1 id="PeygamberimzinIsmi">
+                        Hazreti Muhammed sallallahu aleyhi ve sellem
+                    </h1>
+
+
+                </div>
+    
             <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-                <a href="#overview" class="mdl-layout__tab is-active">Anasayfa</a>
-                <!--<a href="#features" class="mdl-layout__tab">Features</a>
-                <a href="#features" class="mdl-layout__tab">Details</a>
-                <a href="#features" class="mdl-layout__tab">Technology</a>
-                <a href="#features" class="mdl-layout__tab">FAQ</a>-->
+                <a href="#overview"  style="font-size:16px"  class="mdl-layout__tab is-active">Evliya Listesi</a>
+                <a href="#PeygamberimizinHayati" style="font-size:16px" class="mdl-layout__tab">Sevgili Peygamberim</a>
+                <!--<a href="#features"  style="font-size:30px" class="mdl-layout__tab">Details</a>
+                <a href="#features"  style="font-size:30px" class="mdl-layout__tab">Technology</a>
+                <a href="#features" style="font-size:30px" class="mdl-layout__tab">FAQ</a>-->
                 <!--<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
                     <i class="material-icons" role="presentation">add</i>
                     <span class="visuallyhidden">Add</span>
@@ -287,130 +315,770 @@
                     </ul>
                 </section>-->
                
-                <section class="section--footer mdl-color--white mdl-grid">
-                    <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                        <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
-                    </div>
-                    <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-                    </div>
-                    <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                        <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
-                    </div>
-                    <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-                    </div>
-                </section>
-        
+              
             </div>
-            <div class="mdl-layout__tab-panel" id="features">
+            <div class="mdl-layout__tab-panel" id="PeygamberimizinHayati">
                 <section class="section--center mdl-grid mdl-grid--no-spacing">
                     <div class="mdl-cell mdl-cell--12-col">
-                        <h4>Features</h4>
-                        Minim duis incididunt est cillum est ex occaecat consectetur. Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
+                        <h4>Peygamber Efendimizin Hayatı</h4>
+                        Allahü teâlâ bütün peygamberlerine ismiyle hitâb ettiği hâlde, O’na “Habîbim” (sevgilim) diyerek hitâb etmiştir. Nitekim Allahü teâlâ bir hadîs-i kudsîde: “Sen olmasaydın, hiçbir şeyi yaratmazdım!” buyurmuşdur.
                         <ul class="toc">
-                            <h4>Contents</h4>
-                            <a href="#lorem1">Lorem ipsum</a>
-                            <a href="#lorem2">Lorem ipsum</a>
-                            <a href="#lorem3">Lorem ipsum</a>
-                            <a href="#lorem4">Lorem ipsum</a>
-                            <a href="#lorem5">Lorem ipsum</a>
+                            <h4>Başlıklar</h4>
+                            <a href="#PeygamberlerinEnUstunu">Peygamberlerin en üstünüm</a>
+                            <a href="#MubarekSoyu">Mübarek soyu</a>
+                            <a href="#Dogumu">Doğumu</a>
+                            <a href="#Isimleri">İsimleri ve künyeleri</a>
+                            <a href="#Cocuklugu">Çocukluğu</a>
+                            <a href="#Gencligi">Gençliği</a>
+                            <a href="#Evlenmesi">Evlenmesi</a>
+                            <a href="#Peygamberligi">Peygamberliği</a>
+                            <a href="#MekkeDevri">Mekke devri</a>
+                            <a href="#MedineDevri">Medîne devri</a>
+                            <a href="#VedaHacci">Vedâ Haccı</a>
+                            <a href="#Vefati">Vefatı</a>
                         </ul>
-                        <h5 id="lorem1">Lorem ipsum dolor sit amet</h5>
-                        Excepteur et pariatur officia veniam anim culpa cupidatat consequat ad velit culpa est non.
-                        <ul>
-                            <li>Nisi qui nisi duis commodo duis reprehenderit consequat velit aliquip.</li>
-                            <li>Dolor consectetur incididunt in ipsum laborum non et irure pariatur excepteur anim occaecat officia sint.</li>
-                            <li>Lorem labore proident officia excepteur do.</li>
-                        </ul>
+                        <h5 id="PeygamberlerinEnUstunu">Peygamberlerin en üstünü</h5>
                         <p>
-                            Sit qui est voluptate proident minim cillum in aliquip cupidatat labore pariatur id tempor id. Proident occaecat occaecat sint mollit tempor duis dolor cillum anim. Dolore sunt ea mollit fugiat in aliqua consequat nostrud aliqua ut irure in dolore. Proident aliqua culpa sint sint exercitation. Non proident occaecat reprehenderit veniam et proident dolor id culpa ea tempor do dolor. Nulla adipisicing qui fugiat id dolor. Nostrud magna voluptate irure veniam veniam labore ipsum deserunt adipisicing laboris amet eu irure. Sunt dolore nisi velit sit id. Nostrud voluptate labore proident cupidatat enim amet Lorem officia magna excepteur occaecat eu qui. Exercitation culpa deserunt non et tempor et non.
+                            Peygamber efendimiz, Peygamberlerin en üstünü ve sonuncusudur. Allahü teâlânın yarattığı varlıkların en şereflisi Muhammed aleyhisselâmdır. Her şey O’nun hürmetine yaratıldı. O, Allahü teâlânın resûlü, son peygamberidir. Allahü teâlâ bütün peygamberlerine ismiyle hitâb ettiği hâlde, O’na “Habîbim” (sevgilim) diyerek hitâb etmiştir. Nitekim Allahü teâlâ bir hadîs-i kudsîde: “Sen olmasaydın, hiçbir şeyi yaratmazdım!” buyurdu. Bütün mahlûkâtı O’nun şerefine yaratmıştır. Allahü teâlâ kullarına râzı olduğu ve beğendiği yolu göstermek için çeşitli kavimlere zaman zaman peygamberler göndermiştir. Muhammed aleyhisselâmı ise son Peygamber olarak bütün insanlara ve cinlere gönderdi. Bunun için Peygamberimize “Hâtem-ün-nebiyyîn” ve “Hâtem-ül-Enbiyâ” denilmiştir.
                         </p>
                         <p>
-                            Do dolor eiusmod eu mollit dolore nostrud deserunt cillum irure esse sint irure fugiat exercitation. Magna sit voluptate id in tempor elit veniam enim cupidatat ea labore elit. Aliqua pariatur eu nulla labore magna dolore mollit occaecat sint commodo culpa. Eu non minim duis pariatur Lorem quis exercitation. Sunt qui ex incididunt sit anim incididunt sit elit ad officia id.
-                        </p>
-                        <p id="lorem2">
-                            Tempor voluptate ex consequat fugiat aliqua. Do sit et reprehenderit culpa deserunt culpa. Excepteur quis minim mollit irure nulla excepteur enim quis in laborum. Aliqua elit voluptate ad deserunt nulla reprehenderit adipisicing sint. Est in eiusmod exercitation esse commodo. Ea reprehenderit exercitation veniam adipisicing minim nostrud. Veniam dolore ex ea occaecat non enim minim id ut aliqua adipisicing ad. Occaecat excepteur aliqua tempor cupidatat aute dolore deserunt ipsum qui incididunt aliqua occaecat sit quis. Culpa sint aliqua aliqua reprehenderit veniam irure fugiat ea ad.
+                            Her peygamber, kendi zamânında, kendi mekânında, kendi kavminin hepsinden her bakımdan üstündür. Muhammed aleyhisselâm ise, her zamanda, her memlekette, yâni dünyâ yaratıldığı günden kıyâmet kopuncaya kadar, gelmiş ve gelecek bütün varlıkların, her bakımdan en üstünüdür. Hiçbir kimse hiçbir bakımdan O’nun üstünde değildir. Allahü teâlâ her şeyden önce Muhammed aleyhisselâmın nûrunu yarattı. Eshâb-ı kirâmdan Abdullah bin Câbir radıyallahü anh; “Yâ Resûlallah! Allahü teâlâ her şeyden evvel neyi yaratmıştır, bana söyler misin?” deyince, Sevgili Peygamberimiz şöyle buyurdu: “Her şeyden evvel senin peygamberinin yâni benim nûrumu kendi nûrundan yarattı. O zaman ne Levh, ne Kalem, ne Cennet, ne Cehennem, ne melek, ne semâ’ (gökyüzü), ne arz (yeryüzü), ne güneş, ne ay, ne insan, ne de cin vardı.” Âdem aleyhisselâm yaratılınca Arş-ı a’lâda nûr ile yazılmış “Ahmed” ismini gördü. “Yâ Rabbi! Bu nûr nedir?” diye sorunca Allahü teâlâ; “Bu, ismi göklerde Ahmed ve yerlerde Muhammed olan senin zürriyetinden bir peygamberin nûrûdur. Eğer O olmasaydı, seni yaratmazdım.” buyurdu. Âdem aleyhisselâm yaratılınca alnına Muhammed aleyhisselâmın nûru kondu ve o nûr onun alnında parlamaya başladı. Âdem aleyhisselâmdan îtibâren babadan oğula intikal ederek asıl sâhibi Muhammed aleyhisselâma ulaştı.
                         </p>
                         <p>
-                            Eu minim fugiat laborum irure veniam Lorem aliqua enim. Aliqua veniam incididunt consequat irure consequat tempor do nisi deserunt. Elit dolore ad quis consectetur sint laborum anim magna do nostrud amet. Ea nulla sit consequat quis qui irure dolor. Sint deserunt excepteur consectetur magna irure. Dolor tempor exercitation dolore pariatur incididunt ut laboris fugiat ipsum sunt veniam aute sunt labore. Non dolore sit nostrud eu ad excepteur cillum eu ex Lorem duis.
+                            Muhammed aleyhisselâm hicretten 53 sene evvel Rebîülevvel ayının on ikinci pazartesi gecesi, sabaha karşı, Mekke’de doğdu. Târihçiler, bu günün Mîlâdi takvime göre, 20 Nisan 571 tarihine rastladığını söylüyor. Doğmadan birkaç ay önce babası, altı yaşındayken de annesi vefât etti. Bu sebepten Peygamber efendimize Dürr-i Yetîm (yetimlerin incisi) lâkâbı da verilmiştir. Sekiz yaşına kadar dedesi Abdülmuttalib’in yanında kaldı. Dedesi de vefât edince, amcası Ebû Tâlib O’nu yanına aldı. Yirmi beş yaşındayken Hadîcet-ül Kübrâ ile evlendi. Bu hanımından doğan ilk oğlunun adı Kâsım idi. Bundan dolayı Peygamberimize Ebü’l-Kâsım yâni Kâsım’ın babası da denildi. Araplarda böyle künye ile anılmak âdetti. Kırk yaşında, bütün insanlara ve cinne peygamber olduğu Allahü teâlâ tarafından bildirildi. Üç sene sonra herkesi îmâna çağırmağa başladı. Elli iki yaşında mîrac vukû buldu. 622 yılında 53 yaşında olduğu hâlde, Mekke’den Medîne’ye hicret etti. Yirmi yedi defâ muhârebe yaptı. 632 (H. 11) senesinde rebîülevvel ayının on ikinci pazartesi günü öğleden evvel 63 yaşında vefât etti.
+                        </p>
+                        <h5 id="MubarekSoyu">Mübarek Soyu</h5>
+                        <p>
+                            Muhammed aleyhisselâmın nûru, Âdem aleyhisselâmdan itibâren temiz babalardan ve temiz analardan geçerek gelmiştir. Kur’ân-ı kerîmde Şu’ârâ sûresi 219. âyetinde meâlen; “Sen, yâni senin nûrun, hep secde edenlerden dolaştırılıp, sana ulaşmıştır.” buyrulmaktadır. Nitekim Peygamber efendimiz hadîs-i şerîfte; “Allahü teâlâ insanları yarattı. Beni insanların en iyi kısmından vücûda getirdi. Sonra, bu kısımlarından en iyisini (Arabistan’da) seçti. Beni bunlardan vücûda getirdi. Sonra evlerden, âilelerden en iyisini seçip, beni bunlardan meydana getirdi. O hâlde, benim rûhum ve cesedim mahlûkların en iyisidir. Benim silsilem, ecdâdım en iyi insanlardır.” buyurmuşlardır.
                         </p>
                         <p>
-                            Id occaecat velit non ipsum occaecat aliqua quis ut. Eiusmod est magna non esse est ex incididunt aute ullamco. Cillum excepteur sint ipsum qui quis velit incididunt amet. Qui deserunt anim enim laborum cillum reprehenderit duis mollit amet ad officia enim. Minim sint et quis aliqua aliqua do minim officia dolor deserunt ipsum laboris. Nulla nisi voluptate consectetur est voluptate et amet. Occaecat ut quis adipisicing ad enim. Magna est magna sit duis proident veniam reprehenderit fugiat reprehenderit enim velit ex. Ullamco laboris culpa irure aliquip ad Lorem consequat veniam ad ipsum eu. Ipsum culpa dolore sunt officia laborum quis.
-                        </p>
-                        <h5 id="lorem3">Lorem ipsum dolor sit amet</h5>
-                        <p id="lorem4">
-                            Eiusmod nulla aliquip ipsum reprehenderit nostrud non excepteur mollit amet esse est est dolor. Dolore quis pariatur sit consectetur veniam esse ullamco duis Lorem qui enim ut veniam. Officia deserunt minim duis laborum dolor in velit pariatur commodo ullamco eu. Aute adipisicing ad duis labore laboris do mollit dolor cillum sunt aliqua ullamco. Esse tempor quis cillum consequat reprehenderit. Adipisicing proident anim eu sint elit aliqua anim dolore cupidatat fugiat aliquip qui.
-                        </p>
-                        <p id="lorem5">
-                            Nisi eiusmod esse cupidatat excepteur exercitation ipsum reprehenderit nostrud deserunt aliqua ullamco. Anim est irure commodo eiusmod pariatur officia. Est dolor ipsum excepteur magna aliqua ad veniam irure qui occaecat eiusmod aute fugiat commodo. Quis mollit incididunt amet sit minim velit eu fugiat voluptate excepteur. Sit minim id pariatur ex cupidatat cupidatat nostrud nostrud ipsum.
+                            Yaratılan ilk insan olan Âdem aleyhisselâm, Muhammed aleyhisselâmın zerresini taşıdığı için alnında O’nun nûru parlıyordu. Bu zerre hazret-i Havvâ’ya, ondan Şît aleyhisselâma ve böylece, temiz erkeklerden temiz kadınlara ve temiz kadınlardan temiz erkeklere geçti. Muhammed aleyhisselâmın nûru da, zerre ile birlikte alınlardan alınlara geçti. Melekler ne zaman Âdem aleyhisselâmın yüzüne baksalar, alnında Muhammed aleyhisselâmın nûrunu görürler ve ona salevât okurlardı. Yâni; “Allahümme salli alâ seyyidinâ Muhammed.” derlerdi. Âdem aleyhisselâm vefât edeceği zaman oğlu Şît aleyhisselâma dedi ki: “Yavrum! Bu alnında parlayan nûr, son peygamber Muhammed aleyhisselâmın nûrudur. Bu nûru, mü’min, temiz ve afif hanımlara teslim et ve oğluna da böyle vasiyet et! Muhammed aleyhisselâma gelinceye kadar, bütün babalar, oğullarına böyle vasiyet etti. Hepsi bu vasiyeti yerine getirip, en asîl, en kibâr kız ile evlendi. Nûr, temiz alınlardan, temiz kadınlardan geçerek sâhibine ulaştı. Resûlullah’ın sallallahü aleyhi ve sellem dedelerinden birinin iki oğlu olsa, yahut bir kabîle iki kola ayrılsa Muhammed aleyhisselâmın soyu, en şerefli ve hayırlı olan tarafta bulunurdu. Her asırda onun dedesi olan zât, yüzündeki nûrdan belli olurdu. O’nun nûrunu taşıyan seçilmiş bir soy vardı ki, her asırda bu soydan olan zâtın yüzü pek güzel ve nûrlu olurdu. Bu nûr ile kardeşleri arasında belli olur, içinde bulunduğu kabîle başka kabîlelerden daha üstün, daha şerefli olurdu. Âdem aleyhisselâmdan beri evlâttan evlâda geçerek gelen bu nûr İbrâhim’e ondan da oğlu İsmâil’e aleyhimüsselâm geçmiştir. Onun da alnında sabâh yıldızı gibi parlayan nûr, evlâdlarından Adnan’a, ondan Me’ad ondan Nizâr’a intikal etmiştir. Nizâr doğunca babası Me’ad, oğlunun alnındaki nûru görüp sevinmiş, büyük ziyâfet vermiştir. “Böyle oğul için, bu kadar ziyâfet az bir şey.” dediği için de oğlunun adı Nizâr (az bir şey) kalmıştır. Bundan sonra da nûr sıra ile intikal ederek asıl sâhibi olan sevgili Peygamberimize ulaşmıştır.
                         </p>
                         <p>
-                            Enim ea officia excepteur ad veniam id reprehenderit eiusmod esse mollit consequat. Esse non aute ullamco Lorem aliqua qui dolore irure eiusmod aute aliqua proident labore aliqua. Ipsum voluptate voluptate exercitation laborum deserunt nulla elit aliquip et minim ex veniam. Duis cupidatat aute sunt officia mollit dolor ad elit ad aute labore nostrud duis pariatur. In est sint voluptate consectetur velit ea non labore. Ut duis ea aliqua consequat nulla laboris fugiat aute id culpa proident. Minim eiusmod laboris enim Lorem nisi excepteur mollit voluptate enim labore reprehenderit officia mollit.
+                            Sevgili Peygamberimiz; “Ben, Abdullah, Abdülmuttalib, Hâşim, Abdü Menaf, Kuseyy, Kilâb, Mürre, Ka’b, Lüveyy, Gâlib, Fihr, Mâlik, Nadr, Kinâne, Huzeyme, Mudrike, İlyâs, Mudar, Nizâr, Me’ad, Adnân oğlu Muhammed’im. Mensup olduğum topluluk, ne zaman ikiye ayrılmış ise, Allah beni muhakkak onların en hayırlı olan tarafında bulundurmuştur. Ben, câhiliyyet ahlâksızlıklarından hiçbir şey bulaşmaksızın, ana ve babamdan meydana geldim. Ben, Âdem’den babama ve anneme gelinceye kadar, hep nikâhlı anne babadan geldim. Ben ana ve baba îtibâriyle en hayırlınızım.” Başka bir hadîs-i şerîfte de; “Allahü teâlâ, İbrâhim oğullarından İsmâil’i seçti. İsmâil oğullarından Kinâne oğullarını seçti. Kinâne oğullarından Kureyş’i seçti. Kureyş’ten Hâşim oğullarını seçti. Hâşim oğullarından Abdülmuttalib oğullarını seçti. Abdülmuttalib oğullarından da beni seçti.” buyurdu.
                         </p>
                         <p>
-                            Cupidatat labore nisi ut sunt voluptate quis sunt qui ad Lorem esse nisi. Ex esse velit ullamco incididunt occaecat dolore veniam tempor minim adipisicing amet. Consequat in exercitation est elit anim consequat cillum sint labore cillum. Aliquip mollit laboris ad labore anim.
+                            Peygamberimiz Kureyş kabîlesinin Hâşim oğulları kolundandır. Babası Abdullah’dır. Abdullah’ın babası Abdülmuttalib, annesi de Fâtımâ binti Amr’dır. Dedesi Abdülmuttalib, Mekke’nin hâkimi ve Arapların şeref îtibâriyle en üstün kabilesi olan Kureyş kabîlesine mensuptu. Abdülmuttalib’in alnında Muhammed aleyhisselâmın nûru parladığından Kureyş kavmi onunla bereketlenirdi. Peygamberimizin dedesi Abdülmuttalib, oğulları arasında en çok Abdullah’ı severdi. Çünkü onun alnında Muhammed aleyhisselâmın nûru parlıyordu. Abdullah’ın güzelliği Mısır’a kadar şöhret bulmuştu. Alnındaki nûr yüzünden iki yüze yakın kız, onunla evlenmek arzusu ile Mekke’ye gelmişti. Abdülmuttalib ise, O’nu her yönüyle O’na denk olan bir kız ile evlendirmek istiyordu. Bunun için Benî Zühre kabîlesinin büyüğü Vehb bin Abd-i Menâf’ın kızı Âmine’yi oğlu Abdullah’a istedi. Vehb’in kızı Âmine; güzellik, ahlâk ve neseb îtibâriyle Kureyş kızlarının en üstünü idi. Ayrıca soy bakımından Abdullah ile birkaç batın yukarıda birleşmekte idi. Abdülmuttalib, Vehb’in kızını oğlu Abdullah’a isteyince Vehb şöyle dedi: “Ey amcam oğlu, biz bu teklifi sizden önce aldık. Âmine’nin annesi bir rüyâ gördü. Anlattığına göre evimize bir nûr girmiş, aydınlığı yeri ve gökleri tutmuş. Ben de bu gece rüyâmda dedemiz İbrahim’i gördüm. Bana; “Abdülmuttalib’in oğlu Abdullah’la kızın Âmine’nin nikâhlarını ben kıydım. Onu sen de kabûl et.” dedi. Bugün sabahtan beri bu rüyânın tesiri altındayım. Acaba ne zaman gelecekler, diye merak ediyordum.” Bu sözleri duyan Abdülmuttalib sevincinden“Allahü Ekber! Allahü Ekber!” diyerek tekbir getirdi. Nihâyet oğlu Abdullah’ı Vehb’in kızı Âmine ile evlendirdi. Bu konuda başka rivâyetler de vardır.
                         </p>
+                        <p>
+                            Abdullah, Âmine ile evlenince alnında parlayan nûr, hanımına intikal etti. Abdullah’ın evlendiği geceye Türkiye’de ve birçok İslâm memleketlerinde bir asırdan beri Regâib kandili ismi verilmekte ise de bu yanlıştır. Regâib gecesi, Receb ayının ilk cumâ gecesidir. Muhammed aleyhisselâmın nûru ise hazret-i Âmine’ye Cemâzilahir ayında intikal etmiştir. Câhiliyye devrinde Arapların harbi haram saydıkları aylarda harp etmek istedikleri zaman ayların ismini ve sırasını değiştirmeleri yâni Cemâzilahir ayına o sene Recep demeleri sebebiyle halk içinde bu yanlışlık yayılmıştır. Gerçekte bunun dînen ve ilmen bir kıymeti yoktur. O halde Nübüvvet yâni peygamberlik nûrunun Âmine vâlidemize intikali, şimdiki Cemâzilahir ayındadır, Regâib gecesinde değildir. Âmine’nin Muhammed aleyhisselâma hâmile olduğu sırada Kureyş kabilesinde büyük bir darlık, kıtlık ve pahalılık olmuştu. Kureyş çok sıkıntı içinde idi. Muhammed aleyhisselâmın ana rahmine düşmesiyle birlikte, O’nun hürmetine Allahü teâlâ Kureyş kabîlesinin bağ ve bahçelerine, mahsûllerine öyle bereket verdi ki, hepsi zengin oldular. Araplar o seneye “Senet-ül feth ve’l ibtihac” yâni sevinç ve bolluk yılı dediler. Âmine Hâtun Sevgili Peygamberimize hâmile iken kocası Abdullah ticâret için Şam’a gitmişti. Dönüşünde hastalanıp Medîne’ye geldiği sırada dayılarının yanında vefât etti. Bu haber Mekke’de duyulunca çok büyük bir üzüntüye sebep oldu. Eshâb-ı kirâmdan Abdullah ibni Abbas radıyallahü anh şöyle bildirmiştir: “Peygamberimizin babası Abdullah, oğlu doğmadan önce vefât edince melekler; “Ey Rabbimiz, Resûlün yetim kaldı.” dediler. Allahü teâlâ da; “O’nun koruyucusu ve yardımcısı benim.” buyurdu.”
+                        </p>
+                        <p>
+                            Âmine Hâtun şöyle anlatmıştır: “Ben altı aylık hâmile iken, bir gece rüyâmda karşıma bir zât çıkıp dedi ki: “Ey Âmine, bilmiş ol ki, sen âlemlerin en hayırlısı olan kimseye hâmile oldun. Doğurunca ismini Muhammed koy ve hâlini hiç kimseye açmayıp, gizli tut!” Başka bir rivâyette de; “İsmini Ahmed koy.” şeklinde bildirilmiştir.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâmın doğmasına iki ay kadar zaman varken Fil vak’ası meydana geldi. İnsanların her taraftan akın akın gelip Kâbe’yi ziyâret etmesine engel olmak isteyen Yemen vâlisi Ebrehe, Bizans İmparatorunun da yardımıylaSan’a’da büyük bir kilise yaptırdı ve insanların burayı ziyâret etmelerini istedi. Araplar ise eskiden beri Kâbe’yi ziyâret etmekte olup, Ebrehe’nin yaptırdığı kiliseye hiç îtibar etmediler. Hattâ hakâret gözüyle baktılar. İçlerinden biri kiliseyi kirletti. Bu hâdiseye kızan Ebrehe, Kâbe’yi yıkmaya karar verdi ve bu maksatla bir ordu hazırlayıp Mekke üzerine yürüdü. Ebrehe’nin ordusunda önde yürütülen, zaferin kazanılmasında en büyük payı alacağı tahmin edilen Mahmud adında bir fil vardı. Ebrehe Kâbe’ye saldırmaya başlayınca bu fil yere çöktü ve Kâbe yönünde yürümedi. Yönü Yemen’e çevrilince koşarak geri dönüyordu. Böylece Mekke’ye yaklaşıp hücum etmek istediği halde hücum edemeyen Ebrehe ve ordusu üzerine Allahü teâlâ ebâbil (dağ kırlangıcı) denilen kuşlardan bir sürü gönderdi. Ebâbil kuşlarının herbiri, biri ağzında ikisi de ayaklarında olmak üzere, nohut veya mercimek büyüklüğünde üçer taş taşıyorlardı. Bu taşları Ebrehe’nin ordusu üzerine bıraktılar. Taş isâbet eden her asker, ânında yere düşüp öldü. Ebrehe kaçmak istedi. Taşlardan ona da isâbet edip, kaçtıkça etleri parça parça dökülerek öldü. Bu husus Kur’ân-ı kerîm’de Fil sûresinde bildirilmektedir. Böylece Kureyş kabîlesi doğmak üzere olan Muhammed aleyhisselâmın hürmetine büyük bir düşmanın şerrinden kurtuldu. Muhammed aleyhisselâmın geleceği Âdem aleyhisselâmdan îtibâren her peygambere ve ümmetlerine müjdelene gelmiş, doğması yaklaşınca da birçok haber ve müjdeler verilip alâmetler ortaya çıkmış, çeşitli hadiseler meydana gelmiştir.
+                        </p>
+                        <h5 id="Dogumu">Doğumu</h5>
+                        <p>
+                            Muhammed aleyhisselâm Hicret’ten 53 sene evvel Rebîulevvel ayının on ikinci Pazartesi gecesi sabaha karşı Mekke’nin Haşimoğulları mahallesinde, Safâ Tepesi yakınında bir evde doğdu. Bu gün, Mîlâdî takvime göre 20 Nisan 571 tarihine rastlamaktadır. O gün henüz güneş doğmadan âlem nûr ile doldu. Âdem aleyhisselâmdan beri babadan evlâda intikal edegelen nûr asıl sâhibine ulaştı.
+                        </p>
+                        <p>
+                            O’nun doğumunu annesi hazret-i Âmine şöyle anlatıyor: “Doğum ânı geldiğinde heybetli bir ses işittim. Ürpermeye başladım. Sonra beyaz bir kuş gördüm, gelip kanadı ile beni sığadı. O andan sonra bendeki korku ve ürpertiden eser kalmadı. Yanımda süt gibi beyaz bir kâse şerbet gördüm. O şerbeti bana verdiler. O anda çok susamış idim. Verilen şerbeti içtim. Baldan tatlı ve soğuk idi. İçer içmez susuzluğum gitti. Sonra büyük bir nûr gördüm, Evim o kadar nûrlandı ki, o nûrdan başka bir şey görmüyordum. O sırada çok hâtun gördüm. Boyları uzun, yüzleri güneş gibi parlıyordu. Etrafımı sarıp, bana hizmet eden bu hâtunlar, Abdü Menâf kabîlesinin kızlarına benzerlerdi. Yine o sırada beyaz, uzun ve gökten yere uzanmış ipek bir kumaş gördüm. Dediler ki: O’nu insanların gözünden örtün. O anda bir grup kuş peydâ oldu. Ağızları zümrütten, kanatları yâkuttandı. Gümüş ibrikler tutarak havada duruyorlardı. Bana korku gelip terlemiştim, ter damlalarından misk kokusu yayılıyordu. O halde iken gözümden perdeyi kaldırdılar. Doğudan batıya kadar bütün yeryüzünü gördüm. Üç alem (bayrak) dikildi. Onların biri meşrik (doğu), biri mağrip (batı) biri de Kâbe’nin üstünde idi. Etrafımda çok sayıda melekler toplandı. Muhammed doğar doğmaz, mübârek başını secdeye koydu ve şehâdet parmağını kaldırdı. O anda gökten bir parça beyaz bulut indi. O’nu kapladı. Bir ses işittim; “Onu mağripden meşrıka kadar her yerde gezdirin. Tâ ki cümle âlem onu, ismiyle, cismiyle ve sıfatıyla görsünler.” diyordu. Sonra o bulut gözden kayboldu ve Muhammed’i bir beyaz yünlü kumaş içinde sarılı gördüm. Yine o sırada yüzleri güneş gibi parlayan üç kişi gördüm. Birinin elinde gümüşten bir ibrik, birinin elinde zümrütten bir leğen, birinin elinde de bir ipek vardı. İbrikten sanki misk damlıyordu. Muhammed’i o leğenin içine koydular. Mübarek başını ve ayağını yıkadılar ve ipeğe sardılar. Sonra mübârek başına güzel koku sürüp, mübârek gözlerine sürme çektiler ve gözden kayboldular.”
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâmın doğduğu sırada hazret-i Âmine’nin yanında Abdurrahman bin Avf’ın annesi Şifâ Hâtun, Osman bin Ebü’l-Âs’ın annesi Fâtımâ Hâtun ve Peygamberimizin halası Safiyye Hâtun vardı. Bunlar da gördükleri nûru ve diğer hâdiseleri haber verdiler. Şifâ Hâtun şöyle anlatıyor: “Ben, o gece Âmine’nin yanında idim. Muhammed aleyhisselâmın doğar doğmaz duâ ve niyâz ettiğini işittim. Gâibden; “Yerhamüke Rabbüke” diye söylendi. Sonra bir nûr çıkıp o kadar ışık verdi ki, doğudan batıya kadar her yer göründü...” Bundan başka birçok hâdiseye şâhit olan Şifâ Hâtun; “Ne zaman ki, O’na peygamberlik verildi; hiç tereddüt etmeden ilk îmân edenlerden biri de ben oldum.” dedi.
+                        </p>
+                        <p>
+                            Safiyye Hâtun da şöyle anlatmıştır: “Muhammed aleyhisselâm doğduğu sırada her tarafı bir nûr kapladı. Doğar doğmaz secde etti, mübârek başını kaldırıp açık bir dille “Lâ ilâhe illallah, innî resûlullah” dedi. O’nu yıkamak istediğimde, biz O’nu yıkanmış olarak gönderdik.” denildi. O sünnet olmuş ve göbeği kesilmiş görüldü. O’nu kundağa sarmak istediğimde sırtında bir mühür gördüm, mühürün üzerinde (Lâ ilâhe illallah Muhammedün Resûlullah) yazılı idi. Doğar doğmaz secde ettiği sırada hafif sesle bir şeyler söylüyordu, kulağımı mübârek ağzına yaklaştırdım; “Ümmetî, Ümmetî” (Ümmetim, ümmetim) diyordu...”
+                        </p>
+                        <p>
+                            Resûl-i ekrem efendimizin doğduğunu dedesi Abdülmuttalib’e Kâbe’de Allah’a yalvarıp duâ etmekteyken müjdelediler. Abdülmuttalib bu müjdeyi alınca çok sevinip O’nu görmeye giti ve; “Bu oğlumun şânı, şerefi çok yüce olacaktır” dedi. Sonra da O’nun doğumunu kutlamak için doğumun yedinci gününde Mekke halkına üç gün ziyâfet verdi. Ayrıca şehrin her mahallesinde develer keserek insan ve hayvanların istifâde etmesi için bıraktı. Ziyâfet sırasında çocuğa hangi ismi koydun diyenlere Muhammed ismini verdim dedi. Neden atalarından birinin ismini vermedin diyenlere; “Allah’ın ve insanların O’nu medh etmelerini, övmelerini istediğim için.” cevabını verdi. Annesi de Ahmed ismini koydu.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâm doğduğu sırada ve doğduktan sonra pekçok hâdise meydana geldi.
+                        </p>
+                        Muhammed aleyhisselâmın dünyâya geldiği gece bir yıldız doğdu. Bunu gören Yahûdî bilginleri Muhammed aleyhisselâmın doğduğunu anladılar. Eshâb-ı kirâmdan Hassân bin Sâbit anlatır: “Ben sekiz yaşında idim. Bir sabah vakti Yahûdînin biri, hey Yahûdîler! diye çığlık atarak koşuyordu. Yahûdîler ne var, ne yırtınıyorsun diyerek yanına toplanınca şöyle söyledi: “Haberiniz olsun Ahmed’in yıldızı bu gece doğdu! Ahmed bu gece dünyâya geldi...”
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâm doğduğu gece Kâbe’deki putlar yüz üstü yere yıkıldı. Urvetübni Zübeyr rivâyet eder: “Kureyşten bir cemaatin bir putu vardı. Yılda bir defâ onu tavâf ederler, develer kesip şarap içerlerdi. Yine öyle bir günde putun yanına vardıklarında onu yüzüstü yere yıkılmış buldular. Kaldırdılar, yine kapandı. Bu hal üç defâ tekrarlandı. Bunun üzerine etrâfına iyice destek verip diktikleri sırada şöyle bir ses işitildi: “Bir kimse doğdu yer yüzünde her yer harekete geldi. Ne kadar put varsa hepsi yıkıldı. Kralların korkudan kalbleri titredi.” Bu hâdise tam Muhammed aleyhisselâmın doğduğu geceye rastlıyordu.
+                        </p>
+                        <p>
+                            Medâyin şehrindeki İran Kisrâsının sarayının on dört kulesi (burcu) yıkıldı. O gece gürültüyle ve dehşetle uyanan Kisrâ ve halkı yine kendilerinden bâzı ileri gelenlerin gördükleri korkunç rüyaları tâbir ettirdiklerinde bunun büyük bir şeye alâmet olduğunu anladılar.
+                        </p>
+                        <p>
+                            Yine o gece Mecûsîlerin yâni ateşe tapanların bin yıldan beri yanmakta olan kocaman ateş yığınları âniden söndü. Ateşin söndüğü târihi not ettiler. Kisrânın sarayından burçların yıkıldığı geceye isâbet ediyordu.
+                        </p>
+                        <p>
+                            O zaman insanların mukaddes saydıkları Sâve Gölü de yine o gece bir anda suyu çekilip, kuruyuverdi.
+                        </p>
+                        <p>
+                            Şam tarafında bin yıldan beri suyu akmayan ve kurumuş olan Semave Nehrinin vâdisi de, o gece, su ile dolup taşarak akmaya başladı.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâmın doğduğu geceden îtibâren şeytan artık Kureyş kâhinlerine vukû bulacak hâdiselerden haber veremez oldu. Kehânet sona erdi...
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâmın doğduğu gece ve daha sonra o zamâna kadar görülmemiş bu hâdiselerden başka pekçok hâdise vukû buldu, bunların hepsi son Peygamber Muhammed aleyhisselâmın dünyâyı teşrif ettiğine işâret olmuştur.
+                        </p>
+
+                        <h5 id="Isimleri">İsimleri ve künyeleri</h5>
+                        <p>
+                            Peygamber efendimizin en çok söylenilen ismi “Muhammed”dir. Bu isim, Kur’ân-ı kerîm’de Âl-i İmrân sûresi 144. âyette, Ahzab sûresi 40. âyette, Fetih sûresi 29. âyette ve Muhammed sûresi 22. âyetinde olmak üzere dört defâ geçmektedir. Saf sûresi 6. âyetinde ise Îsâ aleyhisselâmın ümmetine Ahmed ismiyle haber verdiği bildirilmektedir. Kur’ân-ı kerîm’de Muhammed ve Ahmed isminden başka, Resûl, Nebî, Şâhid, Beşîr, Nezîr, Mübeşşir, Münzîr, Dâ’i-i ilallah, Sirâcen Münîr, Raûf, Rahîm, Musaddık, Müzekkir, Müdessir, Abdullah, Kerîm, Hak, Mübîn, Nûr, Hâtemün-Nebiyyîn, Rahmet, Ni’met, Hâdi, Tâhâ, Yâsîn... diye anılmıştır. Bundan başka yine bâzıları Kur’ân-ı kerîm’de ve bâzıları da hadîs-i şerîflerde bir kısmı da daha önceki peygamberlere gönderilen mukaddes kitaplarda geçmiştir. Daha önceki peygamberlere indirilen kitaplarda geçen isimlerin çoğu, sıfat olup, mecâzen isim sayılan kelimelerdendir. Bunlardan bâzıları da şöyledir. Dahûk, Hamyata, Ahid, Paraklit, Mazmaz, Müşaffah, Münhamennâ, Muhtar, Rûhûl-Hak, Mukimüssünneh, Mukaddes, Hırz-ul-Ümmiyyîn, Mâlum... Peygamberimizin ismi İncîl’de “Ahmed” (Paraklit), Tevrât’ta ise “Münhamenna” olarak geçmiş olup, Süryanicede Muhammed ismi karşılığıdır. İncîl’de Peygamberimizin geleceği müjdelenip Paraklit kelimesiyle de ifâde edilmiştir ki, Ahmed ve Muhammed mânâsınadır. İncîl tahrif edilince bu kelimeler kasten değiştirilmiştir.
+                        </p>
+                        <p>
+                            Peygamberimizin hadîs-i şerîflerinde ise Mâhi, Hâşir, Âkıb, Mükaffi, Nebüyyür-rahme, Nebiyyüt-Tevbe, Nebüyy-ü Melâhim, Kattâl, Mütevekkil, Fâtih, Hâtem, Mustafa, Ümmî, Kusem (her hayrı kendinde toplayan) isimleri geçmektedir. Bir hadîs-i şerîfte Sevgili Peygamberimiz; “Bana mahsus beş isim vardır: “Ben Muhammed’im. Ben Ahmed’im, ben Mâhi’yim ki, Allah benimle küfrü yok eder. Ben, Hâşir’im ki halk, kıyâmet günü benim izimce haşrolunacaktır. Ben, Âkıb’ım ki benden sonra peygamber yoktur.” buyurdu.
+                        </p>
+                        <p>
+                            Peygamberimizin hazret-i Hadîce’den doğan ve küçük yaşta vefât eden oğlu Kâsım’dan dolayı kendisine Ebü’l-Kâsım künyesi verilmiştir. Yine peygamberliği bildirilmeden önce O’ndaki doğruluk, îtimâd, emîn, güvenilir olması gibi sayılamayacak kadar üstün meziyetlerden dolayı Kureyş kabîlesi ona “El-Emîn” ismini vermiştir.
+                        </p>
+                        <h5 id="Cocuklugu">Çocukluğu</h5>
+                        <p>
+                            Sevgili Peygamberimiz doğduktan sonra dokuz gün kadar annesi Âmine Hâtun tarafından emzirildi. Sonra Ebû Leheb’in câriyesi Süveybe Hâtun onu günlerce emzirdi. O zaman Mekke halkının çocuklarını bir süt annesine vermeleri âdetti.
+                        </p>
+                        <p>
+                            Mekke’nin havası çok sıcak olduğundan, çocukları havası iyi, suyu tatlı olan civar yerlerdeki yaylalara gönderirler, çocuklar bir müddet oralarda, verildikleri süt annelerinin yanında kalırlardı. Her sene bu maksatla Mekke’ye birçok süt anaları gelir, birer çocuk alıp giderlerdi. Çocukları büyütüp teslim edince de çok ücret ve hediyeler alırlardı.
+                        </p>
+                        <p>
+                            Peygamberimizin doğduğu sene de yaylalarda yaşayan Benî Sa’d kabilesinden bir çok süt anne Mekke’ye gelip herbiri emzirmek üzere birer çocuk almıştı. Benî Sa’d kabilesi Mekke civârındaki kabileler arasında şerefte, cömertlikte mertlik ve tevâzuda ve Arapçayı düzgün konuşmakta meşhur olduğundan Kureyş kabîlesinin ileri gelenleri çocuklarını, daha çok, bu kabîleye vermek isterlerdi. O sene Benî Sa’d kabîlesinin yurdunda şiddetli bir kuraklık ve kıtlık olduğundan ücretle çocuk emzirip sıkıntılarını gidermek üzere, her senekinden daha çok süt annesi Mekke’ye gelmişti. Bilhassa zengin âilelerin çocuklarını alıyorlardı. Gelen kadınların herbiri birer çocuk almışlardı. Peygamber efendimiz yetim olduğu için fazla ücret alamama düşüncesiyle, henüz O’na tâlib olan çıkmamıştı. Gelen kadınlar içinde iffeti, temizliği, hilmi (yumuşaklığı), hayâsı ve yüksek ahlâkıyla tanınmış Halîme Hâtun da vardı. Binek hayvanları zayıf olduğu için Mekke’ye ötekilerden geç gelmişti. Kocası ile Mekke’de dolaşarak zengin âilelerin çocuklarının alınmış olduğunu görmüşler, eli boş dönmemek için bir çocuk aramaya başlamışlardı. Nihâyet görünüşü ile hürmet celbeden, sîması çok sevimli bir zat ile karşılaştılar. Bu, Peygamberimizin dedesi Abdülmuttalib idi. Onunla torununu almak üzere anlaştılar. Abdülmuttalib, Halîme Hâtunu Âmine’nin evine götürdü. Halîme Hâtun şöyle anlatır: “Çocuğun baş ucuna vardığımda O’nu, yünden beyaz bir kundağa sarılı, yeşil ipekten bir örtünün üstünde mışıl mışıl uyur gördüm. Etrafa misk kokusu yayılıyordu. Hayret içinde kalıp bir anda O’na öylesine ısındım ki uyandırmaya kıyamadım. Elimi göğsüne koyduğumda uyandı ve bana bakıp öyle bir tebessüm etti ki, kendimden geçtim. Annesi, böylesine güzel ve mübârek çocuğu bana vermez korkusuyla derhal yüzünü örtüp kucağıma aldım. Sağ mememi verdim, emmeye başladı. Sol mememi verdim, emmedi. Abdülmuttalib bana dedi ki: “Sana müjdeler olsun ki, hanımlar içinde senin gibi nîmete kavuşan olmadı.” Âmine Hâtun da bana çocuğunu verdikten sonra şöyle dedi. “Ey Halîme, üç gün evvel bir nidâ işittim ki: “Senin oğluna süt verecek kadın Benî Sa’d kabîlesinden Ebû Züeyb soyundandır.” diyordu.” Ben de dedim ki; “Ben, Benî Sa’d kabîlesindenim ve babamın künyesi Ebû Züeyb’dir.”
+                        </p>
+                        <p>
+                            Halîme Hâtun yine şöyle anlatmıştır: “Âmine Hâtun bana daha nice vakaları anlattı ve vasiyette bulundu. Ben de Mekke’ye gelmeden önce bir rüyâ görmüştüm. Rüyâmda bana; “Ey Halîme! Mekke’ye var, orada çok faydalanırsın. Sana bir nûr, arkadaş olur. Bu rüyâyı kimseye anlatma, gizle!” denildi. Mekke’ye gelirken de sağımdan solumdan sesler duyardım ve bana gâibden; “Sana müjdeler olsun ey Halîme, o parlak nûru emzirmek sana nasip olacak” diye seslenilirdi.” Halîme Hâtun şâhit olduğu daha nice hâdiseleri anlatmıştır.
+                        </p>
+
+                        <p>
+                            Halime Hâtun der ki: “Muhammed’i alıp Âmine’nin evinden ayrıldım. Kocamın yanına gelince kocam O’nun yüzüne bakıp kendinden geçti: “Ey Halîme! Bugüne kadar böyle güzel yüz görmedim” dedi. O’nu yanımıza alır almaz kavuştuğumuz bereketleri görünce de; “Ey Halîme, bilmiş ol ki, sen çok mübârek bir çocuk almışsın.” dedi. Ben de; “Vallahi, ben de zâten böyle dilerdim” dedim.”
+                        </p>
+                        <p>
+                            Halîme Hâtun, kocası ile birlikte Muhammed aleyhisselâmı alıp Mekke’den ayrıldıkları andan îtibâren O’nun bereketine kavuşmaya başladılar. Çelimsiz ve hızlı gidemeyen merkebleri öylesine hızlı yürüyordu ki, beraber geldikleri kâfile, onlardan önce yola çıkıp çok uzaklaşmış olmasına rağmen, onlara yetişip geçmişti. Benî Sa’d yurduna vardıktan sonra görülmemiş bir bolluğa ve berekete kavuştular. Sütü az olan hayvanları bol bol süt veriyordu. Bunu gören komşuları hayret edip, bunun emzirmek için aldıkları çocuk sebebiyle olduğunu açıkça anladılar.
+                        </p>
+                        <p>
+                            Kuraklık sebebiyle çok sıkıntıya düştüklerinde yağmur duâsına giderken O’nu yanlarında götürüp duâ ederek O’nun hürmetine bol yağmura ve berekete kavuştular.
+                        </p>
+                        Sevgili Peygamberimiz süt annesi Halîme Hâtunun sağ memesini emer, sol memesini emmezdi. Onu da süt kardeşine bırakırdı. İki aylıkken emekledi. Üç aylık olunca ayakta durur, dört aylıkken duvara tutunarak yürürdü. Beş aylıkken yürüdü, altı aylıkken çabuk yürümeye başladı. Yedi aylıkken her tarafa gider oldu. Sekiz aylıkken anlaşılacak şekilde, dokuz aylıkken gâyet açık konuşmaya başladı. On aylıkken ok atmaya başladı. Halîme Hâtun şöyle anlatmıştır: “İlk konuşmaya başladığında, “Lâ ilâhe illallahü vallahü ekber. Velhamdülillahi rabbil âlemîn.” dedi. O günden sonra “Bismillâh” demeden hiçbir şeye elini uzatmazdı. Sol eliyle bir şey yemezdi. Yürümeye başladığında çocukların oynadıkları yerden uzak dururdu ve onlara “Biz, bunun için yaratılmadık.” derdi. Her gün O’nu güneş ışığı gibi bir nûr kaplar ve yine açılırdı. İki yaşına girdiğinde gelişmiş, gösterişli bir çocuk olmuştu. Üzerinde beyaz bir bulut dâimâ birlikte hareket eder ve O’nu gölgelerdi. Bir gün Halîme Hâtun farkında olmadan süt kardeşi Şeymâ ile öğlenin yakıcı sıcağında kuzuların yanına gitmişti. Halîme Hâtun, onu yanında göremeyince hemen arayıp buldu. Şeymâ’ya, “Niçin sıcakta dışarı çıktınız?” dedi. Şeymâ; “Anneciğim! Kardeşimin başı üzerinde bir bulut O’nu dâimâ gölgeliyor.” dedi.
+                        </p>
+                        <p>
+                        <p>
+                            Yine bir gün süt kardeşi Abdullah ile evlerinin yakınında bulunan kuzuların arasına gitmişlerdi. Süt kardeşi koşarak eve gelip; “Beyaz elbiseli iki kişi, Kureyşli kardeşimi yere yatırıp karnını yardılar, ellerini karnına soktular!” dedi. Halîme Hâtun ile kocası Hâris, süratle koşup yanına geldiler. Baktılar ki rengi değişmiş, semâya bakıyor ve tebessüm ediyor.“Sana ne oldu yavrucuğum?” diye sorduklarında şöyle anlattı: “Yanıma beyaz elbiseli iki kişi geldi. Birinin elinde içi kar dolu bir tas vardı. Beni tutup, göğsümü yardılar. Kalbimi de çıkarıp yardılar. Ondan siyah bir kan pıhtısı çıkardılar. Göğsümü ve kalbimi o karla temizlediler ve kapatıp kayboldular.” dedi. Bu hâdiseye “Şakk-ı sadr” (göğsünün yarılması) denir. Bu, Kur’ân-ı kerîm’de İnşirah sûresi ilk âyetinde bildirilmektedir.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâma peygamberlik verildikten sonra Eshâb-ı kirâmdan bâzıları; “Yâ Resûlallah, bize kendinizden bahseder misiniz?” deyince; “Ben ceddim İbrahim’in duâsıyım. Kardeşim Îsâ’nın müjdesiyim! Annemin ise rüyâsıyım. O bana hâmileyken Şam saraylarını aydınlatan bir nûrun kendisinden çıktığını görmüştü. Ben Sa’d bin Bekr oğulları yanında emzirilip büyütüldüm. Bir gün süt kardeşimle birlikte evimizin arkasında kuzuları otlatıyorduk. O sırada yanıma beyaz elbiseli iki kişi geldi. Birinin elinde içi karla dolu bir altın tas vardı. Beni tuttular, göğsümü yardılar, kalbimi de çıkarıp yardılar. Ondan siyah bir kan parçası çıkarıp bir yana attılar. Göğsümü ve kalbimi o karla temizlediler.” buyurdu.
+                        </p>
+                        <p>
+                            Halîme Hâtun, dört yaşından sonra O’nu Mekke’ye götürüp annesine verdi. Dedesi Abdülmuttalib, Halîme Hâtuna çok büyük hediyeler verip ihsânda bulundu. Halîme Hâtun O’nu Mekke’ye bırakınca; “Sanki canım ve gönlüm de O’nunla birlikte kaldı.” demiştir.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâm altı yaşına kadar da annesinin yanında büyüdü. Altı yaşındayken annesi, Ümmü Eymen adındaki câriye (hizmetçi) ile birlikte akrabâlarını ve babası Abdullah’ın mezârını ziyâret için Medîne’ye gittiler. Medîne’de bir ay kaldılar. Bu sırada Muhammed aleyhisselâm Benî Neccar kuyusu denilen havuzda yüzmeyi öğrendi. Sırtındaki nübüvvet mührünü ve diğer bâzı alâmetlerini gören Yahûdî âlimlerinden bir kısmı; “Bu çocuk âhir zaman Peygamberi olacak!” demişlerdir. Onların bu sözlerini duyan Ümmü Eymen, durumu Âmine’ye haber verince Âmine Hâtun O’na bir zarar gelmesinden çekinerek, Mekke’ye dönmek üzere yola çıktı. Ebvâ denilen yere geldiklerinde hazret-i Âmine hastalandı. Hastalığı artıp sık sık kendinden geçiyordu. Başında duran oğlu Muhammed aleyhisselâma bakarak şu beyitleri söyledi:
+                        </p>
+                        <p>
+                            Eskir yeni olan, ölür yaşayan,
+                            Tükenir çok olan, var mı genç kalan.
+                        </p>
+                        <p>
+                            Ben de öleceğim tek farkım şudur:
+                            Seni ben doğurdum şerefim budur.
+                        </p>
+                        <p>
+                            Geride bıraktım hayırlı evlad,
+                            Gözümü kapadım, içim pek rahat.
+                        </p>
+                        <p>
+                            Benim nâmım kalır dâim dillerde,
+                            Senin sevgin yaşar hep gönüllerde.
+                        </p>
+                        <p>
+                            Biraz sonra vefât etti. Orada defnedildi. Ümmü Eymen, Muhammed aleyhisselâmı Mekke’ye getirip dedesi Abdülmuttalib’in yanına bıraktı.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâmın babası ve annesi İbrâhim aleyhisselâmın dîninde idi. Yâni mümin idiler. İslâm âlimleri; onların İbrâhim aleyhisselâmın dîninde olduklarını ve Muhammed aleyhisselâm peygamber olduktan sonra da O’nun ümmetinden olmaları için diriltilip, Kelime-i şehâdeti işittiklerini ve söylediklerini, böylece O’nun ümmetinden olduklarını bildirmişlerdir.
+                        </p>
+                        Muhammed aleyhisselâm sekiz yaşına kadar da dedesinin yanında büyüdü. Dedesi Abdülmuttalib Mekke’de sevilen ve çeşitli işleri idâre eden bir zât olup, heybetli, sabırlı, ahlâkı dürüst, mert ve cömertti. Fakirleri doyurur, hattâ aç, susuz kalan hayvanlara bile su ve yiyecek verirdi. Allah’a ve âhirete inanan, kötülüklerden sakınan, câhiliyye devrinin çirkin âdetlerinden uzak duran bir zâttı. Mekke’de zulme, haksızlığa engel olur, oraya gelen misâfirleri ağırlardı. Ramazan ayında Hira Dağında inzivâya çekilmeyi âdet edinmişti. Çocukları seven ve şefkat sahibi olan Abdülmuttalib, Muhammed aleyhisselâmı bağrına basıp gece gündüz yanından ayırmadı. O’na büyük bir sevgi ve şefkat gösterirdi. Kâbe’nin gölgesinde kendisine mahsus olan minderinde O’nunla beraber oturur, mâni olmak isteyenlere; “Bırakın oğlumu, O’nun şânı yücedir!” derdi. Sevgili Peygamberimizin dadısı Ümmü Eymen’e, O’na iyi bakmasını önemle tembih eder; “Oğluma iyi bak! Ehl-i kitab, benim oğlum hakkında, bu ümmetin peygamberi olacak, diyorlar.” derdi. Ümmü Eymen demiştir ki: “O’nun çocukluğunda açlıktan ve susuzluktan şikâyet ettiğini görmedim. Sabahleyin bir yudum zemzem içerdi. Kendisine yemek yedirmek istediğimizde; “İstemem, tokum.” derdi.“Abdülmuttalib uyurken ve odasında yalnızken, O’ndan başkasının yanına girmesine müsâade etmezdi. O’nu dâimâ öper, okşar, sözlerinden ve hareketlerinden son derece hoşlanırdı. Sofrada onu yanına alır, dizine oturtur; yemeğin en iyisini ve en lezzetlisini O’na yedirir ve O gelmeden sofraya oturmazdı. O’nun hakkında nice rüyâlar görüp birçok hâdiseye şâhit oldu. Bir defâsında, Mekke’de kuraklık ve kıtlık olmuştu. Abdülmuttalib, gördüğü bir rüyâ üzerine Muhammed aleyhisselâmın elinden tutup Ebû Kubeys Dağına çıktı ve; “Allah’ım, bu çocuk hakkı için, bizi bereketli bir yağmur ile sevindir.” diyerek duâ etti. Duâsı kabul olundu ve bol yağmur yağdı. O zamanki şâirler bu hâdiseyi şiirler yazarak dile getirmişlerdir.
+                        </p>
+                        <p>
+                            Abdülmuttalib, bir gün Kâbe’nin yanında otururken, Necranlı bir râhip yanına gelip onunla konuşmaya başladı. Bir ara; “Biz İsmâiloğullarından en son gelecek olan peygamberin sıfatlarını kitaplarda bulduk. Burası (Mekke) O’nun doğum yeridir. Sıfatları şöyle, şöyledir!” diyerek birer birer saymağa başladığı sırada, Peygamberimiz yanlarına geldi. Necranlı râhip, O’nu dikkatle seyretmeye başladı, sonra da yaklaşıp gözlerine, sırtına, ayaklarına baktı ve heyecanla; “İşte, O budur. Bu çocuk senin neslinden midir?” dedi. Abdülmuttalib; “Oğlumdur!” deyince, Necranlı râhip; “Kitaplarda okuduğumuza göre O’nun babasının sağ olmaması lazım!” dedi. Abdülmuttalib; “O, oğlumun oğludur. Babası daha O doğmadan, annesi hâmile iken ölmüştü” deyince, râhip; “Şimdi doğru söyledin.” dedi. Bunun üzerine Abdülmuttalib oğullarına; “Kardeşinizin oğlu hakkında söylenileni işitin de, O’nu iyi koruyun!” dedi.
+                        </p>
+                        <p>
+                            Abdülmuttalib vefâtı yaklaşınca oğullarını toplayıp Sevgili Peygamberimize; “Yavrum, bu amcalarından hangisinin yanında kalmak istersin” diye sordu, Resûl-i ekrem efendimiz koşup amcası Ebû Tâlib’in kucağına oturdu. Onun yanında kalmak istediğini söyledi. Abdülmuttalib de O’nu oğlu Ebû Talib’e bıraktı ve O’na iyi bakmasını önemle vasiyet etti. Bundan sonra da vefât etti.
+                        </p>
+                        <p>
+                            Peygamberimiz sekiz yaşından sonra amcası Ebû Tâlib’in yanında kalmaya başladı ve onun himâyesinde büyüdü. O zaman Mekke’de Ebû Tâlib de babası Abdülmuttalib gibi Kureyş’in ileri gelenlerinden, sevilen, saygı gösterilen ve sözü dinlenilen bir zât idi. O da Peygamberimize büyük bir sevgi ve şefkat gösterdi. O’nu kendi çocuklarından çok sever, yanına almadan uyuyamaz, bir yere gitmez ve; “Sen çok hayırlısın, çok mübâreksin!” derdi. O elini uzatmadan yemeğe başlamaz, önce O’nun başlamasını isterdi. Bâzan da ona ayrı sofra kurdururdu. Sabahları uyandığında yüzünden nur saçıldığını, saçlarının taranmış olduğunu görürlerdi. Ebû Tâlib’in fazla malı yoktu ve âilesi de kalabalıktı. Muhammed aleyhisselâmı himâyesine aldıktan sonra bolluğa ve berekete kavuştu. Mekke’de vukû bulan kuraklık sebebiyle halk sıkıntıya düştüklerinde Ebû Tâlib O’nu Kâbe’nin yanına götürüp duâ etti. O’nun bereketiyle bol yağmur yağdı. Kuraklıktan ve kıtlıktan kurtuldular.
+                        </p>
+                        <p>
+                            Ebû Tâlib bir defâsında Şam’a ticâret için giderken Muhammed aleyhisselâmı da dokuz veya on iki yaşında bulunduğu sırada yanında götürdü. Ticâret kervanı uzun bir yolculuktan sonra Busra’da Hristiyanlara mahsus bir manastırın yakınında konakladı. Bu manastırda Bahîra adında bir râhip vardı. Önceden Yahûdî âlimlerindenken sonradan Hristiyan olan bu bilgili râhibin yanında elden ele geçerek saklanan bir kitap bulunmakta ve birçok şey ondan sorulmakta idi. Kureyş kervanı daha önceki yıllarda buradan defâlarca gelip geçmesine rağmen hiç ilgilenmeyen ve her sabah manastırın damına çıkıp kâfilelerin geldiği yöne bakarak merakla bir şey bekleyen râhib Bahîra’ya bu defa bir hâl olmuş ve heycanla irkilip yerinden fırlamıştı. Çünkü o, Kureyş kervanı uzaktan göründüğü sırada kervanın üstünde beyaz bir bulutun da onlarla birlikte akıp geldiği ve onların yanına oturduğu ağacın üstünde durduğunu görmüştü. Bu bulut Muhammed aleyhisselâmı gölgelemekte idi. Kervan konunca Muhammed aleyhisselâmın altına oturduğu ağacın dallarının üzerine doğru eğildiğini görerek iyice heyecanlanan râhip, hemen bir sofra hazırlatıp, acele ile bir de dâvetçi göndererek Kureyş kervanında bulunanların hepsini yemeğe dâvet etti. Kervanda bulunanlar Muhammed aleyhisselâmı mallarının yanında gözcü olarak bırakıp râhip Bahîra’nın yanına gittiler. Ona defâlarca buradan gelip geçtikleri hâlde şimdiye kadar kendilerini dâvet etmeyip de bugün dâvet etmesinin sebebini sorarlarken, Bahîra gelenlere dikkatle bakıp; “Ey Kureyş topluluğu, içinizden yemeğe gelmeyen var mı?” diye sordu. “Evet, bir kişi var.” dediler. Râhip Bahîra ısrarla, O’nun da çağrılmasını isteyince gidip çağırdılar. Gelir gelmez dikkatle O’na bakmaya, incelemeye başlayan Bahîra, yemekten sonra hallerine, işlerine dâir birçok soru sordu. Muhammed aleyhisselâm da cevap verdi. Bahîra gördüğü alâmetlerin ve aldığı cevapların hepsinin, âhir zamanda gelecek peygamberin sıfatları hakkında bildiklerine tam uyduğunu gördü. Sonra sırtını açıp nübüvvet mührüne baktı ve Ebû Tâlib’e; “Bu çocuk senin neslinden midir?” dedi. Ebû Tâlib; “Oğlum” deyince Bahîra; “Kitaplarda bu çocuğun babasının sağ olmayacağı yazılı, O senin oğlun değildir.” dedi. Bu sefer Ebû Tâlib; “O benim kardeşimin oğludur.” dedi. “Babası ne oldu?” deyince de, O’nun doğumuna yakın öldüğü cevâbını alan Bahîra; “Doğru söyledin, annesi ne oldu?” dedi. Ebû Tâlib; “O da öldü.” deyince yine; “Doğru söyledin.” dedi. Sonra da ısrarla şöyle dedi: “Kardeşinin oğlunu hemen memleketine geri götür. O’nu, hasetçi Yahûdîlerden koru! Vallahi Yahûdîler bu çocuğu görüp, benim fark ettiklerimi fark ederlerse, O’na bir zarar vermeye kalkışırlar. Çünkü kardeşinin oğlunda büyük bir hâl ve şan vardır. Bu, peygamberlerin sonuncusu olacaktır. Getireceği din bütün yeryüzüne yayılsa gerektir. Sakın bu çocuğu Şam’a götürme, mübârek bedenine bir zarar verirler. Bunun hakkında çok ahd ve misak olmuştur.”
+                        </p>
+                        <p>
+                            Ebû Tâlib “Mîsak nedir?” diye sorunca, Bahîra; “Allahü teâlâ bütün peygamberlerden ve en son da Îsâ aleyhisselâmdan ümmetlerine âhir zaman peygamberinin geleceğini bildirmeleri üzerine söz almıştır.” dedi. Ebû Tâlib, Bahîra’nın bu sözleri üzerine Şam’a gitmekten vazgeçti ve mallarını Busra’da ucuz fiyata satıp Mekke’ye döndü. Ebû Tâlib, Bahîra’dan işittikleri şeylerden sonra, Muhammed aleyhisselâmı daha da çok sevip ömrü boyunca O’nu korudu ve her işinde O’na yardımcı oldu. Her hâliyle fazîletler ve güzellikler sâhibi müstesnâ bir insan olarak büyüyen Muhammed aleyhisselâm, on yedi yaşına ulaştığı sırada Yemen’e ticâret için giden amcası Zübeyr, ticâretinin bereketli olması için O’nu da yanında götürdü. Bu seferde de nice hârikulade (olağanüstü) halleri görüldü. Mekke’ye döndüklerinde O’nun bu halleri anlatıldı ve Kureyş kabîlesi arasında; “Bunun şânı pek yüce olacak” diye söylenmeye başlandı.
+                        </p>
+                        <h5 id="Gencligi">Gençliği</h5>
+                        <p>
+                            Her bakımdan insanların en üstünü olan Muhammed aleyhisselâm, daha gençliğinde Mekke halkı arasında, diğerlerinden farklı olarak, çok sevilmiştir. Güzel ahlâkı, insanlara görülmemiş bir şekilde iyi davranması, sâkinliği, yumuşaklığı ve diğer üstün halleri, insanlar arasında fevkalâde farklılığı ile herkes O’na hayran olmuştur. Mekke halkı, O’nda gördükleri şaşılacak derecedeki doğru sözlülük ve güvenilirlikten dolayı da O’na El-Emîn (her zaman kendisine güvenilen) dediler ve gençliğinde bu isimle meşhur oldu.
+                        </p>
+                        <p>
+                            Peygamberimizin gençliği sırasında, Araplar koyu bir câhiliyyet devri yaşamakta olup, aralarında puta tapmak, içki, kumar, zina, fâiz ve daha birçok çirkin iş yaygınlaşmıştı. Muhammed aleyhisselâm onların bu bozuk hallerinden son derece nefret eder, her kötülüklerinden dâimâ uzak dururdu. Bütün Mekke halkı O’nun bu hâlini bilirler ve hayret ederlerdi. Daha çocukluğunda O’nunla birlikte Kâbe’yi tavâf eden dedesi Abdülmuttalib ve amcası Ebû Tâlib, O’nun putlardan nefret ettiğini iyi bildikleri için tavâf sırasında O’nu Kâbe’nin çevresindeki putlara yaklaştırmazlar ve bozuk işlerin yapıldığı mahallerden uzak tutarlardı. Nitekim amcası Ebû Tâlib ile ticâret için Şam’a gitmek üzere yola çıkıp Busra denilen yerde konakladıklarında, kendisinde peygamberlik alâmetleri görerek Lât ve Uzzâ putları adına yemin verip, bâzı şeyler soran râhip Bahîra’ya; “Bana Lât ve Uzzâ adına yemin vererek bir şey sorma! Vallahi, ben, o putlardan duyduğum nefreti hiçbir şeyden duymam.” demiştir. Putlardan şiddetle nefret ettiği için aslâ yanlarına yaklaşmazdı.
+                        </p>
+                        <p>
+                            Çocukluğunda ve gençliğinde kendine âit koyunları güder geçimini böyle sağlardı. Bir taraftan da çok bozulmuş olan cemiyetten bu münâsebetle uzak dururdu. Bir defâsında Eshâb-ı kirâma; “Koyun gütmeyen hiçbir peygamber yoktur.” buyurmuştur. “Yâ Resûlallah, sen de güttün mü?” denince; “Evet ben de güttüm.” buyurdu.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâm yirmi yaşlarında bulunduğu sıralarda Mekke’de âsâyiş tamâmen bozularak zulüm son derece yaygınlaşıp mal, can ve nâmus emniyeti kalmamıştı. Mekke’nin yerli halkından fakir olanların yanında ticâret için ve Kâbe’yi ziyâret maksadıyla gelen yabancılar da haksızlığa ve zulme uğruyorlar, haklarını almak için mürâcaat edecek bir merci bulamıyorlardı. Bu sırada ticâret maksadıyla Mekke’ye gelen Yemenli bir tüccarın malları, Âs bin Vâil adında bir Mekkeli tarafından zorla elinden alınıp gasb edilmişti. Bu hâdise üzerine Yemenli, Ebû Kubeys Dağına çıkıp feryâd ederek hakkının alınması için kabîlelerden yardım istedi. Artık zulmün had safhaya ulaştığını dile getiren bu tip hâdiseler üzerine Hâşim ve Zühre oğulları ve diğer kabîlelerin ileri gelenleri Abdullah bin Cedân’ın evinde toplandılar. Yerli yabancı hiç kimseye zulüm ve haksızlık yapılmamasına, zulme mâni olmaya ve haksızlığa uğrayanların haklarını almaya karar verdiler. Bu maksatla bir de adâlet cemiyeti kurdular. Muhammed aleyhisselâmın genç yaşta katıldığı ve kuruluşunda çok tesirli olduğu bu cemiyete, daha önceden Fadl adındaki iki kişi ile Fudayl adında biri tarafından kurulup zamanla unutulan böyle bir cemiyeti de hatırlatmak bakımından, Fâdılların yemini mânâsında Hilf-ul Fudûl Cemiyeti denildi. Bu cemiyet, zulmü önleyip Mekke’de bozulan âsâyişi yeniden kurdu. Tesiri uzun müddet devâm etti. Muhammed aleyhisselâm kendisine peygamberlik verildikten sonra bu olayı Eshâb-ı kirâma anlatıp: “Abdullah bin Cedân’ın evinde yapılan yeminleşmede ben de bulundum. Bence o yeminleşme kırmızı tüylü develere (servete) sâhip olmaktan daha sevimlidir. Şimdi de böyle bir meclise çağrılsam icâbet ederim.” buyurdu.
+                        </p>
+                        <p>
+                            Mekkeliler öteden beri ticâretle uğraşarak geçimlerini sağlarlardı. Muhammed aleyhisselâmın amcası Ebû Tâlib de ticâretle uğraşıyordu. Muhammed aleyhisselâm yirmi beş yaşında bulunduğu sıralarda Mekke’de geçim sıkıntısının iyice artması üzerine Mekkeliler Şam’a gitmek üzere büyük bir ticâret kervanı hazırlamıştı. Ebû Tâlib yeğeni Muhammed aleyhisselâma bu kervana katılmasını tavsiye etti. Amcası Ebû Tâlib’in bu tavsiyesi üzerine Mekke’de üstün ahlâkı ve meziyetleriyle tanınan ve Tâhire (çok temiz) lakabıyla anılan hazret-i Hadîce’nin mallarını götürüp satmak üzere bu ticâret kâfilesine katıldı. Bu işe büyük bir memnuniyet gösteren hazret-i Hadîce kölesi Meysere’yi de O’nun yanına yardımcı olarak vermişti. Bu sefer sırasında bir bulut devamlı üzerinde dolaşarak Muhammed aleyhisselâmı gölgeledi. Kuş şekline giren iki melek sefer bitinceye kadar O’nunla birlikte hareket etti. Yolda yürüyemeyecek derecede yorulup kervandan geri kalan iki deve Muhammed aleyhisselâmın ayaklarını eliyle sığamasından sonra, birden süratlenerek yola devâm ettiler. Üç ay süren bu sefer boyunca Muhammed aleyhisselâmın daha nice hârikulâde hallerine şâhit olan kervandakiler, O’nu son derece sevip şânının çok yüce olacağını anlamışlardı. Busra denilen yere vardıklarında, daha önce amcası Ebû Tâlib’le ticâret için geldiklerinde konakladıkları manastırın yakınında bir yerde bu seferde de konakladılar. Gördüğü birçok alâmetten O’nun son peygamber olacağını anlayıp söyleyen râhip Bahîra ölmüş, O’nun yerine Nastura adında başka bir râhip geçmişti. Manastırın yakınına gelip konan Kureyş kervanını seyreden râhip Nastura manastırın yakınında bulunan kuru ağacın altına birinin oturmasıyla birlikte yeşermesini görerek koşup geldi. Bir elinde bulunan sahifede yazılı olanlara, bir de Muhammed aleyhisselâmın yüzüne bakıyor, baktıkça da hayrete düşüyordu. Nastura bildiği, duyduğu ve okuduğu alâmetleri aynen görüp, Muhammed aleyhisselâmı göstererek; “Îsâ aleyhisselâma İncîl’i indiren Allah hakkı için bu zât son peygamber olacaktır. Ne olaydı ben O’nun peygamber gönderilerek emrolunduğu zamâna ulaşsaydım!” dedi. Muhammed aleyhisselâm Busra pazarında Hadîce Hâtunun mallarını satarken de O’nunla pazarlık yapan bir Yahûdî inanmadığı için; “Lât ve Uzzâya(iki put ismi) yemin et ki inanayım.” deyince Muhammed aleyhisselâmın; “Ben o putlar adına aslâ yemin etmem! Onların yanından geçerken yüzümü başka tarafa çevirerek geçerim.” demişti. O’ndaki diğer alâmetleri de gören Yahûdî; “Söz senin sözündür. Vallahi bu zât peygamber olacak bir kimsedir ki, âlimlerimiz kitaplarda bunun vasfını bulmuşlardır.” diyerek hayranlığını açıklamıştı.
+                        </p>
+                        <p>
+                            Kureyş kervanı ticâretini tamamlayıp Mekke’ye dönünce, kervanda bulunan Hadîce Hâtunun kölesi Meysere Muhammed aleyhisselâm hakkında işittiklerini ve gördüklerini Hadîce Hâtuna bir bir anlattı. Hadîce Hâtun mallarını satmak üzere teslim ettiği Muhammed aleyhisselâmın iyi kâr getirdiğini görerek çok memnun olmuştu. Fakat o bundan ziyâde kervanı karşıladığı sırada Muhammed aleyhisselâmı gölgeleyen iki meleği görmesi ve sefer sırasında vukû bulan hârikulâde hallerin, kölesi Meysere tarafından teker teker anlatılması üzerine hemen amcasının oğlu Varaka bin Nevfel’e gitti. Varaka bin Nevfel putlara tapmayan, okumuş ve çok bilgili, yaşlı bir Hristiyandı. Daha önceden rüyâsında; gökten ayın inerek koynuna girip, koltuğundan çıktığını ve bütün âlemi aydınlattığını anlatan Hadîce Hâtuna Varaka bin Nevfel; “Âhir zaman peygamberi vücûda gelmiştir. Sen O’nun hanımı olursun. Senin zamânında O’na vahiy gelir. O’nun dîni bütün âlemi doldurur. Sen O’na en önce îmân eden olursun. O peygamber Kureyş kabîlesinin Hâşimoğulları kolundan olacak...” demişti. Hadîce Hâtun bu defâ kölesi Meysere’nin anlattıklarını Varaka bin Nevfel’e söyleyince, hayrete düşüp; “Bu söylediklerinden anlaşılıyor ki, şüphesiz Muhammed bu ümmetin peygamberi olacak. Ben zâten bu ümmetten bir peygamberin çıkacağını biliyor ve O’nu bekliyordum. Bu zaman O’nun tam zamanıdır.” dedi. Böylece hazret-i Hadîce’nin sevgisi ve îtimâdı daha da arttı.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâm 12 yaşındayken amcası Ebû Tâlib ile ticâret için Busra’ya kadar, 17 yaşındayken amcası Zübeyr ile Yemen’e ve 25 yaşındayken hazret-i Hadîce’nin mallarını satmak üzere Şam’a olmak üzere üç defâ seyâhate çıktı. Bunların dışında hiçbir yere seyahat yapmadı.
+                        </p>
+                        <h5 id="Evlenmesi">Evlenmesi</h5>
+                        <p>
+                            Muhammed aleyhisselâm yirmi beş yaşındayken ilk olarak hazret-i Hadîce ile evlendi. Hazret-i Hadîce, Kureyş kabîlesinin Esedoğulları kolundan kırk yaşında ve dul bir hanım idi. Fakat, malı, cemâli, aklı, ilmi, şerefi, nesebi, iffet ve edebi pek fazla idi. Yüksek ahlâkı ve üstün vasıfları sebebiyle Kureyş arasında “Tâhire” (çok temiz) İslâmiyet geldikten sonra da “Hadîce-tül-Kübra” ismiyle meşhur olmuştu. Hadîce Hâtun mallarını Şam tarafına götürüp Busra’da satan Muhammed aleyhisselâmı; adâleti, üstün ahlâkı ve hakkında duyup şâhit olduğu hadiseler sebebiyle son derece takdir etti. Bu hâdiseden kısa bir süre sonra, yakınlarının da kabul etmesiyle evlenmeleri kararlaştırıldı. Nikâh meclisi hazret-i Hadîce’nin evinde kuruldu. Ebu Tâlib ve Varaka bin Nevfel tarafından takdim konuşmaları yapıldı. Nikâhı Varaka bin Nevfel kıydı. Kureyş kabîlesinin ileri gelenleri de nikâh şâhidi olarak bulundular. Zamânının emsalsiz bir kadını olan Hadîce vâlidemiz evlilik hayâtı boyunca Muhammed aleyhisselâma dâimâ hizmet edip yardımcısı oldu. Muhammed aleyhisselâmın bu evliliği, onun vefâtına kadar on beş senesi peygamberlikten önce onu da Peygamberlikten sonra olmak üzere yirmi beş sene sürdü. Muhammed aleyhisselâm, ilk zevcesi hazret-i Hadîce hayattayken başkası ile evlenmedi. Muhammed aleyhisselâmın hazret-i Hadîce’den ikisi erkek, dördü kız olmak üzere Kâsım, Zeyneb, Rukayye, Ümmü Gülsüm, Fâtıma ve Abdullah (Tayyib) adlarında altı çocuğu oldu. Peygamberliği sırasında evlendiği hazret-i Mâriye’den de İbrâhim adlı oğlu olmuştu. Diğer zevcelerinden çocuğu olmadı. Zeyneb, kızlarının en büyüğü idi. En küçük kızı Fâtımâ babasının en sevgilisiydi. Hazret-i Fâtımâ Peygamber efendimiz kırk yaşındayken doğdu. Erkek evlatları küçük yaşta vefât ettikleri gibi hazret-i Fâtımâ’dan başka bütün kızları da O’ndan önce vefât ettiler. Hazret-i Fâtımâ da Muhammed aleyhisselâmdan altı ay sonra vefat etti. Hazret-i Ali ile evlenmişti. Muhammed aleyhisselâmın soyu hazret-i Fâtımâ evlâdı, hazret-i Hasan ve hazret-i Hüseyin ile devâm etti.
+                        </p>
+                        <p>
+                            Resûl-i ekrem efendimiz ikinci defâ olarak, elli beş yaşında iken, Ebû Bekr’in (radıyallahü anh) kızı Âişe radıyallahü anhâ ile evlendi. Bunu, Hadîce-tül-Kübrâ’nın vefâtından bir yıl sonra, Allahü teâlânın emri ile nikâh eylemişti. Ölünceye kadar, sekiz sene onunla yaşadı.
+                        </p>
+                        <p>
+                            Diğerlerini, hep hazret-i Âişe’den sonra, dînî, siyâsî sebeplerle veya merhamet ve ihsân ederek Allahü teâlânın izniyle nikâh etti. Bunların hepsi dul olup, çoğu yaşlı idi. Meselâ, Mekke’deki kâfirlerin, Müslümanlara eziyet ve zararları dayanılamayacak bir dereceye gelince Eshâb-ı kirâmın bir kısmı Habeşistan’a hicret etmişti. Habeş Pâdişâhı Necâşi Hristiyan idi. Müslümanlara çeşitli sorular sorup, aldığı cevaplara hayran kalarak îmâna geldi. Müslümanlara çok iyilik yaptı. Îmânı zayıf olan Ubeydullah bin Cahş, fakirlikten kurtulmak için, papazlara aldanıp mürted olmuş, dînini dünyâya değişmişti. Resûlullah efendimizin halasının oğlu olan bu mel’un, karısı Ümmü Habîbe’yi de (radıyallahü anhâ) dinden çıkıp zengin olmaya cebr ve teşvik etti ise de, o, fakirliğe ve ölüme râzı olacağını fakat Muhammed aleyhisselâmın dîninden çıkmayacağını söyleyince, bunu boşadı. Sürünerek, sefâletten ölmesini bekliyordu. Fakat, az zamanda kendi öldü. Ümmü Habîbe, Kureyş’in (Mekke’nin) o zamanki başkumandanı Ebû Süfyân’ın kızı idi. Peygamber efendimiz o zamanlarda, Kureyş orduları ile, çok çetin muhârebelerde bulunuyordu ve Ebû Süfyân, İslâmiyeti yok etmek için son gayretiyle çarpışıyordu. Peygamber efendimiz ÜmmüHabîbe’nin dîninin kuvvetini ve başına gelen bu acı hâli işitti. Necâşi’ye mektup yazıp; “Oradaki Ümmü Habîbe ile evleneceğim. Nikâhımı yap! Sonra kendisini buraya gönder!” şeklinde talepte bulundu. Necâşî daha önce Müslüman olmuştu. Mektuba çok hürmet edip, oradaki Müslümanları sarayına dâvet ederek, ziyâfet verdi. Hicretin yedinci yılında nikâh yapılıp, hediye ve ihsanlarda bulundu. Bu sûretle, Ümmü Habîbe, îmânının mükâfâtına kavuşarak, orada zengin ve râhat oldu. Onun sâyesinde, oradaki Müslümanlar da rahat etti. Cennet’te, kadınlar kocalarının yanında bulunacakları için, Cennet’in en yüksek derecesiyle müjdelenmiş oldu ki, dünyânın bütün zevk ve nîmetleri, bu müjde yanında pek küçük kalır. Bu nikâh, Ebû Süfyân’ın ilerde Müslüman olmakla şereflenmesini hazırlayan sebeplerden biri oldu. Görülüyor ki, bu nikâh, kâfirlerin iftirâlarının ne kadar yanlış ve çürük olduğunu bildirdiği gibi, Resûlullah’ın aklının, zekâsının, dehâsının, ihsânının ve merhametinin derecesini de göstermektedir.
+                        </p>
+                        <p>
+                            İkinci misal; hazret-i Ömer’in kızı Hafsa radıyallahü anhâ dul kalmıştı. Hicretin üçüncü yılında; Ömer radıyallahü anh, Ebû Bekire ve Osman’a (radıyallahü anhümâ) kızımı alır mısın dedikte, düşüneyim, demişlerdi. Bir gün, Resûlullah efendimiz, her üçü ve başkaları yanında iken; “Yâ Ömer! Seni üzüntülü görüyorum, sebebi nedir?” diye sordu. Bir şişedeki mürekkebin rengi kolay görüldüğü gibi, Resûlullah efendimiz de, herkesin düşüncesini, bir bakışta anlardı. Lüzum görürse sorardı. O’na, hattâ herkese doğru söylememiz farz olduğundan hazret-i Ömer de; “Yâ Resûlallah, kızımı Ebû Bekr’e ve Osman’a teklif ettim, almadılar.” cevâbını verdi. Resûlullah efendimiz en çok sevdiği üç eshâbının üzülmesini hiç istemediğinden, onları sevindirmek için, hemen buyurdu ki: “Yâ Ömer! Kızını, Ebû Bekr’den ve Osman’dan daha iyi birine versem ister misin?” Hazret-i Ömer şaşırdı. Çünkü, Ebû Bekr’den ve Osman’dan daha yüksek ve daha iyi kimse olmadığını biliyordu. “Evet, yâ Resûlallah!” dedi. “Yâ Ömer, kızını bana ver!” buyurdu. Bu sûretle, Hafsa radıyallahü anhâ, Ebû Bekr’in ve Osman’ın ve bütün müminlerin anneleri oldu ve bunlar, ona hizmetçi oldu ve Ebû Bekr ve Ömer ve Osmân radıyallahü anhüm birbirlerine daha yakın ve daha sevgili oldular.
+                        </p>
+                        <p>
+                            Üçüncü bir misal, hicretin beş veya altıncı senesinde, Benî Mustalak kabîlesinden alınan yüzlerce esir arasındaki Cüveyriye radıyallahü anhâ kabîlenin reisi olan Hâris’in kızı idi. Bunu satın alıp âzâd ederek, kendilerine nikâh edince, Eshâb-ı kirâmın (aleyhimürrıdvân) hepsi, biz, Resûlullah’ın âilesinin, annemizin akrabâsını câriye ve hizmetçi olarak kullanmaktan hayâ ederiz dedi. Hepsi, esirlerini âzâd etti. Bu nikâh, yüzlerce esirin âzâd olmasına yol açtı. Cüveyriyye radıyallahü anhâ bu hâli her zaman söyleyerek öğünürdü. Âişe radıyallahü anhâ Cüveyriyye’den daha hayırlı, daha bereketli bir kadın görmedim.” derdi.
+                        </p>
+                        <p>
+                            Resûlullah efendimizin çok evlenmesinin mühim bir sebebi de, İslâm dîninin emir ve yasaklarını bildirmek içindi. Hicab âyeti gelmeden, yâni kadınların örtünmeleri emrolunmadan önce, kadınlar da Resûlullah efendimize gelip, bilmediklerini sorar, öğrenirlerdi. Resûlullah efendimiz birinin evine gitse, kadınlar da gelir, oturur, dinler, istifâde ederlerdi. Hicâb âyeti gelip, kadınların yabancı erkeklerle oturmaları, konuşmaları yasak edilince, yabancı kadınları kabul etmedi, onların bilmediklerini, mübârek zevcesi hazret-i Âişe’den sorup öğrenmelerini emir eyledi. Gelip soranların çokluğundan, hazret-i Âişe, hepsine cevap yetiştirmeğe vakit bulamıyordu. Bu mühim hizmeti kolaylaştırmak ve onun yükünü hafifletmek için lâzım olduğu kadar hanımı nikâh etti. Kadınlara âit yüzlerce nâzik bilgileri, Müslüman kadınlarına, mübârek zevceleri yolu ile bildirdi. Zevceleri bir olsaydı, bütün kadınların ondan sorması güç ve hattâ imkânsız olurdu. Allahü teâlânın dînini tam olarak bildirmek için, çok evlenmek yükünü de omuzlarına aldı.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâm hazret-i Hadîce ile evlendikten sonra da Mekke’de ticâretle meşgûl oldu. Ticâreti Saib bin Abdullah ile ortaklık şeklinde yürütürdü. Kazançlarıyla misâfirleri ağırlarlar, yetimlere ve fakirlere yardım ederlerdi. Muhammed aleyhisselâm yine bu sıralarda hazret-i Hadîce’nin kölesi Zeyd’i himâyesine alıp onu kölelikten âzâd etti. O zaman küçük yaşta bulunan hazret-i Ali’yi de yanına alıp evladı gibi yetiştirdi.
+                        </p>
+                        <p>
+                            Otuz beş yaşındayken Kâbe hakemliği yaptı. O zaman yağmur ve seller sebebiyle Kâbe’nin duvarları iyice yıpranmış, bir yangın sebebiyle de tahribâta uğramıştı. Bu durum üzerine Kureyş kabîlesi Kâbe’yi İbrâhim aleyhisselâmın yaptığı temele kadar yıkıp yeniden yapmaya başlamıştı. Her kabîleye bir bölümünü vererek duvarları yükselttiler. Bu işin büyük bir şeref olduğunu bilen kabîleler, Hacer-ül-esved taşını yerine koyma husûsunda anlaşamadılar. Her kabîle böyle bir şerefe sâhip olmak istediğinden aralarında gittikçe artan büyük bir anlaşmazlık çıktı. Dört beş gün süren bu anlaşmazlık sebebiyle neredeyse kan dökülecekti. Bu sırada Abdülmuttalib’in dayısı ve yaşlı bir zat olan Huzeyfe’nin; “Ey Kureyş topluluğu! Anlaşamadığınız iş hakkında hüküm vermek üzere şu kapıdan ilk girecek zâtı aranızda hakem yapın.” diyerek Benî Şeybe kapısını işâret etti. Oradakiler bu teklifi kabûl edip, Benî Şeybe kapısına bakarak ilk girecek ve işin en nâzik ânında bu işi halledecek kimseyi beklemeye başladılar. Nihâyet kapıdan, doğruluğunu, üstün ahlâkını son derece takdir ettikleri ve El-Emîn (her zaman güvenilir) dedikleri Muhammed aleyhisselâmın geldiğini gördüler. “İşte El-Emîn! O’nun hükmüne râzıyız.” dediler. Durum Muhammed aleyhisselâma anlatılınca bir örtü istedi. Hacer-ül-esved’i örtü üzerine koyup “Her kabîleden bir kişi bir ucundan tutsun.” dedi. Taşı konulacağı yere kadar kaldırttı. Sonra da kendisi taşı kucaklayıp yerine koydu. Mekke’de çıkmak üzere olan büyük bir harbin böylece önlendiğini gören kabîleler, O’nun bu hareketinden çok memnun oldular. Sonra da yarım kalan duvarları yapıp tamamladılar.
+                        </p>
+                        <h5 id="Peygamberliği">Peygamberliği</h5>
+                        <p>
+                            Muhammed aleyhisselâm daha otuz yedi yaşında iken gâibden “Yâ Muhammed” diye nidâ olunduğunu duyardı. Otuz sekiz yaşında iken de bir takım nûrlar görmeye başladı. Bu hâlini sâdece hazret-i Hadîce’ye anlatırdı. Muhammed aleyhisselâma peygamberliğin verilmesinin yaklaştığı bu sırada, o zamânın meşhur ediblerinden Kus bin Sâide, Ukaz Panayırında deve üzerinde büyük bir kalabalığa karşı okuduğu hutbede O’nun geleceğini müjdelemişti. Bu hutbeyi dinleyenler arasında Muhammed aleyhisselâm da bulunmuştu. Kus bin Sâide bu meşhur hutbesinin bir bölümünde şöyle demiştir: “Ey insanlar! Geliniz, dinleyiniz, belleyiniz, ibret alınız, yaşayan ölür, ölen fenâ bulur, olacak olur... Kulak veriniz iyi dinleyiniz? Gökte haber var, yerde ibret alacak şeyler var... Allah’ın indinde bir din... Ve Allah’ın gelecek olan bir peygamberi vardır ki, gelmesi pek yakın oldu. Gölgesi başınızın üstüne düştü. Ne mutlu o kimseye ki, O’na îmân edip de O dahi ona hidâyet eyleye. Vay O’na isyân ve muhâlefet eden bedbahta! Yazıklar olsun ömürleri gafletle geçen ümmetlere!..”
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâm otuz dokuz yaşında iken sâdık rüyalar görmeye başladı. Rüyâsında ne görürse aynen çıkardı. Bu hal altı ay devam etti. Bundan sonra yalnızlığı sevip insanlardan uzaklaşarak Hira Dağında bir mağarada tefekküre dalardı. Bâzan Mekke’ye gelir Kâbe’yi tavâf ettikten sonra evine giderdi. Evinde bir müddet kalıp yanına biraz yiyecek alarak yine Hira Dağındaki mağaraya gidip tefekkür ve ibâdetle meşgul olurdu. Bu hâlini gören Mekkeliler; “Muhammed Rabbine âşık oldu.” demişlerdi.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâm kırk yaşında iken yine bir Ramazan ayında Hira Dağındaki mağaraya çekilmiş ve tefekküre dalmıştı. Ramazanın 17. Pazartesi gecesi, gece yarısından sonra kendisini adıyla çağıran bir ses işitti. Başını kaldırıp etrafa baktığı sırada ikinci defâ bir ses işitti ve her tarafı birden bire bir nûr kapladığını gördü. Sonra Cebrâil aleyhisselâm karşısına geldi. “Oku!” dedi. “Ben okumuş değilim.” dedi. O zaman melek Muhammed aleyhisselâmı tutup tâkatı kesilinceye kadar sıktı ve; “Oku!” dedi. Yine; “Ben okuma bilmem.” cevâbını verdi. İkinci defâ sıktı ve; “Oku!” dedi. “Ben okuma bilmem.” dedi. Cebrâil aleyhisselâm üçüncü defâ tutup sıktı ve sonra bıraktı ve; “Oku! Her şeyi yaratan Rabbinin ismiyle ki O, insanı pıhtılaşmış kandan yarattı! Oku, Allahü teâlâ büyük kerem sâhibidir. O, kalemle öğretir, bilmediklerini öğretir.” meâlindeki Alak sûresinin ilk beş âyetini getirdi. Muhammed aleyhisselâm da onunla berâber okudu. İlk vahiy bu sûretle başladı ve bütün cihânı aydınlatan İslâm güneşi doğdu.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâm Peygamberlik vazîfesinin mesuliyetini düşünerek büyük bir ürperti ve heyecanla Hira Dağındaki mağaradan çıkıp aşağıya inmeye başladı. Dağın ortasına geldiği sırada bir ses duydu. Cebrâil aleyhisselâm; “Yâ Muhammed, Sen Allah’ın resûlüsün; ben de Cibril’im.” diyordu. Cebrâil’in sesini duyduğu gibi kendisini de gördü. Cebrâil aleyhisselâm burada Peygamberimize abdest almasını gösterdi. Peygamber efendimiz evine dönünceye kadar yanından geçtiği her taşın, her ağacın «Esselâmü Aleyke Yâ Resûlallah» dediğini işitiyordu. Bundan sonra evine gelip; “Beni örtünüz.” buyurarak ürpermesi geçinceye kadar bir miktar yattı. Biraz istirâhat ettikten sonra gördüklerini hazret-i Hadîce’ye anlattı. O da; “Biliyorum ki sen doğru sözlüsün... Emânete riâyet edersin... Güzel huylu ve iyi ahlâklısın... Senin bu ümmetin peygamberi olacağını umarım...” dedi. Sonra bu durumu sormak üzere Varaka bin Nevfel’e gittiler. İbraniceyi bilen, çok kitap okumuş ve dinler hakkında bilgi sâhibi olan Varaka bin Nevfel’e durumu anlattılar. Varaka Muhammed aleyhisselâmın anlattıklarını dinledikten sonra; «Müjde yâ Muhammed! Allah’a yemin ederim ki sen Îsâ’nın (aleyhisselâm) haber verdiği son peygambersin!Sana görünen melek, senden evvel Mûsâ’ya (aleyhisselâm) gelen Cebrail’dir. Ah! ne olurdu!Genç olaydım. Seni Mekke’den çıkardıkları zamâna yetişeydim de sana yardım etseydim.» dedi.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâma ilk vahiy geldikten sonra üç sene vahiy gelmedi. Bu arada Mikâil aleyhisselâm adındaki melek gelip bâzı şeyler öğretti. Fakat vahiy getirmedi. Bu sırada Peygamber efendimiz üzüldükçe Cebrâil aleyhisselâm gözüküp; “Ey Muhammed! Sen Allah’ın peygamberisin!” der, üzüntüsünü giderirdi.
+                        </p>
+                        <p>
+                            İlk vahyin gelmesiyle peygamberliği duyulmaya başlayan Muhammed aleyhisselâmın tebliğinin 13 senesi Mekke, 10 senesi de Medîne’de geçti.
+                        </p>
+                        <h5 id="MekkeDevri">Mekke Devri</h5>
+                        <p>
+                            Muhammed aleyhisselâm vahyin bir müddet kesilmesinden sonra yine Hira Dağına çıkmıştı. Dağdan aşağı inerken bir ses duydu. Başını kaldırıp baktığında Cebrâil aleyhisselâmı gördü. Mübârek kalbi çarparak ve ürpererek evine dönüp; “Beni örtünüz.” dedi ve örtündü. Bu sırada Cebrâil aleyhisselâm Müddessir sûresinin; “Ey örtüye bürünen (Muhammed aleyhisselâm)! Kalk da (kâfirleri Allahü teâlânın azâbı ile) korkut. Rabbini tekbir et, tâzim et! Giydiklerini temiz tut! Haram edeceğim şeylerden sakın! Yaptığın iyiliği çok görerek başa kakma! Rabbin için sabret! Sûra üfürüldüğü zaman kâfirlere çok sıkıntılı bir gündür. Onlara kolaylık yoktur...” meâlindeki ilk âyetlerini getirdi. Bundan sonra vahiy aralıksız devâm etti. Kur’ân-ı kerîm âyetleri, 22 sene 2 ay 22 gün süren bir müddet içerisinde vahyedilip tamamlandı.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâm, “ümmî” idi. Yâni kitap okumamış, yazı yazmamış, kimseden ders görmemişti. Mekke’de doğup büyüyüp, belli kimseler arasında yetişip, seyâhat etmemişken, Tevrat’ta ve İncil’de, Yunan ve Roma devirlerinde yazılmış kitaplarda bulunan bilgilerden, hâdiselerden haber verdi. İslâmiyeti bildirmek için, hicretin altıncı senesinde Rum, İran ve Habeş hükümdârlarına ve diğer Arap pâdişahlarına mektuplar gönderdi. Hizmetine altmıştan ziyâde yabancı elçi gelmiştir. Bu husûsu Allahü teâlâ Kur’ân-ı kerîm’de meâlen şöyle bildiriyor: “Sen bu Kur’ân-ı kerîm gelmeden önce, bir kitap okumadın. Yazı yazmadın. Okur yazar olsaydın, başkalarından öğrendin diyebilirlerdi.” (Ankebut sûresi: 48). Hadîs-i şerîfte de; “Ben ümmî peygamber Muhammed’im... Benden sonra peygamber yoktur.” buyruldu. Yine Kur’ân-ı kerîm’de şöyle buyrulmaktadır:
+                        </p>
+                        <p>
+                            O (Muhammed aleyhisselâm) kendiliğinden konuşmamaktadır. O’nun sözleri, O’na bir vahy ile bildirilmekte, öğretilmektedir. (Necm sûresi: 3-4)
+                        </p>
+                        Peygamber efendimize vahyin gelmesinden sonra ilk îmân eden hazret-i Hadîce oldu. Cebrâil aleyhisselâm ilk vahyi getirdiği sıralarda Peygamberimize abdestin nasıl alınacağını öğretti. Sonra da O’nunla birlikte iki rekat namaz kıldı. Muhammed aleyhisselâm Cebrâil aleyhisselâmdan öğrendiği gibi abdest almayı ve kıldıkları iki rekat namazı hazret-i Hadîce’ye de öğretti. Ona imam olup bu iki rekat namazı kıldırdı. Bu sırada henüz beş vakit namaz emredilmemişti. Sâdece sabah ve ikindide iki vakit namaz kılınıyordu. Onları bu şekilde namaz kılarken gören hazret-i Ali de Müslüman oldu. Peygamber efendimiz insanları İslâma dâvet işine önce yakınlarından ve samîmî dostlarından başladı. Hazret-i Hadîce’den ve hazret-i Ali’den sonra âzâtlı kölesi Zeyd bin Hârise, eski dostu ve yakın arkadaşı hazret-i Ebû Bekr, hazret-i Osman, Abdurrahmân bin Avf, Sa’d bin Ebi Vakkâs, Zübeyr bin Avvâm, Talha bin Ubeydullah Müslüman oldular. Hazret-i Hadîce’den sonra Müslüman olan bu sekiz kişiye “Sâbıkûn-i İslâm”, yâni ilk Müslümanlar denir.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâm, insanları İslâma dâvet et emrinden sonra halkı gizlice İslâma dâvet etti. İnsanlar birer ikişer Müslüman oluyordu. Bu ilk yıllarda Müslümanların sayısı ancak otuza ulaşmıştı.
+                        </p>
+                        <p>
+                            Bir müddet sonra; “Yakın akrabânı Allah’ın azâbı ile korkutarak, onları hak dîne çağır.” âyet-i kerîmesi gelince, Muhammed aleyhisselâm akrabâsını dîne dâvet etmek üzere hazret-i Ali vâsıtasıyla onları Ebû Tâlib’in evine çağırdı. Önlerine, bir kişiye yetecek kadar bir tabak yemek ve bir tas süt koydu. Önce kendisi besmele ile başlayıp, gelen akrabâsını buyur etti. Gelenler kırk kişi kadar olmasına rağmen o yemek ve süt Muhammed aleyhisselâmın mûcizesi olarak hepsini doyurdu ve hiç eksilmedi. Gelenler bu mûcize karşısında şaşıp kalmışlardı. Yemekten sonra Muhammed aleyhisselâm, akrabâlarını İslâma dâvet etmek için söze başlamak üzereyken amcası Ebû Leheb düşmanlık ederek; “Biz bugünkü gibi bir sihir görmedik. Akrabânız sizi bir sihirle büyüledi.” dedi. Sözlerine hakâretle devâm edince, dâvetliler dağıldılar.
+                        </p>
+                        <p>
+                            Bu hâdiseden kısa bir müddet sonra akrabâsını tekrar dâvet etti. Ali radıyallahü anh yine hepsini çağırdı. Önceki gibi yine önlerine yemek kondu. Muhammed aleyhisselâm yemekten sonra ayağa kalkıp; “Hamd, yalnız Allah’a mahsustur. Yardımı ancak O’ndan isterim. O’na inanır, O’na dayanarım. Şüphesiz bilir ve bildiririm ki Allah’tan başka tanrı yoktur. O birdir, O’nun eşi ve ortağı yoktur.” dedikten sonra sözlerine şöyle devâm etti: “Size aslâ yalan söylemiyorum ve doğruyu bildiriyorum... Sizi bir olan ve O’ndan başka ilâh olmayan Allah’a îmân etmeye dâvet ediyorum. Ben O’nun size ve bütün insanlığa gönderdiği peygamberiyim. Vallahi siz, uykuya daldığınız gibi, öleceksiniz. Uykudan uyandığınız gibi de diriltileceksiniz ve bütün yaptıklarınızdan hesâba çekileceksiniz. İyiliklerinizin karşılığında mükâfât, kötülüklerinizin karşılığında da cezâ göreceksiniz. Bunlar da ya Cennet’te ebedî kalmak veya Cehennem’de ebedî kalmaktır. İnsanlardan, âhiret azâbı ile ilk korkuttuğum kimseler sizlersiniz.”
+                        </p>
+                        <p>
+                            Ebû Tâlib bu sözleri dinledikten sonra; “Sen emrolunduğun şeye devâm et! Seni korumaktan geri durmayacağım. Fakat eski dînimden ayrılmak husûsunda nefsimi bana boyun eğer bulmadım.” dedi. Ebû Leheb hâriç, orada bulunan diğer amcaları ve akrabâsının hepsi yumuşak konuştular. Fakat Ebû Leheb; “Ey Abdülmuttaliboğulları, başkaları O’nun elini tutup mâni olmadan önce siz O’na mâni olun!” gibi daha birçok çirkin sözler söyledi. Onun bu sözleri üzerine Muhammed aleyhisselâmın halası, Ebû Leheb’e; “Ey kardeşim! Kardeşimin oğlunu ve O’nun dînini yardımsız bırakmak sana yakışır mı? Vallahi bugün yaşayan bilginler, Abdülmuttalib’in soyundan bir peygamberin geleceğini bildiriyorlar. İşte O peygamber, budur!” dedi. Ebû Leheb, bu sözler karşısında çirkin konuşmalarına devâm edince, Ebû Tâlib, kızarak; “Ey korkak!Vallahi biz sağ oldukça, O’na yardımcı ve koruyucuyuz!” dedi. Muhammed aleyhisselâma da; “Ey kardeşimin oğlu! İnsanları Rabbine îmâna dâvet etmek istediğin zamânı bilelim, silâhlanıp seninle birlikte ortaya çıkarız!” dedi. Sonra Muhammed aleyhisselâm tekrar söze başlayıp; “Ey Abdülmuttaliboğulları! Vallahi, Araplar içinde, benim size getirdiğim, dünyâ ve âhiretiniz için hayırlı olan şeyden (yâni bu dinden) daha üstününü ve daha hayırlısını kavmine getirmiş bir kimse yoktur. Ben sizi dile kolay gelen, mîzanda ağır basan iki kelimeyi söylemeye dâvet ediyorum ki o da: Allah’tan başka ilâh olmadığına ve benim O’nun kulu ve resûlü olduğuma şehâdet etmenizdir. Allahü teâlâ sizi buna dâvet etmemi emretti.” buyurup; “O halde hanginiz benim bu dâvetimi kabul eder ve bu yolda yardımcım olur?” dedi.
+                        </p>
+                        <p>
+                            Kimseden ses çıkmadı, başlarını önlerine eğdiler. Muhammed aleyhisselâm bu sözlerini üç defâ tekrarladı. Her söyleyişinde hazret-i Ali ayağa kalkıp; “Yâ Resûlallah, her ne kadar bunların yaşça en küçüğü isem de sana ben yardımcı olurum!” dedi. Bunun üzerine Muhammed aleyhisselâm hazret-i Ali’nin elinden tuttu. Diğerleriyse hayret içinde ve alaylı alaylı gülerek dağıldılar.
+                        </p>
+                        <p>
+                            Peygamberliğin dördüncü yılında: “Sana emrolunan şeyi açıkla, baş ağrıtırcasına anlat, müşriklere aldırma.” (Hicr sûresi: 4) meâlindeki ilâhî emir gelince, Mekkelileri açıktan açığa İslâma dâvet etmeye başladı. Vahyolunan âyetleri açıkça okuyor ve herkese, hak din olan İslâmı kabul etmelerini söylüyordu. İlk sıralarda îmân edenler az oldu. Îmân etmeyenler de önce O’ndan alâkalarını kesmediler. Allahü teâlâya ibâdet edilmesini emreden âyetler gelince, bunları işiten Kureyş kavmi Muhammed aleyhisselâmın doğru sözlü ve yüksek ahlâk sâhibi olduğunu bildikleri halde O’ndan yüz çevirdiler ve düşman kesildiler.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâm insanların bu inkârcı tutumu karşısında onları dâimâ îmâna dâvet ediyordu ve Mekkelilerden bir kısmı îmânla şerefleniyordu. Yine bir gün Safâ Tepesi üzerine çıktı. Yüksek ve gür bir sedâ ile; “Ey Kureyş topluluğu buraya geliniz, toplanınız, size mühim bir haberim var.” diye seslendi. Bunun üzerine kabîleler merakla koşup orada toplandılar. Hayretle bakmaya, merakla beklemeye başladılar. “Ey Muhammed-ül emîn! Bizi buraya niçin topladın, neyi haber vereceksin?” diye sordular. Muhammed aleyhisselâm; “Ey Kureyş kabîleleri!” hitâbıyla konuşmaya başlayınca herkes büyük bir dikkatle dinlemeye başladı. Onlara; “Benimle sizin hâliniz, düşmanı görünce, âilesine haber vermek üzere koşan ve düşmanın kendisinden önce âilesine ulaşıp zarar vermesinden korkarak; “Yâ sabâhâh (ey topluluklar).” diye haykıran bir kimsenin hâline benzer. Ey Kureyş topluluğu ben size şu dağın ardında bir düşman ordusu var, üzerinize hücûm etmek üzeredir desem bana inanır mısınız?” dedi. “Evet inanırız, çünkü sende şimdiye kadar doğruluktan başka bir şey görmedik. Senin yalan söylediğini hiç görmedik!” dediler.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâm bu umûmî hitaptan sonra, bütün Kureyş kabîlelerinin ismini; “Ey Haşimoğulları! Ey Abdümenâfoğulları! Ey Abdülmuttaliboğulları!...” şeklinde sayarak; “Ben size önümüzdeki şiddetli azâbın bildiricisiyim. Allahü teâlâ bana; “En yakın akrabâlarını âhiret azâbı ile korkut!” emrini verdi. Sizi Lâ ilâhe illallah vahdehû lâ şerike leh (Allah birdir, O’ndan başka hiçbir ilâh yoktur) diyerek îmân etmeye dâvet ediyorum. Ben de O’nun kulu ve resûlüyüm. Eğer buna îmân ederseniz Cennet’e gideceksiniz. Siz Lâ ilâhe illallah demedikçe ben size ne dünyâda bir fâide, ne de âhirette bir nasip sağlayabilirim!” dedi. Dinleyen kabîleler arasından Ebû Leheb; “Bizi buraya bunun için mi topladın?” diyerek, yerden aldığı taşı Muhammed aleyhisselâma attı. Diğerlerinden o anda böyle bir muhâlefet gelmedi. Aralarında konuşarak dağıldılar. Ebû Leheb’in gösterdiği inkâr ve düşmanlık üzerine daha sonra; “Ebû Leheb’in elleri kurusun, zâten kurudu...” diye başlayan Tebbet sûresi nâzil oldu.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâm bütün insanlara ve cinlere peygamber olarak gönderilip, insanları açıkça İslâma dâvet etmesi emredildiği zaman, bütün insanlık âlemi dînî, rûhî, içtimâî ve siyâsî bakımlardan yaygın bir karanlık, tam bir câhiliyyet, taşkınlık, azgınlık ve sapıklık içerisinde bulunmakta idi. O zaman dünyâ üzerinde göze çarpan belli başlı devletlerden Bizans, İran, Mısır, Hindistan, İskenderiye, Mezopotamya, Çin ve benzerlerinde yaşayan insanlar inançsızlığın veya bâtıl inançların içinde çırpınan ve ne yaptığını bilmeyen azgınlar hâline gelmişti. Âlem öylesine kararmış ve zulmet öyle kesifleşmişti ki insanlar; her şeyin yaratıcısı olan Allah’a îmân ve ibâdet etmek yerine, kâinatta cereyan eden hâdiselere ve Allahü teâlânın yarattığı eşyâya tapıyorlardı. Zavallı insanlık yıldızlara, ateşe, elleriyle yonttukları taştan ve tahtadan putlara “ilâh” diye secde ediyordu... Sınıflara ayrılan insanlardan kuvvetliler zayıfları korkunç bir tahakkümle eziyordu.
+                        </p>
+                        <p>
+                            Dünyâ üzerinde siyasî, coğrafî ve ticârî bakımdan mühim bir yer tutan Arabistan’da da durum diğer yerlerden farksızdı. O zaman Arabistan’da insanlar inanç bakımından bâzı değişiklikler gösteriyordu. Bir kısmı tamâmen inançsız ve dünyâ hayâtından başka bir şey kabul etmiyordu. Bir kısmı ise Allah’a ve âhiret gününe inanıyor, fakat insandan bir peygamberin geleceğini kabul etmiyordu. Bir kısmı da Allah’a inanıyor âhirete inanmıyordu. Diğer büyük bir kısmı da Allah’a şirk koşarak putlara tapıyordu. Müşriklerin herbirinin evinde bir put bulunuyordu. Kâbe’ye de 360 put konulmuştu. Bütün bunlardan başka İbrâhim’in (aleyhisselâm) bildirdiği din üzere olan ve “Hanîfler” denilen ve putlardan uzak duran kimseler de vardı.
+                        </p>
+                        <p>
+                            Cahiliyye devri denilen bu zamanda Arabistan’da insanlar genellikle göçebe hayâtı yaşıyorlardı ve kabîlelere bölünmüşlerdi. Devamlı çekişme hâlinde bulunan bu kabîleler, baskın ve yağmacılığı âdetâ kendileri için bir geçim vâsıtası kabul etmişlerdi. Aralarında zulmün ve yağmacılığın yaygınlaştığı kabîlelerden meydana gelen Arabistan’da siyâsî bir nizam, içtimâî bir düzen de yoktu. Yine bu sırada, dünyânın diğer yerlerinde olduğu gibi, Arabistan’da da ahlâksızlık son haddine ulaşmıştı. İçki, kumar, zina, hırsızlık, zulüm, yalan ve ahlâksızlık nâmına ne varsa alabildiğine yaygınlaşmıştı. Zulme, güçlünün güçsüze karşı kullandığı en amansız ve tüyler ürpertici bir vâsıta olarak başvuruluyor, kadın basit bir mal gibi alınıp satılıyordu. Bir kısmı da kız çocuklarının doğmasını bir felâket ve yüz karası sayıyorlardı. Bu korkunç telakkî o dereceye çıkmıştı ki, küçük kız çocuklarını, kumlar üzerinde açtıkları çukurlara diri diri yatırıp; “Babacığım! Babacığım!” diyerek boyunlarına sarılmalarına ve acı acı feryâd etmelerine hiç kulak asmadan üzerlerini toprakla kapatarak ölüme terk etmekte en ufak bir vicdan azâbı duymuyorlardı. Netîce îtibâriyle o zamânın insanları arasında şefkat, merhamet, iyilik ve adâlet gibi güzel hasletler yok olmuş gibiydi.
+                        </p>
+                        <p>
+                            Korkunç bir câhiliyye devri yaşayan Araplar arasında dikkate değer bir husus vardı. O da; edebiyâtın, belâgatın ve fesâhatın yaygınlaşarak zirveye ulaşmış olmasıydı. Şâire ve şiire çok önem verirler, bunu büyük bir iftihâr vesilesi sayarlardı. Güçlü bir şâir kendisi ve kabîlesi için îtibâr sağlardı. Belirli zamanlarda panayırlar kurulur. Şiir ve hitâbet yarışmaları açılırdı. Birinci gelenlerin şiirleri veya hitâbeleri Kâbe duvarına asılırdı. Câhiliyye devrindeki Kâbe duvarına asılan en meşhur şiirlere «Muallakat-ı Seb’a» (yedi askı) denilmiştir. Kur’ân-ı kerîm âyetleri inmeye başlayınca O’ndaki eşsiz belâgatı gören nice kimseler de bu sebeple Müslüman oldu.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâmın insanlara ebedî saâdeti, sonsuz kurtuluşu bildirmek, onları dalâletten hidâyete kavuşturmak üzere peygamber olarak gönderildiği sırada câhiliyye devri yaşayan Mekkeliler, îmân etmeye dâvet edilince, önceleri ilgisiz davrandı. Sonra açıkça düşmanlık göstermeye başladılar. Müşriklerin bu düşmanlıkları önce alay tarzında olup, sonra hakâret şekline, daha sonra işkence safhasına girdi. Bunlardan sonra ticârî ve diğer bütün münâsebetleri kesme ve şiddet gösterme devresi başladı.
+                        </p>
+                        <p>
+                            Müşriklerden bilhassa azılı beş kişi, Sevgili Peygamberimiz Muhammed aleyhisselâmı çok üzüp alay ediyorlardı. Bunlar arasında, Âs bin Vâil, Esved bin Muttalib, Esved bin Abdi Yagves, Velîd bin Mugîre ve Hâris bin Kays vardı. Bir defâsında Peygamber efendimiz Kâbe’nin yanında otururken, Cebrâil aleyhisselâm da gelmişti. Müşriklerden bu beş kişi önlerinden geçerken Cebrâil aleyhisselâm, Âs bin Vâil’in ayağının tabanına, Esved bin Muttalib’in gözüne, Esved bin Abdi Yagves’in başına, Velîd bin Mugîre’nin inciğine, Hâris’in karnına birer işâret koydu ve; “Yâ Muhammed! Allahü teâlâ bunların şerrinden seni halâs eyledi. Yakında bunların her biri bir belâya uğrayıp helâk olacaklardır.” dedi. Bu beş müşrikten Âs bin Vâil bir gün merkebe binmişti. Mekke’nin dışında bir yerde merkebinden inince ayağına diken battı. Dikenin battığı yer şişti ne kadar ilâç yapıldı ise çâre bulamadılar. Nihâyet ayağı deve boynu gibi şişip; “Muhammed’in Allah’ı beni öldürdü.” diye feryâd ede ede öldü. Esved bin Muttalib, Mekke’nin dışında bir ağaç altında otururken birden bire gözleri kör oldu. Cebrâil aleyhisselâm da başını tutup altına oturduğu ağaca çarparak helâk etti. Esved bin AbdiYagves de Mekke’den çıkıp Bad-ı Semûm denilen yere gitmişti. Buradayken yüzü ve gövdesi simsiyah oldu. Evine gelip kapısını çalınca âilesi onu tanıyamadı ve içeri almadı. Kahrından başını evinin kapısına vura vura öldü. Hâris bin Kays da tuzlu balık yemişti. Öyle bir harârete tutuldu ki ne kadar su içtiyse kanmadı. Su içe içe çatladı. Velîd bin Mugîre’nin ise baldırına bir okçu dükkânı önünde demir parçası battı. Yarasından çok kan aktı ve; “Muhammed’in Allah’ı beni öldürdü.” diye feryâd ederek öldü.
+                        </p>
+                        <p>
+                            Müşriklerin zulüm ve baskıyı arttırması üzerine Muhammed aleyhisselâm, Eshâb-ı kirâmdan Erkam bin Ebil Erkam’ın evini emniyetli bir yer olarak seçti. Dar bir sokak içinde, Safâ Tepesinin doğusunda bulunan bu ev giriş çıkış için ve gelip gidenleri kontrol etmeye elverişli bir yerdi. Peygamber efendimiz İslâmiyeti burada anlatıyor ve Müslümanlar oraya toplanıyordu. Birçok Mekkeli bu evde Müslüman oldu. Bir merkez olarak seçilen bu eve “Darü’l-İslâm” adı verildi.
+                        </p>
+                        <p>
+                            İnsanları ebedî saâdete kavuşturmak için ve rahmet olarak gönderilen Muhammed aleyhisselâm, Mekke’de câhiliyye devri yaşamakta olan insanları açıkça İslâma çağırdı. Hakîkî kurtuluşun Allahü teâlâya îmân etmekte, nefse uymaktan, zulümden, haksızlıktan ve bütün çirkin işlerden uzaklaşmakta olduğunu bildirince, nefslerinin isteklerine, şehvetlerine uyanlar, zayıfları ezenler ve iyice azgınlaşmış olanlar bütün bu bozuk işlerine son verileceğini görerek Muhammed aleyhisselâmın bildirdiklerini inkâr ettiler ve O’na düşman kesildiler. Bir kısmı da kendileri gibi âciz ve fânî insanların ayıplamalarından sakınarak îmân etmediler. Nefislerine, şeytana ve şehvetlerine uyarak saâdetten mahrum kaldılar.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâmın bildirdiklerine îmân etmeyen ve O’na düşmanlık gösteren müşrikler, önce alay etmeye başladılar. Bir araya toplanıp O’na; kâhin, mecnûn, şâir, deli, sihirbâz diyelim şeklinde karar almak istediklerinde, bunların hiçbirinin Muhammed, aleyhisselâmda bulunmadığını yine kendileri îtirâf ediyorlardı. O’na bir şeyler söylemek için toplandıklarında müşriklerden Velid bin Mugîre şöyle diyordu: “Hayır o kâhin değildir. Biz, kâhinleri gördük. O’nun okuduğu ne kâhin fısıltısı, ne de uydurma şeylerdir. Kâhinler hem doğru hem yalan söyler. Biz Muhammed’de hiçbir yalan görmedik. O mecnun, deli de değildir. Deliliğin ne olduğunu biliriz, O’nda böyle bir hal yoktur. O şâir de değildir. Biz şiirin her çeşidini iyi biliriz. O’nun okudukları bunlardan hiçbirine benzemez. O, sihirbâz da değil! Biz sihirbâzları gördük. O’nun okudukları sihirbâzların okuyup üfürmelerine ve düğümleyip bağlamalarına hiç benzemiyor.”
+                        </p>
+                        <p>
+                            Çeşitli hilelerle ve zulümle insanların îmân etmesine mâni olmaya kalkışan müşriklerin ileri gelenleri, insanları Muhammed aleyhisselâmın okuduğu âyetleri dinlemekten men ederlerdi. Kendileriyse geceleri gizlice Muhammed aleyhisselâmın bulunduğu evin yanına gelerek bir köşeye saklanıp dinlerlerdi. Sabah olup ortalık aydınlanmaya başlayınca, birbirinden habersiz gece Kur’ân-ı kerîm’i dinlemeye geldiklerini gören müşriklerin ileri gelenleri birbirlerini ayıplarlar bir daha böyle yapmayalım derlerdi. Ancak ertesi gece yine birbirinden habersiz gidip bir köşeye saklanarak tekrar dinlerlerdi. Sabah olunca da birbirlerini görüp şaşırırlardı. Bir daha böyle yapmamak üzere yemin ederek ayrılırlar, fakat bundan vazgeçemezlerdi. Ancak nefislerine uyup, üstünlük taslayarak ve diğer müşriklerin kendilerini ayıplamalarından çekinerek ve daha birçok boş düşüncelere kapılarak îmân etmediler. Üstelik başkalarına da mâni oldular. Sokaklarda, “Muhammed sihirbâz.” diye bağırdılar.
+                        </p>
+                        <p>
+                            İslâm nûrunun günden güne yayılması üzerine iyice azgınlaşan müşrikler, artık alay etmekten de öteye, Müslümanlara işkence yapmaya başladılar. Muhammed aleyhisselâmın kapısının önüne pislik dökmeye, kapısına kan sürmeye, geçeceği yollara diken dökmeye başladılar. Sevgili Peygamberimiz, Mekke’ye dışardan gelenlere İslâmı anlatarak dâvet ederken, peşinde dolaşıp; “Yalan söylüyor, inanmayın.” diyerek taşkınlık gösterirlerdi. İlk Müslüman olanlardan, önce zayıf ve kimsesizlere sonra da hepsine ağır işkenceler yapmaya başladılar. Bütün bunlarla insanların îmân etmelerine engel olamadıklarını aksine, İslâmın günden güne yayıldığını gören müşrikler her yola başvurdular.
+                        </p>
+                        <p>
+                            Menfaatleri sebebiyle putlara tapan ve İslâmiyetin, zulümlerine, haksızlık ve ahlâksızlıklarına kesinlikle son vereceğini gören müşrikler, buna mâni olmak için ilk safhada başvurdukları şeylerin sonuç vermediğini gördüler. Hattâ ileri gelenleri toplanıp Peygamber efendimizin amcası Ebû Tâlib’e giderek; “Ey Ebû Tâlib! Biz senden kardeşinin oğlunu susturmanı, O’na engel olmanı istiyoruz. Ya O’nu bildirdiği şeylerden vazgeçirirsin veya iki taraftan biri yok oluncaya kadar O’nunla da seninle de çarpışırız... Bundan vazgeçsin ne isterse vereceğiz...” dediler. Ebû Tâlib, müşriklerin söylediklerini Muhammed aleyhisselâma nakletti. Bunun üzerine Muhammed aleyhisselâm; “Ey amca! Şunu bil ki, güneşi sağ, ay’ı da sol elime verseler (her ne vâd ederlerse etsinler) ben aslâ bu dinden ve onu insanlara tebliğ etmekten, bildirmekten vazgeçmem. Ya Allahü teâlâ bu dîni bütün cihâna yayar, vazifem biter veya bu yolda cânımı fedâ ederim.” dedi. Bu sözleri dinleyen Ebû Tâlib Sevgili Peygamberimizin boynuna sarılarak; “İşine devam et, istediğini yap! Vallahi, seni aslâ herhangi bir şeyden dolayı kimseye teslim etmeyeceğim...” dedi. Ebû Tâlib’in yeğenini her şeye rağmen koruyacağını ve aslâ yalnız bırakmayacağını anlayan müşrikler, bundan da bir netice alamadıklarını görerek bizzat Muhammed aleyhisselâmı çağırıp şöyle dediler: “Eğer mal toplamak istiyorsan sana istediğin kadar verelim. Hükümdâr olmak istiyorsan seni kendimize hükümdâr yapalım. Daha her ne istiyorsan yapalım, verelim. Yeter ki bu dâvâdan vazgeç.” Peygamber efendimiz müşriklere şöyle cevap verdi: “Sizin söylediğiniz şeylerin hiç biri bende yoktur. Ben, size mallarınızı istemek, içinizde şeref ve şan kazanmak, üzerinize hükümdâr olmak için gelmedim. Fakat Allah, beni size peygamber olarak gönderdi. Bana bir kitap da indirdi. Îmân ederseniz Cennet’le müjdeleyici, isyânınızdan dolayı da azâbla korkutucu olmamı Allah bana emretti. Ben de Rabbimin bana vahyettiklerini size tebliğ ettim. Size öğüt de verdim. Size getirip tebliğ ettiğim şeyi alır, kabul ederseniz o, dünyâda ve âhirette nasîbiniz ve saâdetiniz olur. Onu reddederseniz Yüce Allah aramızda hükmü verinceye kadar tebliğ etmek, sabretmek ve buna katlanmak benim vazîfemdir.”
+                        </p>
+                        <p>
+                            İnkârlarında ısrâr eden müşrikler bu teşebbüslerinden de netice alamayınca işi zulüm ve işkence safhasına döktüler. Muhammed aleyhisselâma kastetmeye karar verdiler. Başları Ebû Cehil şöyle dedi: “Yarın kaldırabileceğim kadar kocaman bir taşı alıp, O secdeye kapandığı zaman başının üzerine bırakacağım.” Diğer müşrikler de; “Sen istediğini yap seni destekleyeceğiz” dediler. Ertesi günü beklediler ve Muhammed aleyhisselâm Kâbe’ye gelerek namaza durdu. Secdeye vardığı sırada Ebû Cehil kocaman bir taşı alıp yanına yaklaştı. Fakat yaklaşır yaklaşmaz, büyük bir korkuyla, perişân bir halde, geri kaçtı. Ellerinin canı kesildi ve taş yere düştü. Bu hâli gören ve merakla seyreden müşrikler; “Ne oldu sana?” dediklerinde Ebû Cehil; “Bir benzerini görmediğim zaptedilmez bir arslan beni parçalamak üzere üstüme yürüdü.” dedi. Ebû Cehil birkaç kere böyle yapmak istemişse de aynı durumla karşılaşmıştı.
+                        </p>
+                        <p>
+                            Bu ve buna benzer mûcizeleri görenlerden bir kısmı îmân ediyor, bir kısmı da düşmanlıkta ısrar ediyordu. Bundan başka müşriklerin Muhammed aleyhisselâma saldırdıkları, bâzan da mübârek yüzünü, başını yaraladıkları oluyordu. Diğer taraftan Müslüman olanlara yaptıkları işkenceler görülmemiş bir vahşet hâlini almıştı. Yapılan işkencelere dayanamayarak vefât eden Yâsir radıyallahü anh ve Ebû Cehil tarafından karnına mızrak saplanarak şehit edilen Yâsir’in (radıyallahü anh) hanımı Sümeyye Hâtun İslâmda ilk şehitler oldular.
+                        </p>
+                        <p>
+                            Peygamber efendimiz ilk Müslümanların ağır işkencelere uğramaları ve zulüm altında zor duruma düşmeleri üzerine “Siz Habeş ülkesine gidiniz, Allah sizi orada ferahlığa kavuşturur ve sizi yine toplar.” buyurdu. Bi’setin (Peygamberliğin) beşinci yılında (M. 615) Eshâb-ı kirâmdan 10’u erkek, 5’i kadın olmak üzere 15 kişilik bir kâfile Mekke’den Habeşistan’a hicret ettiler. Bi’setin altıncı yılında Hazreti Hamza’nın, sonra da hazret-i Ömer’in îmân etmesi üzerine Müslümanların durumu bir miktar kuvvetlendi.
+                        </p>
+                        <p>
+                            Habeşistan’a hicret eden ilk kâfilenin, hükümdâr Necâşî tarafından iyi karşılanması üzerine, Peygamberimiz, müşriklerin baskı ve işkencelerine mâruz kalan Müslümanlardan ikinci bir kâfileyi de bi’setin yedinci yılında (M.617) Habeşistan’a gönderdi. 80’i erkek, 10’u kadından meydana gelen bu kâfile de Habeşistan’a hicret etti. Bu arada İslâmiyetin yayılmasına mâni olmak için her yola başvuran müşrikler, Peygamber efendimize çeşitli şeyler soruyorlar, nâzil olan âyetler okundukça aldıkları cevaplar ve gördükleri mûcizeler karşısında şaşırıyorlardı.
+                        </p>
+                        <p>
+                            Her şeye rağmen Müslümanların sayısı artıyordu. Bunu engellemek için çeşitli yollar deneyen müşrikler, Müslümanları muhâsara altına almaya, başta ticârî olmak üzere onlarla olan bütün münâsebetlerini kesmek üzere karar aldılar. Müslümanlara hiçbir şey satmamaya ve onlardan hiçbir şey satın almamaya yemin ettiler. Bu anlaşmalarını bir kâğıda da yazarak Kâbe içine astılar. Müslümanlar ise Şi’b-i Ebî Tâlib (Ebû Tâlib mahallesi) denilen yerde toplanmışlardı. Müşrikler bu mahalleye yiyecek, içecek dâhil hiçbir şey sokmuyorlardı. Oradan, bir şey satın almak üzere çıkmak isteyene ve oraya yiyecek içecek satmak için gitmek isteyen hiçbir satıcıya fırsat vermiyorlardı. Bu mahallede muhâsara altına alınan Müslümanlar ise dışardan fazla bir şey satın alamadıkları için şiddetli kıtlıkla karşı karşıya kalmışlardı. Sâdece hac mevsiminde dışarı çıkabiliyorlardı. Ancak Mekke’ye gelen tüccarlardan bir şey satın almak istediklerinde müşrikler, tüccarlardan, fiyatlarını çok yüksek tutmalarını istiyorlardı. Bu sebeple Müslümanlar fazla bir şey satın alamıyorlardı. Bâzıları yiyecek bulamadıkları için ağaç yaprakları ile açlıklarını gidermeye çalışıyor, küçük çocuklar açlıktan feryad ediyordu. Müslümanlar içinde zengin olanlar sıkıntıya düşenlerin ihtiyâcını karşılamak için bütün mallarını harcamışlardı. Ancak bu da kâfi gelmemişti.
+                        </p>
+                        <p>
+                            Üç sene boyunca devâm ettirdikleri bu zulümle Müslümanlara iyi bir ders verdiklerini zannedip İslâmiyetin yayılmasının duracağını ümid eden müşrikler, İslâmın hızla yayıldığını görerek iyice çıldırdılar. Allahü teâlâ, müşriklerin anlaşmalarını yazarak Kâbe içine astıkları sahîfeye bir güve kurdu musallat etti. Güve, o sahîfede bulunan; “Bismike Allahümme” ibâresi hâriç diğer kısmını tamâmen yiyip bitirdi. Bu husus Peygamberimize (sallallahü aleyhi ve sellem) vahiyle bildirildi. Muhammed aleyhisselâm bu durumu amcası Ebû Tâlib’e bildirince, Ebû Tâlib müşriklere gidip; “Kardeşimin oğlunun bana haber verdiğine göre, Allah sizin Kâbe’de astığınız sahîfeye bir kurt musallat etmiş ve (Allah) lafzı hâriç o sahîfede zulüm, akrabâlarla münâsebeti kesme ve iftirâ olarak yazılı diğer kısmı yiyip bitirmiştir. Kâbe’ye gidip bakınız. Bu zulüm ve kötü davranışınızdan vazgeçiniz.” dedi. Kâbe’ye gidip astıkları sahifeyi gerçekten bir güve kurdunun yiyip bitirdiğini gördüler. Bu hâdise karşısında şaşıran müşrikler bâzı ileri gelen kimselerin de böyle bir uygulamadan vaz geçtiklerini bildirmeleri üzerine bi’setin onuncu yılında bundan tamâmen vazgeçmek zorunda kaldılar. Fakat düşmanlıklarını günden güne şiddetlendirip, İslâmiyetin yayılmasına mâni olmak için her türlü yola başvurdular. Halbuki İslâmiyet süratle yayılıyor, Sevgili Peygamberimiz Muhammed aleyhisselâm câhiliyye devrinin zulmetinde bunalan insanları hakîkî saâdete kavuşturuyordu. Bu saâdetle şereflenen insanlar da kavuştukları büyük nimete şükrediyorlar, müşriklerin hakâret ve işkenceleri karşısında aslâ yılmıyorlardı. Muhammed aleyhisselâmın mûcizelerini ve Müslümanların dinlerindeki sebâtını gören nice gönüller İslâm nûru ile aydınlanıyordu.
+                        </p>
+                        <p>
+                            Müşriklerin Müslümanlara uyguladıkları üç senelik abluka sona erince Habeşistan’dan yirmi kişi kadar Hristiyan Ruhban Mekke’ye geldi. Bunlar daha önce Habeşistan’a hicret eden Müslümanlardan İslâmiyetle ilgili duydukları şeyleri bizzât mahallinde görmek ve araştırmak üzere Mekke’ye gelmişlerdi. Kâbe yanında Peygamber efendimizle görüşen bu Hristiyan kâfilesi, Kur’ân âyetlerini dinleyip çok ağladılar. Öyle ki, sakalları gözyaşları ile ıslandı. Sordukları her soruya verilen cevaplar karşısında son derece memnûn kalıp, Sevgili Peygamberimizin kendilerini İslâma dâvet etmesi üzerine büyük bir şevkle sevinç gözyaşları dökerek Müslüman oldular. Bu hâllerini görerek kendilerine çeşitli hakârette bulunan Ebû Cehil’e ve diğer müşriklere aslâ aldırış etmediler; “Bize yaptığınız câhilliği biz size yapamayız ve bize nasîb olan hak dinden aslâ dönmeyiz.” dediler.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâmın peygamberliğinin onuncu yılında büyük oğlu Kâsım ve bir müddet sonra da diğer oğlu Abdullah, küçük yaşta, vefât ettiler. Yine bi’setin onuncu yılında Peygamber efendimizin amcası Ebû Tâlib ve ondan birkaç gün sonra da hanımı hazret-i Hadîce vefât etti. Ard arda ortaya çıkan bu ölüm hâdiselerinden dolayı bu seneye Senet-ül hüzün (hüzün yılı) denildi. Bu vefât hâdiselerine çok sevinen müşrikler, sevgili Peygamberimiz ve Müslümanlara karşı öncekinden daha şiddetli davranmaya başladılar. Ebû Tâlib hayattayken onun himâyesinden çekinen müşrikler, o vefât edince, Muhammed aleyhisselâma ve Müslümanlara yaptıkları tecâvüzleri kat kat arttırdılar.
+                        </p>
+                        <p>
+                            Mekke ahâlisi îmân etmiyor ve Müslümanlara çok sıkıntı veriyordu. İşkenceyi arttırıp, işi azdırmışlardı. Resûlullah çok üzüldü. Hicretten bir yıl önce, elli iki yaşında idi. Zeyd bin Hârise’yi alarak Tâif’e gitti. Tâif halkına bir ay nasîhat eyledi. Kimse îmân etmediği gibi alay ettiler, işkence yaptılar, yuhaladılar. Çocuklar taşa tuttular. Üzüntülü ve yorgun bir şekilde geri dönerken mübârek bacakları yaralandı. Zeyd’in başı kan içinde kaldı. Çok sıcak bir saatte, yol kenarında, bitkin hâlde istirâhat edip yaralarını, kanlarını sildiler. Muhammed aleyhisselâm daha sonra Mekke’ye doğru gitmekte iken, başının üzerinde kendisini gölgeleyen bir bulutu ve biraz sonra da Cebrâil aleyhisselamı gördü. Cebrâil aleyhisselâm; “Yâ Muhammed, şüphesiz ki, Allahü teâlâ kavminin sana ne söylediklerini işitti. (Bir melek göstererek) Şu melek, Allahü teâlânın dağları emrine verdiği melektir. Kavmin hakkında ne dilersen ona emredebilirsin.” dedi. Dağlara müvekkil melek (Mekke’nin iki tarafında bulunan Ebû Kubeys ve Kuaykıan dağlarını göstererek); “Yâ Muhammed! Eğer şu iki yalçın dağın Mekkeliler üzerine kapanıp birbirine kavuşmasını istersen, emret, kavuşturayım!” dedi. Âlemlere rahmet olarak gönderilen Peygamber efendimiz; “Hayır! Ben insanlara rahmet olarak gönderildim. Allahü teâlânın, bu müşriklerin sulbünden, îmân edecek, Allah’a şirk koşmayacak bir nesil çıkarması için duâ ederim.” buyurdu.
+                        </p>
+                        <p>
+                            Peygamber efendimiz Tâif’ten Mekke’ye döndüğü sırada Mekke’ye varmadan Nahle adındaki bir yerde bir müddet istirâhat etti. Bu sırada namaza durmuştu. Nusaybin cinlerinden bir grup oradan geçerken O’nun okuduğu Kur’ân âyetlerini duydular ve durup dinlediler. Sonra Peygamber efendimizle görüşüp Müslüman oldular. Muhammed aleyhisselâm onlara; “Kavminize varınca benim îmâna dâvetimi onlara da söyleyin, onları îmânâ dâvet edin.” buyurdu. O cinnîler kavimlerine gidip bunu bildirince, işiten cinnîlerin hepsi îmân ettiler. Bu husus Kur’ân-ı kerîmde Cin sûresinde bildirilmektedir.
+                        </p>
+                        <p>
+                            Resûl-i ekrem efendimizle Zeyd bin Hârise bu hâdiseden sonra Mekke’ye yürüdüler. Karanlıkta şehre girdiler. Birkaç ay Mekke’de çok sıkıntılı geçti. Her taraf düşman idi. Gidecek bir yer yoktu. Doğruca amcası Ebû Tâlib’in kızıümmü Hâni’nin Ebû Tâlib mahallesinde bulunan evine geldi. Ümmü Hâni, o zaman îmân etmemişti.
+                        </p>
+                        <p>
+                            Resûlullah, o gün çok incinmişti. Abdest alıp, Rabbine yalvarmağa, af dilemeğe, kulların îmâna gelmesi, saadete kavuşmaları için duâya başladı. Çok yorgun, aç, üzüntülü idi. Hasır üzerine uzanıp uyuyuverdi.
+                        </p>
+                        <p>
+                            O anda, Cebrâil aleyhisselâm gelip, Allahü teâlânın dâveti üzerine Muhammed aleyhisselâmı Mirac’a götürdü. Gökleri aştı, bilinmeyen, anlaşılmayan, anlatılamayan şekilde Cennet’i, Cehennem’i, Arş’ı, Kürsî’yi gördü. Mekansız, zamansız, cihetsiz, sıfatsız olarak Allahü teâlâyı görüp konuştu.
+                        </p>
+                        <p>
+                            Hicretten bir sene önce 13 Temmuzda Cumâ gecesi vukû bulan bu mûcizeye “Peygamberimizin “Mîrâcı” denir. Resûlullah Mîrâca rûh ve bedeniyle uyanıkken çıktı. “Beden ile gittim.” buyurdu. Peygamber efendimize Mîrâc gecesinde nice ilâhî hakikatler gösterildi ve beş vakit namaz bu gecede farz kılındı. Mîrâc Kur’ân-ı kerîm’de İsrâ sûresinde ve hadîs-i şerîflerde bildirilmektedir.
+                        </p>
+                        <p>
+                            Peygamber efendimiz, müşriklerin şiddetle karşı çıkmalarına ve istememelerine rağmen, bütün güçlüklere ve sıkıntılara katlanarak insanları İslâma dâvet etti. Mekke her yıl hac mevsiminde uzaktan, yakından gelenlerle dolup taşardı. Peygamberimiz bu mevsimde kurulan panayırlara gider, Mekke’ye gelen Arap kabîlelerine İslâmı anlatır ve onları îmâna dâvet ederdi. Müşrikler ise hep mâni olmak için uğraşırlardı.
+                        </p>
+                        <p>
+                            Peygamber efendimiz bi’setin (peygamberliğin) on birinci yılında hac mevsiminde Mekke’nin yakınında bulunan Akabe’de Medîne’den gelen altı kişiyle karşılaştı, onlarla görüştü. Onlara Kur’ân-ı kerîm okudu ve İslâma dâvet etti. Medîne’deki Hazrec kabîlesinden olan bu altı kişi Peygamberimizi dinledikten sonra hemen îmân ettiler. Bu altı kişi ilk Medîneli Müslümanlardır. Bundan bir sene sonra bi’setin on ikinci yılında yine hac mevsiminde 12 Medîneli, Peygamber efendimizin dâvetini kabûl ederek Müslüman oldular. Allah’a şirk koşmayacaklarına, zinadan, hırsızlıktan sakınacaklarına, kimseye iftirâ etmeyeceklerine, kız çocuklarını öldürmeyeceklerine, Allah’a ve Resûlüne itâat edeceklerine dâir kesinlikle söz verdiler. Bu hâdiselere ilk Akabe bîatları denilmiştir. Medînelilerin yaptıkları bu bîat büyük bir önem taşıyordu. Peygamberimiz bu bîatlerde bulunanlara İslâmı anlatmak ve Kur’ân-ı kerîm’i öğretmek üzere Eshâb-ı kirâmdan Mus’ab bin Umeyr’i, muallim olarak onlarla birlikte Medîne’ye gönderdi. Bu sıralarda Medîne’deki Müslümanların sayısı kırka ulaşmıştı. Mus’ab bin Umeyr’in üstün gayretleriyle Medîne’de bulunan Evs ve Hazrec kabîlelerinden hemen hemen Müslüman olmayan kalmamıştı. Az zamanda İslâmiyet Medîne’de yayıldı. Peygamber efendimiz Medîne’de İslâmın bu şekilde süratle yayıldığını haber alınca çok sevinip bu seneye Sevinç Yılı denildi. Bu seneden sonra peygamberliğin on üçüncü senesinde yine hac mevsiminde Medîne’den 73 erkek 2 kadın olmak üzere 75 kişi Akabe’de gece yarısı Sevgili Peygamberimizle görüştüler. Resûlullah efendimiz onlara; “Allah’tan başka ilâh olmadığına, benim O’nun Resûlü olduğuma îmân ederek dînin emirlerini yerine getireceğinize, bana itâat edeceğinize, hiçbir şeyden çekinmeden Allah yolunda Allah için hakkı söyleyeceğinize, kendi nefsinizi ve nâmusunuzu koruduğunuz gibi bana yardımcı olacağınıza söz veriyor musunuz?” buyurdu. Bunu seve seve kabûl ettiklerini bildiren Medîneliler; “Yâ Resûlallah, senin uğrunda ölürsek bize ne var?” diye sordular. “Cennet var.” buyurunca, Resûlullah efendimizin elini tutarak bîat ettiler. Peygamberimiz bunların içinden Medîne’nin ileri gelenlerinden, okuma yazma bilen 12 kişiyi temsilci olarak seçti. Bu temsilciler; “Allah’a hamd olsun ki; bizi Muhammed aleyhisselamın sevgisiyle ve O’na îmân etmekle şereflendirdi. Allah’ın ve Resûlünün dâvetini kabul ettik, dinledik ve boyun eğdik.” diyerek sevinçlerini ve teslimiyetlerini ifâde ettiler.
+                        </p>
+                        <p>
+                            İkinci Akabe bîatıyla Medîne, Müslümanların rahat edecekleri ve sığınacakları bir yer olmuştu. İkinci Akabe bîatını duyan Mekkeli müşriklerin Müslümanlara tutumları çok şiddetli ve pek tehlikeli bir hal aldı. Müslümanlar durumlarını arzedip hicret için izin istediler. Peygamber efendimizin; “Sizin hicret edeceğiniz yurdun, iki kara taşlık arasında hurmalık bir şehir olduğu bana gösterildi ve bildirildi. Orası Yesrib (Medîne)dir. Oraya hicret ediniz. Orada Müslüman kardeşlerinizle birleşin. Yüce Allah onları size kardeş yaptı ve Medîne’yi size emniyet ve huzur bulacağınız bir yurt yaptı.” buyurarak Mekke’deki Müslümanların Medîne’ye hicret etmelerine izin vermesi üzerine, bölük bölük Medîne’ye hicret ettiler.
+                        </p>
+
+                        <p>
+                            Mekke’de hapsedilen veya işkence altında bulundurulan yâhut da hastalık gibi sebeplerden dolayı yola çıkamayanlar, sevgili Peygamberimiz, hazret-i Ebû Bekr ve hazret-i Ali’den başka Müslümanlardan kimse kalmayıp Medîne’ye hicret ettiler.
+                        </p>
+                        <p>
+                            Müslümanların Mekke’den hicret etmesi üzerine müşrikler harekete geçip ne yapacaklarını kararlaştırmak üzere, kendilerince önemli saydıkları işleri görüştükleri Dar’ün-Nedve denilen yerde toplandılar. Bu sırada şeytan Necdli bir ihtiyar kılığında yanlarına geldi. Ebû Cehil; “Muhammed’i öldürelim” deyince; “İşte bu adamın dediğini yapınız” dedi. Bunun üzerine müşrikler bu kararda birleştiler. Her kabîleden birer kişi olmak üzere 40 kişi seçtiler. Bunlar gece vakti evini sarıp sabahleyin evden çıkarken Sevgili Peygamberimizi öldürmek üzere harekete geçtiler. Cebrâil aleyhisselâm gelip Sevgili Peygamberimize bu durumu ve hicret etmesi için izin verildiğini bildirdi. Resûlullah efendimiz o gece hazret-i Ali’ye yatağına yatmasını ve kendisine bırakılan emânetleri sâhiplerine vermek için Mekke’de kalmasını söyledi.
+                        </p>
+                        <p>
+                            Resûlullah, müşriklerin ellerinde kılıçlarla gece evinin etrâfını sardığı sırada, üzerlerine bir avuç toprak serpti ve Yâsîn sûresinin ilk âyetlerini okuyarak evden çıkıp müşriklerin arasından geçti. Bekleyenlerin hiç biri onu göremedi. Ebû Bekr ile Sevr Dağına çıkıp üç gün orada bir mağarada gizlenip sonra Medîne’ye hicret ettiler. O gece evinin etrafında bekleyen müşrikler sabaha doğru eve girince Ali radıyallahü anh ile karşılaştılar. Muhammed aleyhisselâmın Mekke’den ayrıldığını anlayarak tâkibe koyuldular. Ancak Resûlullah’ın mûcizeleri karşısında âciz kalıp bulamadılar.
+                        </p>
+                        <p>
+                            Peygamber efendimizin bi’setin on üçüncü yılında 12 Rebîulevvel de, Mîlâdi 622 senesinde Medîne’ye hicretiyle on sene süren Medîne devri başladı.
+                        </p>
+
+                        <h5 id="MedineDevri">Medine Devri</h5>
+                        <p>
+                            Muhammed aleyhisselâmın ve Eshâb-ı kirâmın Medîne’ye hicretiyle Müslümanlar için yeni bir devir başlamış oldu. Resûlullah efendimizin Mekke’den Medîne’ye hicret etmekte olduğu işitilince, hâdise Medîne’de büyük bir sevinçle karşılandı. Müslümanlar onu karşılamak için yollara düştüler. Sevgili Peygamberimiz Kubâ’ya gelince orada ilk mescidi yaptırdı. Kubâ’da 10 gün kaldıktan sonra Medîne’ye hareket ettiler. Cumâ günü Rânuna Vâdisinden geçerken öğle olmuştu. Peygamberimiz cumâ namazının farz olduğunu bildirdi ve orada ilk cumâ namazını kıldırdı. Medîne’ye varınca görülmemiş bir sevgi ve tezâhüratla karşılandı.
+                        </p>
+                        <p>
+                            Bu sırada Medîne’de Yemen’den gelip yerleşmiş olan Evs ve Hazrec kabîleleri ve Benî Kaynuka, Benî Nâdir, Benî Kureyzâ adında üç Yahûdî kabîlesi bulunuyordu. Mekkeli Müslümanların gelip Medîne’de bulunan Müslümanlarla her bakımdan yardımlaşmak üzere kardeşlik kurmaları ile Medîne’nin havası değişmişti.
+                        </p>
+                        <p>
+                            İlk zamanlarda, Medîne’de bir mescid olmadığı için Sevgili Peygamberimizin bulunduğu her yerde cemaatla namaz kılınıyordu. Daha sonra Resûlullah efendimizin Medîne’ye ilk geldikleri gün devesinin çöktüğü arsa satın alınarak oraya bir mescid inşâ edildi. Resûlullah için de, bu mescide bitişik odalar yapıldı.
+                        </p>
+                        <p>
+                            Peygamber efendimiz kalmakta olduğu, Eshâb-ı kirâmdan Ebû Eyyûb-i Ensârî Hâlid bin Zeyd’in evinden mescidin bitişiğinde yapılan bu odalara taşındı. Ayrıca mallarını, mülklerini Mekke’de bırakarak hicret eden Müslümanlarla Medîneli Müslümanlar arasında kardeşlik kurdu. Her Medîneli Müslüman, Mekke’den gelen Müslümanlardan birini evine aldı, malına ortak etti. Evi, âilesi olmayan yetmişten fazla fakir Müslüman da mescidin avlusunda yapılan sofada ikâmet ettiler, bütün ihtiyaçları burada karşılandı. Bunlara “Eshâb-ı Suffe” denildi. Bunlar Peygamber efendimizin yanından ayrılmaz, söylediklerini ezberler, İslâmiyeti iyice öğrenirlerdi. Medîne dışındaki yerlere İslâmiyeti öğretmek üzere bunlardan öğretici muallimler gönderilirdi.
+                        </p>
+                        <p>
+                            Hicretin birinci yılında Medîne’de mescid yapıldıktan sonra günde beş vakit ezân okunmaya başlandı. Yine bu sene Peygamber efendimiz hazret-i Ebû Bekr’in kızı hazret-i Âişe ile evlendi.
+                        </p>
+                        <p>
+                            Her sene hac mevsiminde çevreden Kâbe’deki putlara tapmak için gelen Arap kabîlelerinden kazanç sağlayan müşrikler bu kazancın ellerinden kaçması endişesine kapıldılar. Ayrıca Mekkeli müşriklerin Şam ticâret yolu da Medîne yakınından geçiyordu. Müslümanların bu yolu da kapamasından korkan müşrikler, yeni çâreler arıyorlardı.
+                        </p>
+                        <p>
+                            Hicretten sonra Medîne’de birleşen Müslümanların karşısında; Mekkeli müşrikler, Medîne’de ve çevresinde bulunan Yahûdîler ve münâfıklar olmak üzere üç çeşit düşmanları vardı. Bu bakımdan tehlike daha çok artmıştı. Böylesine mühim ve tehlikeli bir durum karşısında Peygamber efendimiz tarafından yeni tedbirler alındı. Medîne’de bulunan Evs ve Hazrec kabîleleri arasındaki anlaşmazlıkları düzeltip, onları birbirine dost yaptı. Yahûdî kabîleleriyle de bir antlaşma yapıldı. Bu antlaşmaya göre; Yahûdîler kendi dinlerinde serbest kalacak, ancak Medîne’ye dışardan yapılacak her türlü düşman saldırısına karşı Müslümanlarla birlikte vatanlarını müdâfaa edeceklerdi. Yahûdîlerle Müslümanlar arasında bir anlaşmazlık çıkarsa, Resûlullah’ın hakemliğini kabul edeceklerdi. Bundan başka Mekke civârındaki diğer kabîlelerle de sulh antlaşması yapıldı. Mekkelilerin Şam ticâret yolu kapatıldı. Medîne’de bulunan Müslümanların ilk nüfus sayımı yapıldı. Bin beş yüz civârında bulunan Müslümanlar için nüfus defteri tutuldu.
+                        </p>
+                        <p>
+                            Sevgili Peygamberimiz Medîne’nin âsâyişini korumak, düşmanların durumunu kontrol etmek için de devriyeler tertipledi. Muhtemel düşman saldırılarına karşı nöbet tutuluyordu. Hazret-i Hamza’nın, hazret-i Ubeyde ibni Hâris’in ve hazret-i Sa’d bin Ebî Vakkâs’ın komutasında olmak üzere, beş ve dört yüz kişi arasında değişen üç seriyye hazırlanmıştı. Hicretin ikinci yılında cihâda, düşmanla harbe izin verildi. Önce yalnız müdâfaa etmek sûretiyle izin verilmesi üzerine ilk gazâlar yapılmaya başlandı. Medîne devrinde yapılan gazâların sayısı yirmidir. Seriyyeler ise daha fazladır. Cihâda izin verilmesi Kur’ân-ı kerîm’de Hicr sûresi 39-41. âyetlerinde, Hac sûresi 39. âyetinde, Bakara sûresi 190, 192 ve 193. âyetlerinde bildirilmektedir. Hicretin ikinci yılı olaylarından bir diğer önemli hâdise de, daha önce Kudüs’e karşı namaz kılınmaktayken Allahü teâlânın Kâbe’ye yönelerek namaz kılmayı emretmesiyle kıblenin değişmesidir.
+                        </p>
+                        <p>
+                            Kıblenin Kâbe olmasından bir ay ve hicretten 18 ay sonra Şâban ayının onuncu günü Bedir Gazâsından bir ay önce oruç farz oldu. Yine bu sene Ramazan ayında terâvih namazı kılınmaya başlandı ve sadaka-yı fıtr vermek vâcib oldu. Hicretin ikinci senesinde Ramazan ayında zekât vermek de farz oldu. Hicretin ikinci yılında zilhicce ayında da Kurbân kesmek ve bayram namazı kılmak vâcib oldu.
+                        </p>
+                        <p>
+                            Muhammed aleyhisselâm Medîne’ye hicret ettikten sonra, Medîne’de bütün işleri ve münâsebetleri tertibe koyup Müslümanları güçlü bir duruma getirdi. Böylece İslâmiyet her geçen gün yayılıyor ve Müslümanlar git-gide kuvvetleniyordu. Hicretin ikinci yılında Mekkeli müşrikler, her âileden sermâye alıp bir kervanı Şam’a gönderdiler. Başlarında Ebû Süfyân vardı. Kervan, mallarını sattıktan sonra kâr ile silah satın aldı. Peygamber efendimiz silahların Mekkeli müşriklerin eline geçmesini önlemek için üç yüz on üç Eshâb-ı kirâm ile kervanın yolunu kesmek için Medîne’den çıktı. Kervan başka yoldan Mekke’ye giderken Mekkeli müşrikler de bin kişilik bir ordu hazırlayıp gönderdiler. Medîne dışında Bedir denilen yerde iki ordu karşılaştı ve Bedir Savaşı yapıldı. Bu savaşta Müslümanların sayısı 313 kişiydi. Müşriklerle yapılan bu ilk savaşta Müslümanlar ilk parlak zaferi kazandılar. Başta Ebû Cehil olmak üzere müşriklerin ileri gelenleri bu savaşta öldürüldü. Yine bir kısmı ileri gelenleri olmak üzere 70’i esir alındı. Peygamber efendimiz bu esirlerin bir kısmını fidye karşılığı, okuma yazma bilenleri de Medîneli 10 çocuğa okuma yazma öğretmek şartıyla serbest bıraktı. Bu hâdise Mekke ve Medîne’den birçok kimsenin Müslüman olmasına sebep oldu.
+                        </p>
+                        <p>
+                            Bedir Savaşında Müslümanların gâlip gelmesi, Medîne’deki Yahûdîleri endişelendirdi. Münâfıklarla birleşen Benî Kaynuka Yahûdîleri, Sevgili Peygamberimizle yaptıkları vatandaşlık antlaşmasını bozarak harbe karar verdiler. Bunun üzerine yapılan Benî Kaynuka Gazâsında yenilip teslim olan Yahûdiler Medîne’den çıkarıldı.
+                        </p>
+                        <p>
+                            Hicretin üçüncü yılında Sevik Gazvesi, Necd Gazvesi, Zeyd bin Hârise Seriyyesi, Muhammed bin Mesleme Seriyyesi yapıldı. Peygamberimiz kızı Ümmü Gülsüm’ü, hazret-i Osman ile evlendirdi. Hazret-i Ömer’in kızı Hafsa’yı kendi nikâhlarına aldılar. Hazret-i Ali’nin oğlu, hazret-i Hasan dünyâya geldi. Şevval ayında Uhud Gazvesi yapıldı. Bedir Savaşında yenilen müşrikler, bir yıl sonra da 3000 kişilik bir kuvvetle Medîne üzerine yürüdüler. Peygamberimiz müşriklerin bu saldırısına karşı 1000 kişilik bir ordu ile düşmanı Uhud Dağında karşıladı. Bir müdâfaa savaşı olan Uhud Savaşında, Sevgili Peygamberimizin mübârek dişi kırıldı, mübârek yüzü kanadı ve mübârek dudağı yaralandı. Hazret-i Hamza şehit edildi. Bundan başka Muhâcir ve Ensar’dan yetmiş sahâbi şehit oldu.
+                        </p>
+                        <p>
+                            Uhud Savaşından sonra hicretin dördüncü yılında Benî Nâdir Gazâsı yapıldı. Önceden Peygamber efendimizle antlaşma yapan Yahûdî kabîlelerinden biri olan Benî Nâdir, Uhud Savaşından sonra sevgili Peygamberimize sûikast yapmaya kalkışarak antlaşmayı bozdular. Münâfıkların kendilerini destekleyeceklerini söylemeleri üzerine de anlaşmayı yenilemeye yanaşmadılar. Bu sebeple yapılan savaşta Benî Nâdir kabîlesi Medîne’den çıkarıldı. Böylece Müslümanların Medîne’deki durumu biraz daha kuvvetlendi.
+                        </p>
+                        <p>
+                            Medîne civârında bulunan iki kabîle Peygamber efendimize elçi göndererek kendilerine İslâmiyeti öğretmek üzere muallim (öğretmen) istediler. Bu istek üzerine Eshâb-ı kirâmdan on kişi gönderildi. Recî’ denilen yere vardıklarında 200 kişilik bir düşman hücûmuna uğrayan bu heyetten 8 kişi şehit oldu. Bu hâdiseye Recî Vak’ası denir. Yine Necid Şeyhi Ebû Berâ’nın Medîne’ye gelip kendilerini irşâd için muallimler istemesi üzerine irşâd için, Eshâb-ı kirâmdan 70 kişilik bir heyet gönderildi. Eshâb-ı Suffadan olan bu irşad heyeti Bir-i Mâûne denilen yere vardıklarında, Necidliler, verdikleri teminâta rağmen, ihânet ettiler. Üzerlerine gönderdikleri bir ordu ile bu yetmiş sahabenin hepsini şehit ettiler. Bu hâdise de Bi’r-i Mâûne Faciası adı ile bilinmektedir.
+                        </p>
+                        <p>
+                            Şarap (içki) içmeyi haram kılan âyet-i kerîme de hicretin dördüncü yılında indi. Peygamberimiz bu yılda Ümmü Seleme ile evlendi. Ümmü Seleme’nin kocası Uhud Savaşında yaralanmış, sonra da vefât etmişti. Sevgili Peygamberimiz, ihtiyar ve çocukları olan Ümmü Seleme’yi radıyallahü anhâ kendisine nikâhlayarak zor durumdan kurtarıp himâyelerine aldılar.
+                        </p>
+                        <p>
+                            Hicretin beşinci yılında Hendek Savaşı yapıldı. Müşriklerin Medîne üzerine yaptıkları üçüncü ve son saldırı olan bu savaşta, Benî Nâdir Yahûdîleri ve müşriklerin berâberce hazırladıkları on bin kişilik bir ordusu vardı. Peygamber efendimiz Medîne’nin etrâfına geniş ve derin bir hendek kazdırıp üç bin kişilik bir ordu ile düşmana karşı durdu. Bir ay süren kuşatmada Medîne’de bulunan Benî Kureyzâ Yahûdîleri de Peygamber efendimizle yaptıkları antlaşmayı bozarak Müslümanları arkadan vurmaya kalkıştı. Netîcede kuvvetli bir fırtınaya ve şiddetli yağmura tutularak darmadağın olan düşman ordusu perişân bir hâlde paniğe kapılarak Mekke’ye döndü. Bu hâdise Kur’ân-ı kerîmde Ahzâb sûresi 9. âyetinde meâlen şöyle bildirilmektedir: “Ey îmân edenler! Allah’ın size olan nîmetlerini hatırlayınız. Hani ordular saldırmıştı da, biz onların üzerine bir rüzgâr ve sizin görmediğiniz (meleklerden) ordular göndermiştik.” Bu savaştan sonra Sevgili Peygamberimiz; “Artık nöbet sizindir. Bundan sonra Kureyş sizin üzerinize gelmez.” buyurdu.
+                        </p>
+                        <p>
+                            Şanlı Peygamberimiz Hendek Savaşından Medîne’ye dönünce Eshâb-ı kirâma, silâhlarını çıkarmadan, Hendek Savaşı sırasında ihânet ederek müşriklerle birleşip Müslümanları arkadan vurmak isteyen Benî Kureyzâ Yahûdîleri üzerine hareket emri verdi. Netîcede teslim olan bu kabîleye haklarında kendi kitapları Tevrât’ın hükmü uygulandı.
+                        </p>
+                        <p>
+                            Teyemmüm âyeti ile haccın farz olduğunu bildiren âyet hicretin beşinci yılında nâzil oldu.
+                        </p>
+                        <p>
+                            Hicretin altıncı yılında Mekke dışındaki müşriklerle Müreysi Gazâsı yapıldı. Mekkeli müşriklerin İslâmiyeti resmen bir devlet olarak tanımak zorunda kaldıkları Hudeybiye Antlaşması da bu yılda yapıldı. Yine bu yılda Şanlı Peygamberimiz bütün insanlara peygamber olarak gönderildiğini bildirmek ve İslâmiyeti her tarafa yaymak için Bizans, İran, Habeş, Mısır, Gassan ve Yemâme hükümdarlarına elçilerle mektuplar göndererek onları İslâma dâvet etti. Peygamber efendimizin bu dâveti karşısında Habeş hükümdarı Müslüman oldu. Bizans İmparatoru elçiye iyi muâmele yaptı. Mısır hâkimi Peygamberimize hediyeler gönderdi. İran şâhı ve Gassan beyi ise elçilere hakâret ederek sert davrandılar. Yemâme beyi ise boş ve mânâsız tekliflerde bulundu.
+                        </p>
+                        <p>
+                            Hicretin yedinci senesinde, İslâmiyet Arap Yarımadasında süratle yayılmaya başladı ve düşmanlar oldukça tesirsiz hâle getirildi. Bu yılda vukû bulan mühim hâdiselerden biri de Hayber’in fethidir. Peygamber efendimizin Medîne’ye hicret etmesinden sonra Yahûdî kabîleleri ile antlaşma yapıldı. Fakat bu kabîleler sözlerinde durmadılar. Mekkeli müşriklerle birleşerek Müslümanlara ihânet ettiler. Bu sebeple de Medîne’den çıkarıldılar. Bunlardan Benî Nâdir kabîlesi Hayber’e yerleşmişti. Şanlı Peygamberimiz bin altı yüz kişilik bir ordu ile Hayber üzerine gitti ve bir hafta süren kuşatmadan sonra Hayber fethedildi. Böylece Yahûdî tehlikesi ve fitnesi ortadan kaldırıldı. Yine bu yılda Peygamber efendimiz Eshâb-ı kirâmdan iki bin kişiyle Mekke’ye gidip Kâbeyi tavâf etti. Mekkeliler üzerinde büyük bir tesir bırakan bu ziyâret üzerine önde gelen birçok kimse Müslüman oldu. İslâmın ilk yıllarında Mekke’den Habeşistan’a hicret eden Müslümanlar da bu yılda Medîne’ye geldiler.
+                        </p>
+                        <p>
+                            Hicretin sekizinci yılında Mûte Savaşı yapıldı. Şanlı Peygamberimizin gönderdiği bir elçinin şehit edilmesi üzerine yapılan bu savaş, yüz bin kişilik Rum ordusuna karşı üç bin İslâm mücâhidinin çok büyük kahramanlıklar gösterdiği bir savaştı. Bu savaşta geri çekilmek zorunda kalan Rumların güçleri kırıldı.
+                        </p>
+                        <p>
+                            Bu yılda vukû bulan hâdiselerin en önemlisi Mekke’nin Fethidir. Peygamber efendimizle on senelik bir zaman için Hudeybiye Antlaşmasını imzâlayan Kureyşliler, aradan iki yıl geçmeden antlaşmayı bozdular. Peygamber efendimiz Kureyşlilerden, yapılan antlaşmaya uymalarını istedi. Müşrikler buna yanaşmayınca on bin kişilik bir kuvvetle Mekke üzerine yüründü ve Arap Yarımadasında puta tapıcılığın merkezi olan Mekke fethedildi. Bütün putlar kırılıp, Kâbe putlardan temizlendi. Yirmi yıldan beri Müslümanlara amansız düşmanlık yapan müşriklerin gücü tamâmen kırıldı. Şanlı Peygamberimizin affına kavuşup, çoğu Müslüman oldu.
+                        </p>
+                        <p>
+                            Mekke’nin Fethinden sonra Hevâzin veSakif kabîleleri, Sa’d oğulları gibi bâzı küçük kabîleleri de yanlarına alarak 20 bin kişilik bir ordu ile harekete geçtiler. Sevgili Peygamberimiz de 12 bin kişilik bir ordu ile üzerlerine gidip bu müttefik müşrik ordusunu mağlup etti. Bu düşman kabîleler Tâif’e sığınarak yeniden savaşa hazırlanmaya başladılar. Peygamber efendimiz Tâif’i 20 gün kuşatma altında tuttuktan sonra muhâsarayı kaldırdı. Bir sene sonra da Tâifliler kendi istekleriyle Müslüman oldular.
+                        </p>
+                        <p>
+                            Hicretin dokuzuncu yılı İslâmiyetin Arap Yarımadasında büyük bir süratle yayıldığı bir yıl oldu. Bir taraftan bölük bölük insanlar Medîne’ye gelip Müslüman oluyor, bir taraftan da İslâmiyeti kabul eden kabîlelerin dînî ve idârî işlerini yürütmek için çevreye memurlar ve vâliler gönderiliyordu. Bu sırada çevrede İslâmın yayılmasını engellemek isteyen devletler vardı. Bunlardan biri de o zamânın en güçlü devletleri arasında yer alan Bizans’tı. Bizans Kayseri Heraklius Mûte Savaşından beri Arap Yarımadasını istilâ ederek İslâmiyetin yayılmasına son vermek istiyordu. Heraklius Hristiyan Arapların ve diğer bir takım kabîlelerin desteğini alıp, kendisi de 40 bin kişilik bir ordu toplayarak Medîne üzerine yürümeye hazırlanmıştı. Peygamber efendimiz bu durumu haber alınca 30 bin kişilik bir ordu hazırladı. Bu hazırlıkta Eshâb-ı kirâm mallarını da vererek fiilen büyük bir fedâkârlık gösterdi. İslâm ordusu Tebük’e geldiği sırada, Müslümanların bu hazırlığını işiten Bizanslılar savaşmaktan çekinip, geri döndüler. Sevgili Peygamberimiz ordusuyla Tebük’te 20 gün kaldı. Şam’da bulaşıcı bir hastalık olan tâûn (vebâ) salgını olduğunu duyunca Medîne’ye döndü. Böylece Bizans’ın mâneviyâtı iyice kırıldı ve İslâmiyetin şanı, şerefi her tarafta duyuldu.
+                        </p>
+                        <p>
+                            Peygamber efendimiz Mekke devrinde sâdece müşrikler ve Medîne devrinde ise müşrikler, Yahûdîler ve münâfıklar olmak üzere üç çeşit düşmanla karşılaştı. Bunlardan müşrikler ve Yahûdîlerle yaptığı savaşlarda düşmanı mağlup ederek onları tesirsiz hâle getirdi. Lâkin münâfıkların düşmanlıkları sinsice, devam etti. Bunların yaptığı düşmanlıklardan biri de Müslümanlar arasına fitne sokmak maksadıyla Peygamber efendimizin Medine’ye hicreti sırasında yaptırdığı meâlen; “Temeli takvâ üzerine atıldı.” (Tevbe sûresi: 108) buyrulan Kubâ Mescidi karşısında Mescid-i Dırâr’ı yapmalarıdır. Münâfıkların Kubâ Mescidinin cemaatını bölmek gibi bozuk düşüncelerle yaptıkları bu mescit, Tevbe sûresi 107 ve 108. âyetlerinin nâzil olması üzerine Peygamber efendimiz tarafından yıktırıldı. Bu hâdiseden iki ay sonra başları Abdullah bin Übey’in ölmesi ile münâfıklar dağılıp düşmanlık faaliyetleri sona erdi. Böylece hicretin dokuzuncu yılında İslâmın belli başlı düşmanlarının karşı durma ve engelleme güçleri büyük ölçüde sona erdirildi.
+                        </p>
+                        <p>
+                            Bu yılın mühim bir hâdisesi de çevreden Medîne’ye akın akın heyetlerin gelmesidir. Bu bakımdan bu yıla “Senet-ül Vüfûd” (elçiler yılı) denildi. Peygamber efendimize gelen bu heyetler; ya Müslüman olmak veya Müslüman olduklarını bildirmek üzere yâhut da kabul ettikleri İslâmiyetin esaslarını öğrenmek için geliyorlardı. Peygamberimiz müslüman olan bu kabîlelere İslâmiyeti öğretmek, işlerini yürütmek üzere muallimler ve vâliler gönderdi.
+                        </p>
+                        <p>
+                            Hicretten önce îmân etmemiş olan ve hicretin sekizinci yılında Taif Muhâsarası sırasında Sevgili Peygamberimize karşı çıkan Taifliler de hicretin dokuzuncu yılında, Tebük Seferinden sonra, heyet göndererek Müslüman oldular.
+                        </p>
+                        <p>
+                            İslâmın beş şartından biri olan hac da hicretin dokuzuncu yılında farz kılındı. Âl-i İmrân sûresinin 96 ve 97. âyetleri nâzil olunca, Peygamber efendimiz bunu Eshâb-ı kirâma bildirdi. O sene hazret-i Ebû Bekr’i üç yüz kişilik bir kâfileye hac emiri tâyin etti. Bu kâfilede bulunan Eshâb-ı kirâm hazret-i Ebû Bekr’in emirliğinde Mekke’ye gitti. Bu sırada Berâe sûresinin ilk âyetleri nâzil oldu. Bu âyetlerde muâhede hakkındaki bâzı hükümler bildirildi. Peygamber efendimiz bunu bildirmek üzere hazret-i Ali’yi Mekke’ye gönderdi. O zaman Araplar arasında yaygın olan bir geleneğe göre bir antlaşma yapılır veya yapılmış bir antlaşma bozulursa, bu antlaşmayı bizzat yapan veya onun tâyin ettiği bir akrabâsı tarafından îlân olunurdu. Peygamber efendimiz bu iş için hazret-i Ali’yi hac kâfilesinin arkasından Mekke’ye gönderdi. Hazret-i Ali kâfileye yetişip Mekke’ye birlikte girdiler. Ebû Bekr radıyallahü anh bir hutbe okudu. Hac ibâdetini anlattı. Eshâb-ı kirâm öğretilen esaslara göre hac yaptılar. Hac ibâdeti edâ edilirken hazret-i Ali de Mina’da Cemre-i Akabe denilen yerde bir hutbe okudu. Bu hutbesinde; “Ey insanlar beni size Resûlullah gönderdi.” diyerek söze başladı ve Berâe sûresinin ilk âyetlerini okudu. Bundan sonra; “Ben size dört şeyi bildirmeye memurum.” dedi. Bu dört hususu şöyle bildirdi:
+                        </p>
+                        <p>
+                            1. Müminlerden başka hiç kimse Cennete giremez.
+                        </p>
+                        <p>
+                            2. Bu seneden sonra hiçbir müşrik Kâbe’ye yaklaşamayacak.
+                        </p>
+                        <p>
+                            3. Hiçbir kimse Kâbe’yi çıplak tavâf etmeyecek (O zaman müşrikler Kâbe’yi çıplak olarak tavaf ederlerdi.)
+                        </p>
+                        <p>
+                            4. Her kimin Resûlullah ile antlaşması varsa, müddeti bitinceye kadar mûteber olacak. Bunlar dışındakilere dört ay mühlet tanınmıştır. Bundan sonra hiçbir müşrik için ahd (antlaşma) ve himâye yoktur.
+                        </p>
+                        <p>
+                            O günden sonra hiçbir müşrik Kâbe’yi tavâf etmeye gelmedi ve hiç kimse çıplak olarak Kâbe’yi tavâf etmedi. Bu hususlar bildirildikten sonra müşriklerden çoğu Müslüman oldu. Hac farizâsı yerine getirildikten sonra hazret-i Ebû Bekr ile Ali radıyallahü anh yanlarındaki Eshâb-ı kirâmla Medîne’ye döndüler.
+                        </p>
+                        <p>
+                            Hicretin onuncu yılında İslâmiyet bütün Arap Yarımadasına yayıldı. Arabistan’ın her tarafından insanlar Medîne’ye geliyor, Müslüman olmakla şereflenmek, ebedî saâdete kavuşmak için birbirleriyle yarış ediyorlardı. Artık Arabistan’da Müslümanlara karşı duracak hiçbir kuvvet kalmamış, İslâmiyet her tarafa hâkim olmuştu. Sâdece bâzı Yahûdî ve Hristiyan kabîleleri Müslüman olmamıştı.
+                        </p>
+                        <p>
+                            Peygamber efendimiz hicretin onuncu yılında Hâlid bin Velîd hazretlerini dört yüz mücâhid ile Yemen civârında bulunan Hâris bin Ka’b oğullarını İslâma dâvet için gönderdi. Hâlid bin Velîd, Resûlullah’ın emri üzerine bu kabîleyi İslâma dâvet etti. Onlar da dâvete icâbet ederek Müslüman oldular. Yine bu yılda Peygamber efendimiz Necranlı Hristiyanlarla sulh antlaşması yaptı. Bunlardan bir kısmı sonra kendiliklerinden Müslüman oldu. Bu sene hazret-i Ali Eshâb-ı kirâmdan üç yüz kişiyle birlikte Yemen’de bulunan Medlec kabîlesini İslâma dâvet etmek için gönderildi. Önce karşı durdu ise de netîcede bu kabîle de Müslüman oldu. Peygamber efendimiz bu sene İslâmiyetin yayıldığı bütün beldelere, vâliler ve zekât toplamak üzere görevliler (âmil, sâi) gönderdi ve Vedâ Haccını yaptı.
+                        </p>
+
+                        <h5 id="VedaHacci">Veda Haccı</h5>
+                        <p>
+                            Peygamberimiz Vedâ Haccında Mina’da bulunduğu sırada; “Allah’ın yardımı ve zafer günü gelip insanların Allah’ın dînine akın akın girdiklerini görünce, Rabbini överek, tesbîh et! O’ndan af dile! Çünkü O, tövbeleri dâimâ kabul eder.” meâlindeki en son nâzil olan Nasr sûresi indiğinde Peygamber efendimiz kızı hazret-i Fâtımâ’yı çağırıp; “Bana kendi vefâtım haber verildi.” buyurdu. Bunun üzerine ağlamaya başlayan Fâtımâ’ya; “Ağlama, zîrâ benim ehlimden bana ilk kavuşan sen olacaksın.” buyurdu.
+                        </p>
+                        <p>
+                            Cebrâil aleyhisselâm Peygamber efendimize her sene o zamâna kadar nâzil olan âyetleri okumak üzere senede bir kere gelirdi. Vefât edeceği sene iki kere gelip Kur’ân-ı kerîm’i iki defâ baştan sona okudu.
+                        </p>
+                        <p>
+                            Resûlullah sallallahü aleyhi ve sellem vefât etmeden bir müddet önce Bakî mezarlığında ve Uhud’da bulunan Müslümanların kabrini ziyâret ederek onlar için duâ ve istiğfâr etti.
+                        </p>
+                        <p>
+                            Bakî mezarlığındayken yanında bulunan Ebû Müveyhib’e dönerek; “Ey Ebû Müveyhib! Ben dünyâ hazîneleriyle âhiret nîmetlerini seçmede serbest bırakıldım. İstersen dünyâda bakî ol, sonra Cennet’e git, istersen likaullah (Allah’a kavuşmak) hâsıl olup Cennet’e gir dediler. Ben likaullahı ve sonra Cennet’i seçtim.” buyurdu.
+                        </p>
+                        <p>
+                            Sevgili Peygamberimiz vefâtından önce humma hastalığına tutuldu. Bu hastalık 13 gün sürdü. Bu müddetin son 8 gününü hazret-i Âişe’nin odasında geçirdi. Hastalığının ilk günlerinde ve ateşi düştüğü sıralarda mescide çıkıp Eshâbına namaz kıldırıyordu.
+                        </p>
+                        <p>
+                            Hastalığının ikinci günü hazret-i Ali ve Fazl bin Abbâs kollarına girerek mescidi teşrif etti. Minbere oturup hamd ve senâdan sonra; “Ey Eshâbım, bilmiş olunuz ki aranızdan ayrılmam yaklaştı. Kimin bende hakkı varsa benden istesin. Benim yanımda sevgili olan benden hakkını istesin veya helâl etsin ki Rabbime ve rahmetine bunları ödemiş olarak kavuşayım.” buyurdu. Sonra minberden inip öğle namazını kıldırdı. Namazdan sonra tekrar minbere çıkıp namazdan önce buyurduğunu tekrar etti. Bunun üzerine Eshâbdan biri kalkıp üç dirhem alacağı olduğunu söyleyince hemen ödedi.
+                        </p>
+                        <p>
+                            Peygamber efendimizin hastalığının arttığı günlerde Eshâb-ı kirâma yaptığı vasiyetlerden biri de şöyledir: “Müşrikleri Arabistan’dan çıkarınız. Size gelen elçilere benim yaptığım gibi ikrâm ve ihsânda bulununuz.”
+                        </p>
+                        <p>
+                            Vefâtından beş gün önce hastalığı biraz hafifledi ve mescidi teşrif edip, minbere çıkarak Eshâb-ı kirâma; “Ey Eshâbım, hiçbir peygamber ümmeti içinde ebedî olarak yaşamadı. Biliniz ki, ben de Rabbime kavuşacağım. Muhakkak ki siz de Rabbinize kavuşacaksınız. Dünyâda hiç kimse kalmaz. Her şey Allah’ın irâdesine bağlıdır. Allah’ın takdir buyurduğu zaman ne öne alınır, ne de o zamandan kaçılır. Sizinle buluşacağımız yer, Kevser Havzının başıdır. Her kim benimle Kevser Havzı kenârında buluşmak isterse elini ve dilini korusun, günahlardan sakınsın. Ey Eshâbım! Allah kullarından birini dünyâ hayâtıyla âhiret hayâtını seçmekte serbest bıraktı. Fakat bu kul âhiret hayâtını seçti.” buyurdu. Hazret-i Ebû Bekr Resûlullah efendimizin bu sözleriyle vefâtına işâret buyurduğunu anlayarak ağlamaya başladı. Peygamber efendimiz; “Ağlama yâ Ebâ Bekr!” buyurarak onu teselli etti ve; “Bana her bakımdan en faydalı olanınız Ebû Bekr’dir.” ve “Mescide açılan kapılardan Ebû Bekr’inki hâriç hepsini kapatınız.” buyurdu. Sonra minberden inerek hazret-i Âişe’nin odasına döndü. Biraz sonra Eshâb-ı kirâmın çok üzülmesi ve endişeleri üzerine hazret-i Ali ve Fazl bin Abbâs’ın koltuğuna girdiği halde tekrar mescide geldi. Minberin alt basamağına durup Eshâb-ı kirâma son hutbesini okudu ve vasiyetini yaparak şöyle buyurdu: “Ey Muhâcirler, size Ensar hakkında hayırlı olmanızı vasiyet ederim. Onlar benim has cemaatımdır. Onlar sizi evlerinde misâfir edip, her hususta sizi nefslerine tercih ettiler. Eshâbım! İlk Muhâcirlere de hürmet etmenizi vasiyet ederim. Bütün Muhâcirler birbirlerine hayırlı olsunlar. Her iş Allahü teâlânın izniyle olur. Allahü teâlânın irâdesine karşı çıkanlar sonunda mağlup olurlar. Allahü teâlânın emrine uymak istemeyenler, muhakkak aldanırlar.” Daha önce hazret-i Ebû Bekr’den memnûniyetini belirttiği gibi bu hutbede de hazret-i Ömer’den memnuniyetini belirtti ve; “Ömer benimledir, ben de onunlayım. Benden sonra hak Ömer’le berâberdir.” buyurdu. Resûlullah efendimiz bu hutbeden sonra minberden indi ve Eshâbdan ayrılıp odasına çekildi. Vefâtına üç gün kala bir yatsı vaktinde namaz için ezân okunmuştu. Peygamber efendimiz namazın kılınıp kılınmadığını sorunca; “Cemaat sizi bekliyor yâ Resûlallah!” denildi. Resûlullah cemaate gitmek istedi. Cemaate gidecek takat bulamayınca; “Ebû Bekr’e söyleyin namazı kıldırsın.” buyurdu. Resûlullah efendimiz bu emrini üç defâ tekrarladı. Hazret-i Ebû Bekr üç gün cemâate namaz kıldırdı.
+                        </p>
+                        <p>
+                            Sevgili Peygamberimiz vefât ettiği günün sabah namazı vaktinde mescide açılan odanın kapısındaki perdeyi kaldırdı. Hazret-i Ebû Bekr cemaate sabah namazını kıldırıyordu. Eshâbına bakıp onların namazda saf tutup durduklarını görünce sevinerek tebessüm etti. Sonra da mescide girdi. Resûlullah’ın teşrifini fark eden hazret-i Ebû Bekr mihrabdan çekilmek üzereyken Resûlullah eliyle yerinde durması için işâret edip, oturduğu yerde Ebû Bekr’e radıyallahü anh uyarak sabah namazını kıldı. O gün hastalığı hafiflemişti. Namazdan sonra Eshâb-ı kirâma dönüp; “Ey insanlar! Siz Allahü teâlânın hıfzındasınız ve sizi Allahü teâlâya emânet ettim. Takvâ üzere olun. Allahü teâlâdan korkun. Allahü teâlânın emrini tutun ve itâat edin. Ben bu dâr-ı dünyâdan ayrılırım.” buyurdu. Sonra mescitten odasına geçti. Bu Eshâb-ı kirâmın Resûlullah efendimizi son görüşü oldu.
+                        </p>
+                        <p>
+                            Resûl-i ekrem efendimiz hazret-i Âişe’nin hücresine girip yattığı sırada, Üsâme bin Zeyd huzûruna geldi. Resûlullah efendimiz 23 senelik peygamberlik müddetinde son olarak Suriye tarafında Bizans üzerine gidecek bir ordu hazırlamıştı. Bu orduya kumandan tâyin ettiği Üsâme bin Zeyd’e hareket etmesini buyurdu. Bu sırada hastalığı şiddetlenen Peygamber efendimiz kızı hazret-i Fâtımâ’yı çağırıp kulağına bir şeyler söyledi. Hazret-i Fâtımâ ağlamaya başladı. Sonra bir şeyler daha söyleyince hazret-i Fâtımâ güldü. Resûlullah efendimiz hazret-i Fâtımâ’ya vefât edeceğini söyleyince hazret-i Fâtıma ağladı. Sonra da; “Sana müjde olsun ki bütün ehlimden önce sen bana kavuşursun.” buyurdu. Bunun üzerine hazret-i Fâtıma sevinip güldü.
+                        </p>
+                        <p>
+                            Resûl-i ekrem efendimiz vefât edeceği sırada hazret-i Ali’ye, hazret-i Âişe’ye vasiyette ve nasîhatta bulundu. Bu sırada ağlayıp gözyaşı döken hazret-i Fâtımâ’ya; “Kızım bir miktar sabreyle, ağlama. Zîrâ Hamele-i Arş (melekler) senin ağlaman üzerine ağlaşırlar.” buyurdu. Hazret-i Fâtımâ’nın göz yaşını sildi. Teselli verip Allahü teâlâdan sabır vermesini diledi ve; “Ey kızım, benim rûhum kabz olacak. (İnnâ lillahi ve innâ ileyhi râci’ûn) diyesin. Ey Fâtımâ, gelen her musibete bir karşılık verilir.” buyurdu. Bir müddet mübârek gözlerini kapayıp sonra; “Bundan sonra babana üzüntü ve gussa (keder, tasa) olmaz. Zîrâ fânî âlemden ve mihnet yerinden kurtuluyor.” buyurdu. Sonra hanımlarına nasîhat buyurdu. Torunları hazret-i Hasan ve hazret-i Hüseyin’i yanına alıp, onlara şefkatle bakarak alınlarından öptü. Sonra da hazret-i Ali’yi yanına çağırıp mübârek başını onun koluna dayayarak oturup; “Yâ Ali, zimmetimde filan Yahûdînin şu kadar malı vardır. Asker hazırlamak için almıştım. Sakın onu ödemeyi unutma. Elbette zimmetimi kurtarırsın ve Kevser Havzı başında benimle görüşeceklerin birincisi sensin. Benden sonra sana çok zarar gelir, sabır edesin. İnsanlar dünyâyı istedikleri vakit sen âhireti seçesin.” buyurdu. Resûlullah efendimiz vasiyetini tamamladıktan sonra hâli değişti, yatağına yatırdılar.
+                        </p>
+                        <p>
+                            Rebiülevvel ayının on ikisinde Pazartesi günü öğleden evvel Cebrâil aleyhisselâm gelip; “Yâ Resûlallah! Cennetleri süslediler, Hûri ve Rıdvan donandı. Allahü teâlâ sana hiç kimseye verilmeyen çok şeyler ihsân etti. Kevser Havzı, Makam-ı Mahmûd ve Şefâat-i ümmet verdi. Kıyâmet günü sen râzı oluncaya kadar ümmetini bağışlar. Yâ Resûlallah; Melek-ül Mevt kapıda beklemektedir. İçeri girmeye izin ister. Şimdiye kadar kimseden izin istememiştir. Bundan sonra da istemez.” dedi.
+                        </p>
+                        <p>
+                            Sevgili Peygamberimizin izni üzerine Azrâil aleyhisselâm içeri girip selâm verdi ve sonra; “Yâ Resûlallah! Allahü teâlâ beni senin huzûruna gönderdi. Senin emrinden dışarı çıkmamamı buyurdu. Dilersen şerefli rûhunu kabz edip ulvî âleme yükselteyim, yoksa dönüp gideyim.” dedi. Cebrâil aleyhisselâm; “Ey Habîbullah! Allahü teâlâ sana müştâktır(âşıktır).” dedi. Sonra selâm verip vedâ ederken; “Ey Muhammed; Ey Ahmed! Bundan sonra vahiy için bir daha gelmem ve Hak teâlânın haberini yer yüzüne getirmem. Benim maksûdum ve matlûbum sen idin yâ Resûlallah.” dedi. Bundan sonra Peygamber efendimizin; “Ey Azrâil vazîfeni yap.” buyurması üzerine, mübârek rûhunu kabz etti. Böylece Resûl-i ekrem efendimiz Hicretin on birinci yılında (Mîlâdî 632) Rebiülevvel ayının 12’sinde Pazartesi günü öğleden evvel vefât etti. Vefât ettiğinde Kamerî seneye göre 63, şemsî seneye göre 61 yaşında idi.
+                        </p>
+                        <p>
+                            Eshâb-ı kirâm, Resûlullah efendimizin vefâtı üzerine pekçok üzülüp gözyaşı döktüler. Çoğunun dili tutulup bir müddet konuşamaz oldu. Ebû Bekr radıyallahü anh Resûlullah’ın yanına girip mübârek yüzünden örtüyü kaldırarak mübârek alnından öptü. Sonra başını kaldırıp, mübârek alnından tekrâr öpüp; “Âh Sâfi” dedi. Bir daha öpüp, “Âh dost” dedi. Sonra mübârek pazusunu öpüp ağladı. “Anam babam sana fedâ olsun! Dirin ve ölün tayyib, temiz ve ne güzeldir!” dedi. Ve; “Eğer ihtiyârımız elimizde olsaydı canlarımızı yoluna fedâ ederdik. Eğer sen bizi men etmeseydin, gözlerimizden pınarları akıtırdık.” Sonra salâtü selâm okuyup; “Yâ Resûlallah, bizi Rabbinin katında hatırla.” dedi. Sonra dışarı çıktı. Mescitte minbere çıkarak Eshâb-ı kirâma bir hutbe okudu. Allahü teâlâya hamd ve senâ etti. Resûl-i ekrem efendimize sallallahü aleyhi ve sellem salât okudu. Sonra şöyle dedi: “Her kim Muhammed’e îmân etmişse bilsin ki, Muhammed aleyhisselâm vefât etti. Her kim Allahü teâlâya tapıyorsa O, Hayy, diri ve Bâkî’dir, ölmez, ebedîdir.” buyurdu ve sonra; “Muhammed de kendinden önce geçen Resûller gibi Resûldür. Eğer O vefât eder, yâhut öldürülürse, siz dîninizden, yâhut cihaddan, eski hâlinize dönecek misiniz? Böyle değişen, Allahü teâlâya zarar vermez, kendine zarar eder. İslâm ve sebatta şükredenlere muhakkak mükâfat verecektir.” (Âl-i İmrân sûresi: 144) meâlindeki âyet-i kerîmeyi okudu.
+                        </p>
+                        <p>
+                            Hazret-i Ebû Bekr Eshâb-ı kirâmı ve Ehl-i beyti teselli etti. İlk anda acı haber üzerine çok şaşıran Ömer radıyallahü anh, Ebû Bekr’i radıyallahü anh dinleyince kendine geldi. Peygamberimizin vefât ettiği gün Eshâb-ı kirâm yapılan umûmî bir bîatle hazret-i Ebû Bekr’i halîfe seçtiler.
+                        </p>
+                        <p>
+                            Resûlullah efendimizin cenâzesi vefât ettiği günden sonra, salı günü yıkandı ve kefenlendi. Gasl (yıkama) işine bizzat hazret-i Ali, hazret-i Abbâs ve hazret-i Abbâs’ın oğulları Fazl ve Kusem de yardım ettiler. Üsâme ile Şukran Sâlih radıyallahü anhümâ da su döktüler.
+                        </p>
+                        <p>
+                            Peygamber efendimiz gömleği üzerinde olduğu halde üç kere yıkanıp üç kat yeni beyaz kefene sarıldı. Bundan sonra mübârek cesedi sedir üstüne konulup bulunduğu odanın kapısı Eshâb-ı kirâma açıldı. Eshâb-ı kirâm grup grup odaya girip cenâze namazı kıldılar. Salıyı çarşambaya bağlayan gece (çarşamba gecesi) yarısı mübârek rûhu alındığı yerde defn olundu. Mübârek cesedini kabre Ali, Fadl, Üsâme ve Abdurrahmân bin Avf radıyallahü anhüm indirdi. Kıyâmet günü kabirden en önce O kalkacaktır. En önce O şefâat edecektir. En önce O’nun şefâati kabul olunacaktır. Cennet kapısını önce O açacaktır.
+                        </p>
+                        <p>
+                            Resûl-i ekrem efendimizin vefâtı üzerine bütün Müslümanların kalpleri yandı, çok üzüldüler. Peygamber efendimiz bizim bilmediğimiz bir hayat ile, şimdi kabrinde hayattadır. Cesed-i şerîfi aslâ çürümez. Kabrinde bir melek durup, ümmetinin söyledikleri salevâtı kendisine haber verir. Minberi ile kabr-i şerîfi arası Cennet bahçesi gibi kıymetlidir.
+                        </p>
+                        <p>
+                            Kabr-i şerîfini ziyâret etmek, tâatların büyüğü ve ibâdetlerin en kıymetlisidir: “Beni ziyâret edene şefâatim vâcib olur.” buyurmuştur.
+                        </p>
+                        <p>
+                            Hazret-i Fâtıma, babasının vefâtından duyduğu üzüntüyü şu mersiye ile dile getirdi: “Benim üzerime öyle musibetler döküldü ki, eğer onlar gündüzlerin üzerine dökülseydi gece olurdu.”
+                        </p>
+                        <p>
+                            Peygamber efendimizin görünüşünün anlatılmasına İslâm terminolojisinde “Hilye-i Saâdet” denilmiştir. Peygamberimizin mübârek bedeninin dış görünüşü bütün incelikleriyle bu Hilye-i Saâdet yazılarında bildirilmiştir. Bunları okuyanlar, Peygamber efendimizin rûhen olduğu gibi bedenen de hiç eksiksiz ve kusursuz, insanların en güzeli ve her bakımdan en üstünü olduğunu anlarlar. İslâm dünyâsında bu konuda pekçok eser yazılmıştır.
+                        </p>
+                        <p>
+                            Peygamber efendimizi medheden on binlerce kitap, kasîde ve diğer eserler yazılmıştır. Bunları yazanlar içinde şöhretleri ve sanatları bütün dünyâyı ve asırları kaplamış olanları dahi, O’nu methetmekten âciz olduklarını beyan etmişlerdir.
+                        </p>
+                        <p>
+                            Arap, Fars ve Türk edebiyâtında görülen Nâtlar hep O’nun için yazılmıştır.
+                        </p>
+                        <p>
+                            Resûlullah efendimiz günümüzde de bütün dünyâ milletlerinin, ilim adamlarının, devlet, siyâset ve fikir adamlarının, ediplerin, târihçi ve askerî şahsiyetlerin alâkasını çekmekte, bunların herbiri O’nu biraz inceledikten sonra hayranlık ve şaşkınlıklarını, dile getirmektedirler. Müslüman olmayanlar, Habîb-i ekrem efendimizin sâdece idâreciliği, dehâsı, askerî, sosyal ve diğer taraflarını görmekte, yalnız bunlara bakarak O’nu tanımaya çalışmaktadırlar. Gördükleri fevkalâde ve hiçbir insanda görülmemiş üstünlükler karşısında acze düşmekle berâber, O’na peygamber gözüyle bakmadıkları için, O’nu tanımaktan ve anlamaktan çok uzak kalmaktadırlar. Müslümanlar da Peygamber efendimizin güzellik ve üstünlüklerini ilimleri, ihlâsları ve O’na olan muhabbetleri kadar derece derece görmekte ve anlayabilmektediler. Bunlardan zâhir âlimleri O’nun zâhirî vasıflarını, bâtın âlimleri de bâtınî güzelliklerini görebildikleri kadar dile getirmişlerdir. Ulemâ-i râsihîn denilen hem zâhir ve hem de bâtın bilgilerinde üstâd ve Peygamber efendimize vâris olan yüksek İslâm âlimleri ise O’nu bütün güzellikleriyle görmüş ve âşık olmuşlardır. Bunların en başında Ebû Bekr-i Sıddîk radıyallahü anh gelmektedir. O, Resûlullah efendimizdeki nübüvvet nûrunu görmekte, O’nun üstünlük, güzellik ve yüksekliklerini idrâk ederek, O’na âşık olmakta öyle ileri gitmiştir ki, başka hiçbir kimse Ebû Bekr-i Sıddîk radıyallahü anh gibi olamamıştır. Ebû Bekr-i Sıddîk radıyallahü anh her an, her baktığı yerde Resûlullah’ı görürdü. Bir keresinde hâlini; “Yâ Resûlallah! Nereye baksam sizi görüyorum. Helâda bile, karşımdasınız, utanıyorum.” diye arzetmişti. Bir keresinde de; “Bütün iyiliklerimi, sizin bir sehvinize (yanılmanıza) değişirim.” demişti. Resûlullah efendimizin güzelliğini en iyi görüp anlayan ve anlatanlardan biri de zevcât-ı mutahheradan, müminlerin annesi hazret-i Âişe idi. Âişe radıyallahü anhâ âlime, müctehide, akıllı, zekî ve edibe idi. Gâyet beliğ ve fasih konuşurdu. Kur’ân-ı kerîm’in mânâlarını, helâl ve harâmları, Arap şiirlerini ve hesap ilmini çok iyi bilirdi. Resûlullah’ı metheden şu iki beyti Âişe radıyallahü anhâ söylemiştir:
+                        </p>
+                        <p>
+                            Ve lev semia ehlü Mısra evsâfe haddihî.
+                            Lemâ bezelû fî sevmi Yûsüf’e min nakdin.
+                        </p>
+                        <p>
+                            Levîmâ Zelîhâ lev reeyne cebînehû.
+                            Le âserne bilkatil kulûbi alel eydi.
+                        </p>
+                        <p>
+                            “Eğer Mısır’dakiler, Peygamber efendimizin yanaklarının güzelliğini işitmiş olsalardı. Güzelliği dillere destan olan Yûsüf aleyhisselâmın pazarlığında hiç para vermezlerdi. Bütün mallarını, onun yanaklarını görebilmek için saklarlardı. Zelîhâ’yı Yûsuf aleyhisselâma âşık oldu diyerek kötüleyen kadınlar Resûlullah’ın parlak alnını görselerdi ellerinin yerine kalplerini keserlerdi de acısını duymazlardı.”
+                        </p>
+                        <p>
+                            Yine hazret-i Âişe buyuruyor ki: “Bir gün Resûlullah mübârek nalınlarının kayışlarını çakıyordu. Ben de iplik eğiriyordum. Mübârek yüzüne baktım. Parlak alnından ter damlıyordu. Ter damlası, her tarafa nûr saçıyordu. Gözlerimi kamaştırıyordu. Şaşakaldım. Bana doğru bakıp; “Sana ne oldu ki böyle dalgın duruyorsun?” buyurdu. “Yâ Resûlallah! Mübârek yüzündeki nûrların parlaklığına ve mübârek alnındaki ter tânelerinin saçtıkları ışıklara bakarak kendimden geçtim.” dedim. Resûlullah kalkıp yanıma geldi. Gözlerimin arasını(alnımı) öptü ve; “Yâ Âişe! Allahü teâlâ sana iyilikler versin! Beni sevindirdiğin gibi, seni sevindiremedim.” buyurdu. Yâni, senin beni sevindirmen, benim seni sevindirmemden çoktur, dedi.” Hazret-i Âişe’nin mübârek gözlerinin arasını öpmesi, Resûlullah efendimizi severek, O’nun cemâlini anlayarak gördüğü için âferin ve takdir olmaktadır.
+                        </p>
+                        <p>
+                            Resûlullah efendimizin Kur’ân-ı kerîm’de geçen isimlerinden biri de Kur’ân-ı kerîm’in kalbi olan Yâsîn sûresindeki “Yâsîn” kelimesidir. Ulemâ-i rasihînin büyüklerinden olan Seyyid Abdülhakîm-i Arvâsî hazretleri; “Yâsîn, ey benim muhabbet deryamın dalgıcı olan habîbim, demektir.” buyurmuştur. Bu deryânın ismini duyanlar, uzaktan görenler, yakınına gelenler, içine girip nasîbi kadar derine inenlerin hepsi, ömürlerinin her safhasında Resûlullah efendimizin aşkı ile yanıp tutuşmuşlar, yanık feryâdlar, içli gözyaşları ve yakıcı mısralarla bu aşklarını dile getirmişlerdir. Bunların içinde en büyük ve meşhurlarından olan ve bu muhabbet deryasından büyük pay sâhibi olan Mevlânâ Hâlid-i Bağdâdî hazretleri de Sevgili Peygamberimize olan muhabet ve aşkını dile getirdiği kasîdelerinden birinde şöyle demektedir:
+                        </p>
+                        <p>
+                            Server-i âlem, sana âşık olup da, yanarım!
+                            Her nerede olsam, o güzel cemâlin ararım.
+                        </p>
+                        <p>
+                            Kâbe kavseyn tahtının sultânı sen, ben hiçim.
+                            Misafirinim dersem saygısızlık sayarım.
+                        </p>
+                        <p>
+                            Her şey cihanda senin şerefine bilirim.
+                            Rahmetin yağsa bana hergün olur bahârım.
+                        </p>
+                        <p>
+                        <p>
+                            Herkes Kâbe’yi tavâf için gelir Hicâz’a,
+                            Sana kavuşmak için ben dağları aşarım.
+                        </p>
+                        <p>
+                            Seadet tâcına kavuştum ben rüyâda.
+                            Ayağın toprağı serpildi yüzüme sanarım.
+                        </p>
+                        <p>
+                            Dostunu öven âşıkların bülbülü, ey Câmî!
+                            Dîvânında şu yazılar, oluyor, tercümânım.
+                        </p>
+                        <p>
+                            Dili sarkmış, susuz kalmış, uyuz bir köpek gibi,
+                            Senin ihsân denizinden bir damla arzularım.
+                        </p>
+                        <p>
+                            Resûlullah’ı sevmek, bütün Müslümanlara farz-ı ayndır. O’nun sevgisi bir gönüle yerleşirse, İslâmiyeti yaşama, îmânın ve islâmın tadına doyulmaz zevkine ermek ne kadar kolay olur. Bu sevgi, iki cihânın efendisine tam uymaya sebeptir. Bu sevgiyle Allahü teâlânın Habîbine ikrâm ettiği sonsuz ve târife sığmaz nîmetlere ve bereketlere kavuşmakla şereflenilir. Küçük, büyük her Müslümanı doğrudan doğruya Resûlullah’ın sevgisine götüren Ehl-i sünnet âlimleri ve kitapları bu bereketlerin senetleridir.
+                        </p>
+                        <h5 id="Vefati">Vefatı</h5>
+                        <p>
+                            Peygamberimiz Vedâ Haccında Mina’da bulunduğu sırada; “Allah’ın yardımı ve zafer günü gelip insanların Allah’ın dînine akın akın girdiklerini görünce, Rabbini överek, tesbîh et! O’ndan af dile! Çünkü O, tövbeleri dâimâ kabul eder.” meâlindeki en son nâzil olan Nasr sûresi indiğinde Peygamber efendimiz kızı hazret-i Fâtımâ’yı çağırıp; “Bana kendi vefâtım haber verildi.” buyurdu. Bunun üzerine ağlamaya başlayan Fâtımâ’ya; “Ağlama, zîrâ benim ehlimden bana ilk kavuşan sen olacaksın.” buyurdu.
+                        </p>
+                        <p>
+                            Cebrâil aleyhisselâm Peygamber efendimize her sene o zamâna kadar nâzil olan âyetleri okumak üzere senede bir kere gelirdi. Vefât edeceği sene iki kere gelip Kur’ân-ı kerîm’i iki defâ baştan sona okudu.
+                        </p>
+                        <p>
+                            Resûlullah sallallahü aleyhi ve sellem vefât etmeden bir müddet önce Bakî mezarlığında ve Uhud’da bulunan Müslümanların kabrini ziyâret ederek onlar için duâ ve istiğfâr etti.
+                        </p>
+                        <p>
+                            Bakî mezarlığındayken yanında bulunan Ebû Müveyhib’e dönerek; “Ey Ebû Müveyhib! Ben dünyâ hazîneleriyle âhiret nîmetlerini seçmede serbest bırakıldım. İstersen dünyâda bakî ol, sonra Cennet’e git, istersen likaullah (Allah’a kavuşmak) hâsıl olup Cennet’e gir dediler. Ben likaullahı ve sonra Cennet’i seçtim.” buyurdu.
+                        </p>
+                        <p>
+                            Sevgili Peygamberimiz vefâtından önce humma hastalığına tutuldu. Bu hastalık 13 gün sürdü. Bu müddetin son 8 gününü hazret-i Âişe’nin odasında geçirdi. Hastalığının ilk günlerinde ve ateşi düştüğü sıralarda mescide çıkıp Eshâbına namaz kıldırıyordu.
+                        </p>
+                        <p>
+                            Hastalığının ikinci günü hazret-i Ali ve Fazl bin Abbâs kollarına girerek mescidi teşrif etti. Minbere oturup hamd ve senâdan sonra; “Ey Eshâbım, bilmiş olunuz ki aranızdan ayrılmam yaklaştı. Kimin bende hakkı varsa benden istesin. Benim yanımda sevgili olan benden hakkını istesin veya helâl etsin ki Rabbime ve rahmetine bunları ödemiş olarak kavuşayım.” buyurdu. Sonra minberden inip öğle namazını kıldırdı. Namazdan sonra tekrar minbere çıkıp namazdan önce buyurduğunu tekrar etti. Bunun üzerine Eshâbdan biri kalkıp üç dirhem alacağı olduğunu söyleyince hemen ödedi.
+                        </p>
+                        <p>
+                            Peygamber efendimizin hastalığının arttığı günlerde Eshâb-ı kirâma yaptığı vasiyetlerden biri de şöyledir: “Müşrikleri Arabistan’dan çıkarınız. Size gelen elçilere benim yaptığım gibi ikrâm ve ihsânda bulununuz.”
+                        </p>
+                        <p>
+                            Vefâtından beş gün önce hastalığı biraz hafifledi ve mescidi teşrif edip, minbere çıkarak Eshâb-ı kirâma; “Ey Eshâbım, hiçbir peygamber ümmeti içinde ebedî olarak yaşamadı. Biliniz ki, ben de Rabbime kavuşacağım. Muhakkak ki siz de Rabbinize kavuşacaksınız. Dünyâda hiç kimse kalmaz. Her şey Allah’ın irâdesine bağlıdır. Allah’ın takdir buyurduğu zaman ne öne alınır, ne de o zamandan kaçılır. Sizinle buluşacağımız yer, Kevser Havzının başıdır. Her kim benimle Kevser Havzı kenârında buluşmak isterse elini ve dilini korusun, günahlardan sakınsın. Ey Eshâbım! Allah kullarından birini dünyâ hayâtıyla âhiret hayâtını seçmekte serbest bıraktı. Fakat bu kul âhiret hayâtını seçti.” buyurdu. Hazret-i Ebû Bekr Resûlullah efendimizin bu sözleriyle vefâtına işâret buyurduğunu anlayarak ağlamaya başladı. Peygamber efendimiz; “Ağlama yâ Ebâ Bekr!” buyurarak onu teselli etti ve; “Bana her bakımdan en faydalı olanınız Ebû Bekr’dir.” ve “Mescide açılan kapılardan Ebû Bekr’inki hâriç hepsini kapatınız.” buyurdu. Sonra minberden inerek hazret-i Âişe’nin odasına döndü. Biraz sonra Eshâb-ı kirâmın çok üzülmesi ve endişeleri üzerine hazret-i Ali ve Fazl bin Abbâs’ın koltuğuna girdiği halde tekrar mescide geldi. Minberin alt basamağına durup Eshâb-ı kirâma son hutbesini okudu ve vasiyetini yaparak şöyle buyurdu: “Ey Muhâcirler, size Ensar hakkında hayırlı olmanızı vasiyet ederim. Onlar benim has cemaatımdır. Onlar sizi evlerinde misâfir edip, her hususta sizi nefslerine tercih ettiler. Eshâbım! İlk Muhâcirlere de hürmet etmenizi vasiyet ederim. Bütün Muhâcirler birbirlerine hayırlı olsunlar. Her iş Allahü teâlânın izniyle olur. Allahü teâlânın irâdesine karşı çıkanlar sonunda mağlup olurlar. Allahü teâlânın emrine uymak istemeyenler, muhakkak aldanırlar.” Daha önce hazret-i Ebû Bekr’den memnûniyetini belirttiği gibi bu hutbede de hazret-i Ömer’den memnuniyetini belirtti ve; “Ömer benimledir, ben de onunlayım. Benden sonra hak Ömer’le berâberdir.” buyurdu. Resûlullah efendimiz bu hutbeden sonra minberden indi ve Eshâbdan ayrılıp odasına çekildi. Vefâtına üç gün kala bir yatsı vaktinde namaz için ezân okunmuştu. Peygamber efendimiz namazın kılınıp kılınmadığını sorunca; “Cemaat sizi bekliyor yâ Resûlallah!” denildi. Resûlullah cemaate gitmek istedi. Cemaate gidecek takat bulamayınca; “Ebû Bekr’e söyleyin namazı kıldırsın.” buyurdu. Resûlullah efendimiz bu emrini üç defâ tekrarladı. Hazret-i Ebû Bekr üç gün cemâate namaz kıldırdı.
+                        </p>
+                        <p>
+                            Sevgili Peygamberimiz vefât ettiği günün sabah namazı vaktinde mescide açılan odanın kapısındaki perdeyi kaldırdı. Hazret-i Ebû Bekr cemaate sabah namazını kıldırıyordu. Eshâbına bakıp onların namazda saf tutup durduklarını görünce sevinerek tebessüm etti. Sonra da mescide girdi. Resûlullah’ın teşrifini fark eden hazret-i Ebû Bekr mihrabdan çekilmek üzereyken Resûlullah eliyle yerinde durması için işâret edip, oturduğu yerde Ebû Bekr’e radıyallahü anh uyarak sabah namazını kıldı. O gün hastalığı hafiflemişti. Namazdan sonra Eshâb-ı kirâma dönüp; “Ey insanlar! Siz Allahü teâlânın hıfzındasınız ve sizi Allahü teâlâya emânet ettim. Takvâ üzere olun. Allahü teâlâdan korkun. Allahü teâlânın emrini tutun ve itâat edin. Ben bu dâr-ı dünyâdan ayrılırım.” buyurdu. Sonra mescitten odasına geçti. Bu Eshâb-ı kirâmın Resûlullah efendimizi son görüşü oldu.
+                        </p>
+                        <p>
+                            Resûl-i ekrem efendimiz hazret-i Âişe’nin hücresine girip yattığı sırada, Üsâme bin Zeyd huzûruna geldi. Resûlullah efendimiz 23 senelik peygamberlik müddetinde son olarak Suriye tarafında Bizans üzerine gidecek bir ordu hazırlamıştı. Bu orduya kumandan tâyin ettiği Üsâme bin Zeyd’e hareket etmesini buyurdu. Bu sırada hastalığı şiddetlenen Peygamber efendimiz kızı hazret-i Fâtımâ’yı çağırıp kulağına bir şeyler söyledi. Hazret-i Fâtımâ ağlamaya başladı. Sonra bir şeyler daha söyleyince hazret-i Fâtımâ güldü. Resûlullah efendimiz hazret-i Fâtımâ’ya vefât edeceğini söyleyince hazret-i Fâtıma ağladı. Sonra da; “Sana müjde olsun ki bütün ehlimden önce sen bana kavuşursun.” buyurdu. Bunun üzerine hazret-i Fâtıma sevinip güldü.
+                        </p>
+                        <p>
+                            Resûl-i ekrem efendimiz vefât edeceği sırada hazret-i Ali’ye, hazret-i Âişe’ye vasiyette ve nasîhatta bulundu. Bu sırada ağlayıp gözyaşı döken hazret-i Fâtımâ’ya; “Kızım bir miktar sabreyle, ağlama. Zîrâ Hamele-i Arş (melekler) senin ağlaman üzerine ağlaşırlar.” buyurdu. Hazret-i Fâtımâ’nın göz yaşını sildi. Teselli verip Allahü teâlâdan sabır vermesini diledi ve; “Ey kızım, benim rûhum kabz olacak. (İnnâ lillahi ve innâ ileyhi râci’ûn) diyesin. Ey Fâtımâ, gelen her musibete bir karşılık verilir.” buyurdu. Bir müddet mübârek gözlerini kapayıp sonra; “Bundan sonra babana üzüntü ve gussa (keder, tasa) olmaz. Zîrâ fânî âlemden ve mihnet yerinden kurtuluyor.” buyurdu. Sonra hanımlarına nasîhat buyurdu. Torunları hazret-i Hasan ve hazret-i Hüseyin’i yanına alıp, onlara şefkatle bakarak alınlarından öptü. Sonra da hazret-i Ali’yi yanına çağırıp mübârek başını onun koluna dayayarak oturup; “Yâ Ali, zimmetimde filan Yahûdînin şu kadar malı vardır. Asker hazırlamak için almıştım. Sakın onu ödemeyi unutma. Elbette zimmetimi kurtarırsın ve Kevser Havzı başında benimle görüşeceklerin birincisi sensin. Benden sonra sana çok zarar gelir, sabır edesin. İnsanlar dünyâyı istedikleri vakit sen âhireti seçesin.” buyurdu. Resûlullah efendimiz vasiyetini tamamladıktan sonra hâli değişti, yatağına yatırdılar.
+                        </p>
+                        <p>
+                            Rebiülevvel ayının on ikisinde Pazartesi günü öğleden evvel Cebrâil aleyhisselâm gelip; “Yâ Resûlallah! Cennetleri süslediler, Hûri ve Rıdvan donandı. Allahü teâlâ sana hiç kimseye verilmeyen çok şeyler ihsân etti. Kevser Havzı, Makam-ı Mahmûd ve Şefâat-i ümmet verdi. Kıyâmet günü sen râzı oluncaya kadar ümmetini bağışlar. Yâ Resûlallah; Melek-ül Mevt kapıda beklemektedir. İçeri girmeye izin ister. Şimdiye kadar kimseden izin istememiştir. Bundan sonra da istemez.” dedi.
+                        </p>
+                        <p>
+                            Sevgili Peygamberimizin izni üzerine Azrâil aleyhisselâm içeri girip selâm verdi ve sonra; “Yâ Resûlallah! Allahü teâlâ beni senin huzûruna gönderdi. Senin emrinden dışarı çıkmamamı buyurdu. Dilersen şerefli rûhunu kabz edip ulvî âleme yükselteyim, yoksa dönüp gideyim.” dedi. Cebrâil aleyhisselâm; “Ey Habîbullah! Allahü teâlâ sana müştâktır(âşıktır).” dedi. Sonra selâm verip vedâ ederken; “Ey Muhammed; Ey Ahmed! Bundan sonra vahiy için bir daha gelmem ve Hak teâlânın haberini yer yüzüne getirmem. Benim maksûdum ve matlûbum sen idin yâ Resûlallah.” dedi. Bundan sonra Peygamber efendimizin; “Ey Azrâil vazîfeni yap.” buyurması üzerine, mübârek rûhunu kabz etti. Böylece Resûl-i ekrem efendimiz Hicretin on birinci yılında (Mîlâdî 632) Rebiülevvel ayının 12’sinde Pazartesi günü öğleden evvel vefât etti. Vefât ettiğinde Kamerî seneye göre 63, şemsî seneye göre 61 yaşında idi.
+                        </p>
+                        <p>
+                            Eshâb-ı kirâm, Resûlullah efendimizin vefâtı üzerine pekçok üzülüp gözyaşı döktüler. Çoğunun dili tutulup bir müddet konuşamaz oldu. Ebû Bekr radıyallahü anh Resûlullah’ın yanına girip mübârek yüzünden örtüyü kaldırarak mübârek alnından öptü. Sonra başını kaldırıp, mübârek alnından tekrâr öpüp; “Âh Sâfi” dedi. Bir daha öpüp, “Âh dost” dedi. Sonra mübârek pazusunu öpüp ağladı. “Anam babam sana fedâ olsun! Dirin ve ölün tayyib, temiz ve ne güzeldir!” dedi. Ve; “Eğer ihtiyârımız elimizde olsaydı canlarımızı yoluna fedâ ederdik. Eğer sen bizi men etmeseydin, gözlerimizden pınarları akıtırdık.” Sonra salâtü selâm okuyup; “Yâ Resûlallah, bizi Rabbinin katında hatırla.” dedi. Sonra dışarı çıktı. Mescitte minbere çıkarak Eshâb-ı kirâma bir hutbe okudu. Allahü teâlâya hamd ve senâ etti. Resûl-i ekrem efendimize sallallahü aleyhi ve sellem salât okudu. Sonra şöyle dedi: “Her kim Muhammed’e îmân etmişse bilsin ki, Muhammed aleyhisselâm vefât etti. Her kim Allahü teâlâya tapıyorsa O, Hayy, diri ve Bâkî’dir, ölmez, ebedîdir.” buyurdu ve sonra; “Muhammed de kendinden önce geçen Resûller gibi Resûldür. Eğer O vefât eder, yâhut öldürülürse, siz dîninizden, yâhut cihaddan, eski hâlinize dönecek misiniz? Böyle değişen, Allahü teâlâya zarar vermez, kendine zarar eder. İslâm ve sebatta şükredenlere muhakkak mükâfat verecektir.” (Âl-i İmrân sûresi: 144) meâlindeki âyet-i kerîmeyi okudu.
+                        </p>
+                        <p>
+                            Hazret-i Ebû Bekr Eshâb-ı kirâmı ve Ehl-i beyti teselli etti. İlk anda acı haber üzerine çok şaşıran Ömer radıyallahü anh, Ebû Bekr’i radıyallahü anh dinleyince kendine geldi. Peygamberimizin vefât ettiği gün Eshâb-ı kirâm yapılan umûmî bir bîatle hazret-i Ebû Bekr’i halîfe seçtiler.
+                        </p>
+                        <p>
+                            Resûlullah efendimizin cenâzesi vefât ettiği günden sonra, salı günü yıkandı ve kefenlendi. Gasl (yıkama) işine bizzat hazret-i Ali, hazret-i Abbâs ve hazret-i Abbâs’ın oğulları Fazl ve Kusem de yardım ettiler. Üsâme ile Şukran Sâlih radıyallahü anhümâ da su döktüler.
+                        </p>
+                        <p>
+                            Peygamber efendimiz gömleği üzerinde olduğu halde üç kere yıkanıp üç kat yeni beyaz kefene sarıldı. Bundan sonra mübârek cesedi sedir üstüne konulup bulunduğu odanın kapısı Eshâb-ı kirâma açıldı. Eshâb-ı kirâm grup grup odaya girip cenâze namazı kıldılar. Salıyı çarşambaya bağlayan gece (çarşamba gecesi) yarısı mübârek rûhu alındığı yerde defn olundu. Mübârek cesedini kabre Ali, Fadl, Üsâme ve Abdurrahmân bin Avf radıyallahü anhüm indirdi. Kıyâmet günü kabirden en önce O kalkacaktır. En önce O şefâat edecektir. En önce O’nun şefâati kabul olunacaktır. Cennet kapısını önce O açacaktır.
+                        </p>
+                        <p>
+                            Resûl-i ekrem efendimizin vefâtı üzerine bütün Müslümanların kalpleri yandı, çok üzüldüler. Peygamber efendimiz bizim bilmediğimiz bir hayat ile, şimdi kabrinde hayattadır. Cesed-i şerîfi aslâ çürümez. Kabrinde bir melek durup, ümmetinin söyledikleri salevâtı kendisine haber verir. Minberi ile kabr-i şerîfi arası Cennet bahçesi gibi kıymetlidir.
+                        </p>
+                        <p>
+                            Kabr-i şerîfini ziyâret etmek, tâatların büyüğü ve ibâdetlerin en kıymetlisidir: “Beni ziyâret edene şefâatim vâcib olur.” buyurmuştur.
+                        </p>
+                        <p>
+                            Hazret-i Fâtıma, babasının vefâtından duyduğu üzüntüyü şu mersiye ile dile getirdi: “Benim üzerime öyle musibetler döküldü ki, eğer onlar gündüzlerin üzerine dökülseydi gece olurdu.”
+                        </p>
+                        <p>
+                            Peygamber efendimizin görünüşünün anlatılmasına İslâm terminolojisinde “Hilye-i Saâdet” denilmiştir. Peygamberimizin mübârek bedeninin dış görünüşü bütün incelikleriyle bu Hilye-i Saâdet yazılarında bildirilmiştir. Bunları okuyanlar, Peygamber efendimizin rûhen olduğu gibi bedenen de hiç eksiksiz ve kusursuz, insanların en güzeli ve her bakımdan en üstünü olduğunu anlarlar. İslâm dünyâsında bu konuda pekçok eser yazılmıştır.
+                        </p>
+                        <p>
+                            Peygamber efendimizi medheden on binlerce kitap, kasîde ve diğer eserler yazılmıştır. Bunları yazanlar içinde şöhretleri ve sanatları bütün dünyâyı ve asırları kaplamış olanları dahi, O’nu methetmekten âciz olduklarını beyan etmişlerdir.
+                        </p>
+                        <p>
+                            Arap, Fars ve Türk edebiyâtında görülen Nâtlar hep O’nun için yazılmıştır.
+                        </p>
+                        <p>
+                            Resûlullah efendimiz günümüzde de bütün dünyâ milletlerinin, ilim adamlarının, devlet, siyâset ve fikir adamlarının, ediplerin, târihçi ve askerî şahsiyetlerin alâkasını çekmekte, bunların herbiri O’nu biraz inceledikten sonra hayranlık ve şaşkınlıklarını, dile getirmektedirler. Müslüman olmayanlar, Habîb-i ekrem efendimizin sâdece idâreciliği, dehâsı, askerî, sosyal ve diğer taraflarını görmekte, yalnız bunlara bakarak O’nu tanımaya çalışmaktadırlar. Gördükleri fevkalâde ve hiçbir insanda görülmemiş üstünlükler karşısında acze düşmekle berâber, O’na peygamber gözüyle bakmadıkları için, O’nu tanımaktan ve anlamaktan çok uzak kalmaktadırlar. Müslümanlar da Peygamber efendimizin güzellik ve üstünlüklerini ilimleri, ihlâsları ve O’na olan muhabbetleri kadar derece derece görmekte ve anlayabilmektediler. Bunlardan zâhir âlimleri O’nun zâhirî vasıflarını, bâtın âlimleri de bâtınî güzelliklerini görebildikleri kadar dile getirmişlerdir. Ulemâ-i râsihîn denilen hem zâhir ve hem de bâtın bilgilerinde üstâd ve Peygamber efendimize vâris olan yüksek İslâm âlimleri ise O’nu bütün güzellikleriyle görmüş ve âşık olmuşlardır. Bunların en başında Ebû Bekr-i Sıddîk radıyallahü anh gelmektedir. O, Resûlullah efendimizdeki nübüvvet nûrunu görmekte, O’nun üstünlük, güzellik ve yüksekliklerini idrâk ederek, O’na âşık olmakta öyle ileri gitmiştir ki, başka hiçbir kimse Ebû Bekr-i Sıddîk radıyallahü anh gibi olamamıştır. Ebû Bekr-i Sıddîk radıyallahü anh her an, her baktığı yerde Resûlullah’ı görürdü. Bir keresinde hâlini; “Yâ Resûlallah! Nereye baksam sizi görüyorum. Helâda bile, karşımdasınız, utanıyorum.” diye arzetmişti. Bir keresinde de; “Bütün iyiliklerimi, sizin bir sehvinize (yanılmanıza) değişirim.” demişti. Resûlullah efendimizin güzelliğini en iyi görüp anlayan ve anlatanlardan biri de zevcât-ı mutahheradan, müminlerin annesi hazret-i Âişe idi. Âişe radıyallahü anhâ âlime, müctehide, akıllı, zekî ve edibe idi. Gâyet beliğ ve fasih konuşurdu. Kur’ân-ı kerîm’in mânâlarını, helâl ve harâmları, Arap şiirlerini ve hesap ilmini çok iyi bilirdi. Resûlullah’ı metheden şu iki beyti Âişe radıyallahü anhâ söylemiştir:
+                        </p>
+                        <p>
+                            Ve lev semia ehlü Mısra evsâfe haddihî.
+                            Lemâ bezelû fî sevmi Yûsüf’e min nakdin.
+                        </p>
+                        <p>
+                            Levîmâ Zelîhâ lev reeyne cebînehû.
+                            Le âserne bilkatil kulûbi alel eydi.
+                        </p>
+                        <p>
+                            “Eğer Mısır’dakiler, Peygamber efendimizin yanaklarının güzelliğini işitmiş olsalardı. Güzelliği dillere destan olan Yûsüf aleyhisselâmın pazarlığında hiç para vermezlerdi. Bütün mallarını, onun yanaklarını görebilmek için saklarlardı. Zelîhâ’yı Yûsuf aleyhisselâma âşık oldu diyerek kötüleyen kadınlar Resûlullah’ın parlak alnını görselerdi ellerinin yerine kalplerini keserlerdi de acısını duymazlardı.”
+                        </p>
+                        <p>
+                            Yine hazret-i Âişe buyuruyor ki: “Bir gün Resûlullah mübârek nalınlarının kayışlarını çakıyordu. Ben de iplik eğiriyordum. Mübârek yüzüne baktım. Parlak alnından ter damlıyordu. Ter damlası, her tarafa nûr saçıyordu. Gözlerimi kamaştırıyordu. Şaşakaldım. Bana doğru bakıp; “Sana ne oldu ki böyle dalgın duruyorsun?” buyurdu. “Yâ Resûlallah! Mübârek yüzündeki nûrların parlaklığına ve mübârek alnındaki ter tânelerinin saçtıkları ışıklara bakarak kendimden geçtim.” dedim. Resûlullah kalkıp yanıma geldi. Gözlerimin arasını(alnımı) öptü ve; “Yâ Âişe! Allahü teâlâ sana iyilikler versin! Beni sevindirdiğin gibi, seni sevindiremedim.” buyurdu. Yâni, senin beni sevindirmen, benim seni sevindirmemden çoktur, dedi.” Hazret-i Âişe’nin mübârek gözlerinin arasını öpmesi, Resûlullah efendimizi severek, O’nun cemâlini anlayarak gördüğü için âferin ve takdir olmaktadır.
+                        </p>
+                        <p>
+                            Resûlullah efendimizin Kur’ân-ı kerîm’de geçen isimlerinden biri de Kur’ân-ı kerîm’in kalbi olan Yâsîn sûresindeki “Yâsîn” kelimesidir. Ulemâ-i rasihînin büyüklerinden olan Seyyid Abdülhakîm-i Arvâsî hazretleri; “Yâsîn, ey benim muhabbet deryamın dalgıcı olan habîbim, demektir.” buyurmuştur. Bu deryânın ismini duyanlar, uzaktan görenler, yakınına gelenler, içine girip nasîbi kadar derine inenlerin hepsi, ömürlerinin her safhasında Resûlullah efendimizin aşkı ile yanıp tutuşmuşlar, yanık feryâdlar, içli gözyaşları ve yakıcı mısralarla bu aşklarını dile getirmişlerdir. Bunların içinde en büyük ve meşhurlarından olan ve bu muhabbet deryasından büyük pay sâhibi olan Mevlânâ Hâlid-i Bağdâdî hazretleri de Sevgili Peygamberimize olan muhabet ve aşkını dile getirdiği kasîdelerinden birinde şöyle demektedir:
+                        </p>
+                        <p>
+                            Server-i âlem, sana âşık olup da, yanarım!
+                            Her nerede olsam, o güzel cemâlin ararım.
+                        </p>
+                        <p>
+                            Kâbe kavseyn tahtının sultânı sen, ben hiçim.
+                            Misafirinim dersem saygısızlık sayarım.
+                        </p>
+                        <p>
+                            Her şey cihanda senin şerefine bilirim.
+                            Rahmetin yağsa bana hergün olur bahârım.
+                        </p>
+                        <p>
+                            Herkes Kâbe’yi tavâf için gelir Hicâz’a,
+                            Sana kavuşmak için ben dağları aşarım.
+                        </p>
+                        <p>
+                            Seadet tâcına kavuştum ben rüyâda.
+                            Ayağın toprağı serpildi yüzüme sanarım.
+                        </p>
+                        <p>
+                            Dostunu öven âşıkların bülbülü, ey Câmî!
+                            Dîvânında şu yazılar, oluyor, tercümânım.
+                        </p>
+                        <p>
+                            Dili sarkmış, susuz kalmış, uyuz bir köpek gibi,
+                            Senin ihsân denizinden bir damla arzularım.
+                        </p>
+                        <p>
+                            Resûlullah’ı sevmek, bütün Müslümanlara farz-ı ayndır. O’nun sevgisi bir gönüle yerleşirse, İslâmiyeti yaşama, îmânın ve islâmın tadına doyulmaz zevkine ermek ne kadar kolay olur. Bu sevgi, iki cihânın efendisine tam uymaya sebeptir. Bu sevgiyle Allahü teâlânın Habîbine ikrâm ettiği sonsuz ve târife sığmaz nîmetlere ve bereketlere kavuşmakla şereflenilir. Küçük, büyük her Müslümanı doğrudan doğruya Resûlullah’ın sevgisine götüren Ehl-i sünnet âlimleri ve kitapları bu bereketlerin senetleridir.
+                        </p>
+
                     </div>
                 </section>
             </div>
             <footer class="mdl-mega-footer">
-                <div class="mdl-logo">
-                05.03.2015
-                </div>
-                <!--<div class="mdl-mega-footer--middle-section">
+       <div class="mdl-mega-footer--middle-section">
         <div class="mdl-mega-footer--drop-down-section">
             <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-            <h1 class="mdl-mega-footer--heading">Features</h1>
+            <h1 class="mdl-mega-footer--heading">Bölümler</h1>
             <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Updates</a></li>
+                <li><a href="#EvliyaSehri">Evliya Listesi</a></li>
+                <li><a href="#PeygamberimizinHayati">Sevgşi Peygamberim</a></li>
+              
             </ul>
         </div>
         <div class="mdl-mega-footer--drop-down-section">
             <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-            <h1 class="mdl-mega-footer--heading">Details</h1>
+            <h1 class="mdl-mega-footer--heading">Kaynaklar</h1>
             <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Spec</a></li>
-                <li><a href="#">Tools</a></li>
-                <li><a href="#">Resources</a></li>
+                <li><a href="https://dinimizislam.com/">Dinimiz islam</a></li>
+                <li><a href="#href">Google maps</a></li>
+               
             </ul>
         </div>
-        <div class="mdl-mega-footer--drop-down-section">
-            <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-            <h1 class="mdl-mega-footer--heading">Technology</h1>
-            <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Patterns</a></li>
-                <li><a href="#">Usage</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contracts</a></li>
-            </ul>
-        </div>
-        <div class="mdl-mega-footer--drop-down-section">
-            <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-            <h1 class="mdl-mega-footer--heading">FAQ</h1>
-            <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Questions</a></li>
-                <li><a href="#">Answers</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
-        </div>
+      
     </div>
-    <div class="mdl-mega-footer--bottom-section">
-        <div class="mdl-logo">
-            More Information
-        </div>
-        <ul class="mdl-mega-footer--link-list">
-            <li><a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Privacy and Terms</a></li>
-        </ul>
-    </div>-->
+
             </footer>
         </main>
     </div>
@@ -441,7 +1109,7 @@
                         if (myParam == MySehir) {
 
                             var key = childSnapshot.key; // "ada"
-                            var name = childSnapshot.child("name").val();
+                            var Ad = childSnapshot.child("Ad").val();
                             var DT = childSnapshot.child("DT").val();
                             var OT = childSnapshot.child("OT").val();
 
@@ -458,7 +1126,7 @@
 
 
                             var title = document.createElement("h5");
-                            title.textContent = name;
+                            title.textContent = Ad;
                             divInfo.appendChild(title);
 
                             var shortInfo = document.createElement("div");
@@ -506,10 +1174,10 @@
 
                                              
                                                 var shortInfo = document.getElementById('dialogInfo');
-                                                shortInfo.textConten = "";
+                                              
                                                 shortInfo.textContent = hayati;
                                                 shortInfo.scrollTop = 0;
-                                                shortInfo.  scrollIntoView();
+                                                shortInfo.scrollIntoView();
                                             };
 
                                         })
