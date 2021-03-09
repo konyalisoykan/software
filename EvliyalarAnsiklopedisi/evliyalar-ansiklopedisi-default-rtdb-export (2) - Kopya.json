@@ -10,12 +10,12 @@
       "Detaylar": "1"
     },
     "2": {
-      "Ad": "Abdulhakim Arvasi",
+      "Ad": "Seyyid Abdülhakim-i Arvasi",
       "DT": "1860",
       "OT": "27 Kasım 1943",
-      "Sehir": "Ankara",
+      "Sehir": "ankara",
       "Ilce": "Bağlum",
-      "Bilgi": "Efendi  Hazretleri",
+      "Bilgi": "Son asırda yetişen, zahir ve batın ilimlerinde kamil ve dört mezhebin fıkıh bilgilerinde mahir, büyük âlim ve ruh bilgilerinin mütehassısı büyük velidir. Babası Seyyid Mustafa Efendidir. 1865 yılında Van'ın Başkale kazasında doğdu. 1943‘de Ankara'da vefat etti. Kabirleri Ankara’nın Bağlum nahiyesindedir.",
       "Detaylar": "2"
     },
     "3": {
@@ -35,17 +35,350 @@
       "Ilce": "Beykoz",
       "Bilgi": "Yuşa aleyhisselam İstanbul’a hiç gelmedi. Beykoz Tepesinde ziyâret edilmekte olan kabrin Yuşa peygambere âit olduğu söyleniyorsa da târihî bilgilere uygun değildir. Bu bir velî veyâ havârilerden birine âit olabilir. Böyle ise yine kıymetlidir. Kabrin Yuşa peygambere âit olup olmadığını kesin olarak söylemek uygun değildir.",
       "Detaylar": "4"
+    },
+    "5": {
+      "Ad": "Sümbül Sinan Efendi",
+      "DT": "1452",
+      "OT": "1529",
+      "Sehir": "istanbul",
+      "Ilce": "Fatih",
+      "Bilgi": "İstanbul'da bulunan büyük velilerdendir. Adı Yusuf b. Ali'dir. Dedesine Kaya Bey derlerdi. Lakabı Sinanüddin ve Zeynüddin'dir. Sümbül Sinan Efendi diye şöhret bulmuştur.",
+      "Detaylar": "5"
+    },
+    "6": {
+      "Ad": "Merkez Efendi",
+      "DT": "1463",
+      "OT": "1551",
+      "Sehir": "istanbul",
+      "Ilce": "Zeytinburnu",
+      "Bilgi": "Osmanlı dönemi İstanbul'da bulunan büyük velilerdendir. Adı Musa olup, Merkez Muslihiddin diye meşhur oldu. Denizli ilinin Sarıhanlı köyünde 868 (m.1463) yılında doğdu. 959 (m.1551) yılında İstanbul'da vefat etti. Musa Efendi, küçük yaşta ilim tahsiline başladı. İlk tahsilini memleke­tinde yaptı. Daha sonra Bursa ve İstanbul'a giderek zamanın tedris edilen ilimlerini tahsil etti. Bu sırada tekkelere gidip sohbetlere katılarak tasavvuf neşvesini de geliştirdi. ",
+      "Detaylar": "6"
+    },
+    "7": {
+      "Ad": "Aziz Mahmud Hüdayi Hazretleri",
+      "DT": "1541",
+      "OT": "1628",
+      "Sehir": "istanbul",
+      "Ilce": "üsküdar",
+      "Bilgi": "O, bir asra yakın ömür sürmüş ve sekiz pâdişah devrini idrâk etmiş bir gönül sultânıdır. Asrında, gerek eserleri, gerekse sohbet, irşad, vaaz ve nasihatleri ile ümmet için bir feyiz kaynağı olmuştur.",
+      "Detaylar": "7"
+    },
+    "8": {
+      "Ad": "Akbaba Mehmed Efendi  Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Beyloz",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "8"
+    },
+    "9": {
+      "Ad": "Mehmet Emin Tokadi  Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Beyloz",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "9"
+    },
+    "10": {
+      "Ad": "Murad-ı münzevi Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Beyloz",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "10"
+    },
+    "11": {
+      "Ad": "Abdulfettah Bağdadi El-Akri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "11"
+    },
+    "12": {
+      "Ad": "Beşiktaşlı Yahya Efendi",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "12"
+    },
+    "13": {
+      "Ad": "Ebül Vefa Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "14": {
+      "Ad": "Kaşgari Abdullah Efendi Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "15": {
+      "Ad": "İsa Geylani Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "16": {
+      "Ad": "Ebussuud Efendi Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "17": {
+      "Ad": "Fatih Sultan Mehmet Han Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "18": {
+      "Ad": "Sultan 2. Beyazıd Veli  Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "19": {
+      "Ad": "Yavuz Sultan Selim Han  Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "20": {
+      "Ad": "Kanuni Sultan Süleyman   Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "21": {
+      "Ad": "Sultan 2. Selim Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "22": {
+      "Ad": "Sultan 2. Murad Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "23": {
+      "Ad": "Sultan 3. Mehmed Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+
+    "24": {
+      "Ad": "Sultan 1. Ahmed  Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "25": {
+      "Ad": "Sultan 1. Mustafa  Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "26": {
+      "Ad": "Sultan ibrahim  Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "27": {
+      "Ad": "Sultan 4. Mehmed  Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "28": {
+      "Ad": "Sultan 3. Mustafa  Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "29": {
+      "Ad": "Sultan 1. Abdulhamis  Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "30": {
+      "Ad": "Sultan 2. Mahmut  Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "31": {
+      "Ad": "Sultan Abdulmecid  Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "32": {
+      "Ad": "Sultan 5. Mehmet Reşat  Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "33": {
+      "Ad": "Sultan 2. Abdulhamid Han  Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "34": {
+      "Ad": "Sultan Abdulaziz  Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "35": {
+      "Ad": "Sultan 4. Mustafa  Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "36": {
+      "Ad": "Mimar Sinan Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "37": {
+      "Ad": "Kaptanı Derya Sina Paşa Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "38": {
+      "Ad": "Kaptanı Derya Barboros Hayrettin Paşa Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "39": {
+      "Ad": "Seyyid Ahmed Arvas",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "40": {
+      "Ad": "Ahmed Mekkî Efendi Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
+    },
+    "41": {
+      "Ad": "Ahmed Davutoğlu Hocaefendi Hazretleri",
+      "DT": "--",
+      "OT": "--",
+      "Sehir": "istanbul",
+      "Ilce": "Üsküdar",
+      "Bilgi": "Fatih Sultan Mehmed Han ile Konstantıniyye (İstanbul) şehrini fetheden ni’me’l-ceyş’dendir (mutlu asker). Kabri, Beykoz’da, kendi adıyla anılan Akbaba Köyü’ndedir. H",
+      "Detaylar": "13"
     }
   },
-
   "Detaylar": {
     "1": {
       "Hayati": "En güzel günleri başlatacak olan büyük hicret [göç] bitmek üzeredir. Allahın emriyle Mekke’den ayrılan sevgili Peygamberimiz, Medîne’ye girdiler. Bütün Müslüman kabîleler, Resûlullah efendimizi misâfir etmek için yarışıyorlard\r\rNeccâroğullarının reisi Hazret-i Ebû Eyyûb da, bütün akrabâlarını toplamış; Resûlullahı karşılamaya çıkmıştı. Bütün Medîneli Müslümanlar gibi, o da iki cihânın efendisi Resûlullah efendimizi ağırlamak ateşiyle yanmaktadır.\r\rAnamız babamız fedâ olsun\rZaman zaman, Resûlullah efendimizin devesi Kusvâ’nın yularını yakalıyanlar, “Buyurunuz yâ Resûlallah! Anamız, babamız, canımız, herşeyimiz; sizin yolunuza fedâ olsun!” diyerek, kendi evlerine götürmek istiyorlardı.\r\rFakat Kâinâtın efendisi, kimsenin gücenmesini arzû etmiyorlardı. Kusvâ’yı işâret ederek buyurdular ki:\r- Devemin yularını bırakınız! Kimin evinin önünde çökerse, orada misâfir olurum!\r\rGerçekten o mes’ûd Deve de, sanki vazîfesini biliyormuş gibi hareket ediyordu. Yorgunluğuna rağmen, yavaş ve asîl hareketlerle, epeyce dolaştı. Sonunda, iki yetîme ait, boş bir arsa üzerinde durdu. Ağır ağır yere çöktü.\rResûlullah efendimiz devesinden inmediler. Hayvan tekrar ayağa kalktı, yürümeye başladı. Eski yere çöktü, bir daha kalkmadı ve tatlı tatlı homurdanmaya başladı.\r\rBunun üzerine sevgili Peygamberimiz, Kusvâ’nın üzerinden inip buyurdular ki:\r- İnşâallah yerimiz burasıdır. Burası kimindir?\r- Yâ Resûlallah! Amr oğulları Süheyl ve Sehl’indir.\r- Akrabâlarımızdan hangisinin evi buraya daha yakındır?\r\rŞeref kazansın\rHâlid bin Zeyd Ebû Eyyûb el-Ensârî hazretleri sevinçle cevap verdi:\r- Buyurunuz yâ Resûlallah!\rBuyurunuz ki fakîr evimiz, varlığınızla şeref kazansın. İşte hemen şuracıkta.\r\r\rHicretten 52 yıl sonra, İstanbul üzerine; İslâm seferi açıldı. Mısır’dan, Şam’dan, Arabistan’ın her yerinden; ayrı ordular geldi. Çünkü, Resûl-i ekrem efendimiz buyurmuşlardı \rİstanbul elbette fetholunacaktır! Onu fetheden emîr, ne güzel emîr; fetheden asker, ne güzel askerdir.)\r\rÜstelik hastasın!\rte bu methedilen, övülen askerler arasına katılmak arzûsuyla Müslümanlar, akın akın İstanbul fethine koştular. O sırada, Hazret-i Ebû Eyyûb rahatsızdı. Fakat cihâd haberlerini duyduğunda, heyecanla doğruldu. Hele İstanbul gazâsını işitince, gözleri parladı. Hazırlıklara başladı. Yakınları dediler ki:/r/r Yâ Ebâ Eyyûb! 70 yaşını geçtin. Üstelik hastasın. Bu sefer ise, uzun ve tehlikelidir.\rHazret-i Eyyûb’un cevabı tereddütsüz ve kesin oldu:\r Cihâd ve gazâyı terketmek, daha tehlikelidir.\r\rSevgili Peygamberimizin Medîne’ye gelişlerinden yarım asır sonra, sevgili arkadaşları da İstanbul önlerine geldiler.\r\rKalın surlar dibinde Ebû Eyyûb hazretleri, vefât etmek üzeredir. Güçlükle konuşmaktadır:\r\r Mücâhidlere selâm söyleyiniz. Onlara Resûl-i Kibriya Efendimizden duyduğum şu mübârek sözleri bildiriniz: “Her kim, Allaha şerîk koşmadan, rûhunu teslim ederse; cenâbı Hak da onu, Cennetine koyar.”\r\rEtrafındaki gâzi ve askerler, gizli gizli ağlıyorlardı. Ak sakallı gâzi, son bir gayretle şunları fısıldadı:\r Sizlere vasiyetim olsun:\r\rÖldükten sonra cesedimi, burada bırakmayın! Gâzilerin girebildikleri, en uzak yere götürün! Bizans topraklarının, İstanbul’a en yakın noktasına defnedin. Zîrâ Peygamber efendimiz; “Kostantiniyye’de kalenin yanında bir racül-i sâlih defnolunacaktır” buyurmuştu.",
       "Harita": "https://maps.google.com/maps?q=ey%C3%BCp%20sultan%20hazretleri&t=&z=13&ie=UTF8&iwloc=&output=embed"
     },
     "2": {
-      "Hayati": "",
-      "Harita": "https://maps.google.com/maps?q=ey%C3%BCp%20sultan%20h%C3%BCseyin%20hi%C5%9Fmi%20%C4%B1%C5%9F%C4%B1k&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      "Hayati": "Babası Seyyid Mustafa Efendi ve bütün dedeleri, zamanlarının âlim ve fadılları idiler. İmam-ı Ali Rıza bin Musa Kazım soyundan olup, seyyid oldukları Irak'taki şer'i mahkeme defterlerinde yazılıdır. Arvasi ailesi, altı yüz seneden beri ilim yaymakla ve en üstün insanlık meziyetlerinde numune olmakla tanınmış ve halk arasındaki ayrılıkları gidermekte, milli birliği sağlamakta büyük vazifeler üstlenmiş ve bunları devam ettiregelmişlerdir.\n\nk tahsilini babasının huzurunda gördü. Seyyid Abdülhakim Arvasi hazretleri Nehri'de gördüğü bir rüya üzerine tahsiline daha büyük ehemmiyet verdi. Bu rüyayı şöyle anlatmaktadır:\n\nNehri isimli kasabada din ve fen ilimleri üzerine tahsil görüyordum. Ramazan ayını ailemle birlikte geçirmek üzere memleketime döndüm. Henüz ilk mektep kitaplarını tahsil ettiğim zamanlardı. Ramazan ayının on beşinci Salı gecesi, rüyada Allah'ın Resulünü gördüm. Yüce bir taht üzerinde risalet makamında oturmuşlardı. Onun heybet ve celali karşısında dehşete düşmüş, yere bakarken, arkamdan bir kimse yavaş yavaş sağ tarafıma yanaştı. Göz ucuyla kendisine baktım. Kısaya yakın orta boylu, sakallı, aydınlık alınlı bir zat Bu zat sağ kulağıma işitilmeyecek kadar hafif bir sesle, fıkıh ilminin hayz meselelerinden bir sual sordu\nHayz zamanında bir kadının, camiye girmesi uygun değilken, iki kapılı bir caminin bir kapısından girip öbür kapısından çıkmakta şer'an serbest midir?\n\nAllah Resulünün heybetlerinden büzülmüştüm. Suali tekrar sormaması için gayet yavaşça ve alçak bir sesle\n\nDinin sahibi hazırdır, buradadır\n\ndiye cevap verdim.Maksadım, onun huzurunda kimsenin din meselelerine el atamayacağını anlatmaktı. Resulullah efendimiz, ses işitilemeyecek bir mesafede bulunmalarına rağmen cevabımı duydular. Durmadan;\n\nCevap veriniz!diye üst üste iki defa emir buyurdular.Ertesi gün, öğle namazı vaktinde pederimin camiye geliş yolları üzerinde durdum. Kendilerine bir şeyi arz edeceğimi hissederek yanıma geldiler. Rüyamı anlattım. Yüzlerine büyük bir sevinç dalgası yayılırken; \n\nSeni müjdelerim! Âlemin Fahri seni mezun ve din bilgilerini tebliğe memur buyurdular. İnşâallah âlim olursun! Bütün gücünle çalış\\diyerek rüyamı tabir etti. Babama\n\nKâinatın efendisi huzurunda, bunca din meselesi dururken bana hayz bahsinden sual açılmasının ve cevabının tarafımdan verilmesi hakkındaki Resulullahın emrinin hikmeti nedir\n\ndiye sordum şu cevabı verdi:\n\nHayz, fıkıh bilgilerinin en zoru olduğu için, böyle bir sual, senin ileride din ilimleri bakımından çok yükseleceğine işarettir\n\nBu rüyadan sonra, on sene müddetle, Cuma gecelerinden başka hiç bir geceyi yorgan altında geçirdiğimi hatırlamıyorum. Sabahlara kadar dersle uğraşıp insanlık icâbı uykuyu kitap üzerinde geçirdim. İnsan gücünün üstünde denilebilecek bir gayret ve istekle çalıştıSeyyid Abdülhakim Arvasi hazretleri, öğrendiği fıkıh, tefsir gibi ilimlerin yanında kendisini mânevi yoldan yetiştirecek bir rehbere kavuşma arzusu ile yanıyordu. Diğer taraftan Seyyid Tâhâ-i Hakkâri'nin halifesi Seyyid Fehim-i Arvasi, rüyasında Allahü teâlânın Resulünü gördü. Peygamber efendimiz kendisine\n\nAbdülhakim'in terbiyesini sana ısmarladım buyurmuştu\n\nYüksek tahsilini zamanın en büyük âlim ve evliyası Seyyid Fehim Arvasi hazretlerinin huzurunda tamamladı. 1300 hicri sene başında ilm-i sarf, nahv, mantık, münazara, vad', beyan, meani, bedi', belagat, kelâm, usul-i fıkıh, tefsir, tasavvuf, ulum-i hikemiyye yani hikmet-i tabi’iyye (fizik, biyoloji), hikmet-i ilahiyye, riyaziyye (yani matematik, geometri), hey’et (astronomi) gibi zahir ilimlerde icazet (diploma); tasavvufun Nakşibendiyye, Kadiriyye, Kübreviyye, Sühreverdiyye ve Çeştiyye yollarından hilafet aldı. Başkale'de otuz yıl kadar tedris ve irşad ile meşgul oldu. Yani ders okuttu ve insanlara Allahü teâlânın emir ve yasaklarını anlattı.",
+      "Harita": "https://maps.google.com/maps?q=abdulhakim%20arvasi%20kabri&t=&z=13&ie=UTF8&iwloc=&output=embed"
     },
     "3": {
 
@@ -56,8 +389,42 @@
 
       "Hayati": " İsrailoğullarına gönderilen peygamberlerden. Musa aleyhisselamdan sonra gönderilmiş olup Musa aleyhisselamın yeğeni veya vekîliydi. İsmi Yuşa olup, Hristiyanlar Yeşû diyorlar. Yusuf aleyhisselamın neslinden gelen Nûn’un oğludur. Annesi Musa aleyhisselamın kız kardeşidir. Yuşa aleyhisselam Musa aleyhisselama bildirilen dînin esaslarını insanlara tebliğ etti.\r\rMısır’da doğan Yuşa aleyhisselam, Musa aleyhisselamın husûsî talebesi, hâlis hizmet görücüsü ve en yakın dostlarındandı. Musa aleyhisselam Firavun’un zulmü üzerine Allahü teâlânın emriyle kendine inanan ve tâbi olanlarla birlikte Mısır’dan Tîh Sahrasına hicret ederken Yuşa aleyhisselam da onunla berâber bulundu. Musa aleyhisselamın Hızır aleyhisselamla görüşmek üzere çıktığı yolculukta onunla berâber bulundu. Musa aleyhisselam Hızır aleyhisselamla karşılaşınca Yuşa aleyhisselam geriye döndü.",
       "Harita": "https://maps.google.com/maps?q=yu%C5%9Fa%20hazretleri&t=&z=13&ie=UTF8&iwloc=&output=embed"
-
-
+    },
+    "5": {
+      "Hayati": "",
+      "Harita": "https://maps.google.com/maps?q=s%C3%BCmb%C3%BCl%20sinan%20efendi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    },
+    "6": {
+      "Hayati": "",
+      "Harita": "https\": //maps.google.com/maps?q=merkez%20efendi%20t%C3%BCrbesi&t=&z=13&ie=UTF8&iwloc=&output=embed\""
+    },
+    "7": {
+      "Hayati": "",
+      "Harita": "https://maps.google.com/maps?q=aziz%20mahmud%20h%C3%BCsayi%20kabri&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    },
+    "8": {
+      "Hayati": "",
+      "Harita": "https://maps.google.com/maps?q=akbab%20sultan%20kabri&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    },
+    "9": {
+      "Hayati": "",
+      "Harita": "https://maps.google.com/maps?q=mehmed%20emin%20tokadi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    },
+    "10": {
+      "Hayati": "",
+      "Harita": "https://maps.google.com/maps?q=Murad-%C4%B1%20m%C3%BCnzevi%20Hazretleri&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    },
+    "11": {
+      "Hayati": "",
+      "Harita": "https://maps.google.com/maps?q=Abdulfettah%20Ba%C4%9Fdadi%20El-Akri&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    },
+    "12": {
+      "Hayati": "",
+      "Harita": "https://maps.google.com/maps?q=Be%C5%9Fikta%C5%9Fl%C4%B1%20Yahya%20Efendi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    },
+    "13": {
+      "Hayati": "",
+      "Harita": "https://maps.google.com/maps?q=Eb%C3%BCl%20Vefa%20Hazretleri&t=&z=13&ie=UTF8&iwloc=&output=embed"
     }
 
   }

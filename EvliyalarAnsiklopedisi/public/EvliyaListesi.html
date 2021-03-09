@@ -177,10 +177,10 @@
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
 
     <dialog class="mdl-dialog">
-
-   
+        <div id="dialogInfo" class="mdl-dialog__actions">
+      <iframe src="https://dinimizislam.com/detay.asp?Aid=3782"></iframe>
+        </div>
         <div class="mdl-dialog__actions">
-
             <button type="button" class="mdl-button close">Kapat</button>
         </div>
     </dialog>
@@ -1167,14 +1167,14 @@
                                     .then(function (snapshot) {
                                         snapshot.forEach(function (childSnapshot) {
                                             var key = childSnapshot.key;
-
+                                           
                                             if (button.id == "show-dialog" + key) {
                                                 var baslik = childSnapshot.child("Baslik").val();
                                                 var hayati = childSnapshot.child("Hayati").val();
-
+                                               
                                              
                                                 var shortInfo = document.getElementById('dialogInfo');
-                                              
+                                                shortInfo.textContent = "";
                                                 shortInfo.textContent = hayati;
                                                 shortInfo.scrollTop = 0;
                                                 shortInfo.scrollIntoView();
