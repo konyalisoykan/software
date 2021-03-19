@@ -374,11 +374,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\skonyali\\source\\repos\\FirebaseEditor\\FirebaseEditor.csproj",
+      "projectUniqueName": "C:\\SoykanData\\repos\\yazilim\\software\\FirebaseEditor\\FirebaseEditor.csproj",
       "projectName": "FirebaseEditor",
-      "projectPath": "C:\\Users\\skonyali\\source\\repos\\FirebaseEditor\\FirebaseEditor.csproj",
+      "projectPath": "C:\\SoykanData\\repos\\yazilim\\software\\FirebaseEditor\\FirebaseEditor.csproj",
       "packagesPath": "C:\\Users\\skonyali\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\skonyali\\source\\repos\\FirebaseEditor\\obj\\",
+      "outputPath": "C:\\SoykanData\\repos\\yazilim\\software\\FirebaseEditor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",

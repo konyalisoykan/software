@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z32LDBVVIrYG1rqGJcp3tALjjMUVNgKhr3N1FgTE9yrfEkZipHKG3fZ+0ND9OnfdcwFUvqz4yq8GLSjZYwD58A==",
+  "dgSpecHash": "WEsxMKDvd9hbxqGBxsF7pk8PNS/t5gIPBtjr9jVGOO+4Zls/IAMdxr1Pldo+5tj1M8pGlQZaUb/EvmqfX1zhtQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\skonyali\\source\\repos\\FirebaseEditor\\FirebaseEditor.csproj",
+  "projectFilePath": "C:\\SoykanData\\repos\\yazilim\\software\\FirebaseEditor\\FirebaseEditor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\skonyali\\.nuget\\packages\\firesharp\\2.0.4\\firesharp.2.0.4.nupkg.sha512",
     "C:\\Users\\skonyali\\.nuget\\packages\\microsoft.bcl\\1.1.9\\microsoft.bcl.1.1.9.nupkg.sha512",

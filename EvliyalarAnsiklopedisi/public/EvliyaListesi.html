@@ -1098,7 +1098,7 @@
             var dialog = document.querySelector('dialog');
             var dialogmap =document.getElementById("mapDialog");
           //  var dialogmap= document.querySelector('dialog');
-            var query = firebase.database().ref("Evliyalar").orderByKey();
+            var query = firebase.database().ref("Evliyalar").orderByChild('Ilce');
             query.once("value")
                 .then(function (snapshot) {
                     snapshot.forEach(function (childSnapshot) {
@@ -1122,18 +1122,26 @@
 
                             divInfo.className = "section__text mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone";
 
-
-
-
-                            var title = document.createElement("h5");
+                            divInfo.style.borderWidth = '5px';
+                            divInfo.style.borderColor = '#cf7fab';
+                              var br = document.createElement("br");
+                            divInfo.appendChild(br);
+                            var title = document.createElement("h8");
+                            title.style.color = 'black';
+                            title.style.fontSize = '20px';
                             title.textContent = Ad;
                             divInfo.appendChild(title);
-
+                            var br = document.createElement("br");
+                            divInfo.appendChild(br);
+                            var br = document.createElement("br");
+                            divInfo.appendChild(br);
                             var shortInfo = document.createElement("div");
 
                             var tn1 = document.createTextNode("Doğum Tarihi :" + DT + " Vefat Tarihi :" + OT + "\n\r");
+                            var span = document.createElement('span');
+                            span.style.color = '#7f00ff';
                             var tn2 = document.createTextNode("Kabrinn bulunduğu ilçe :" + Ilce);
-
+                            span.appendChild(tn2);
                             var tn3 = document.createTextNode(Bilgi);
 
                             shortInfo.appendChild(tn1);
@@ -1141,12 +1149,13 @@
                             shortInfo.appendChild(br);
                             var br = document.createElement("br");
                             shortInfo.appendChild(br);
-                            shortInfo.appendChild(tn2);
+                            shortInfo.appendChild(span);
                             var br = document.createElement("br");
                             shortInfo.appendChild(br);
                             var br = document.createElement("br");
                             shortInfo.appendChild(br);
                             shortInfo.appendChild(tn3);
+
                             //   shortInfo.appendChild(satir1);
                             //   shortInfo.appendChild(satir2);
                             //   shortInfo.appendChild(satir3);
@@ -1201,7 +1210,7 @@
                             componentHandler.upgradeElement(button);
 
                             var button1 = document.createElement("buton");
-                            var textNode = document.createTextNode("Harita");
+                            var textNode = document.createTextNode("ZİYARET ET");
                             button1.appendChild(textNode);
                             button1.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
                             button1.id = 'show-map' + key;
@@ -1237,7 +1246,10 @@
 
                             divInfo.appendChild(button);
                             divInfo.appendChild(button1);
-
+                            var br = document.createElement("br");
+                            divInfo.appendChild(br);
+                            var br = document.createElement("br");
+                            divInfo.appendChild(br)
                             document.getElementById('EviliyaConteiner').appendChild(divInfo)
 
 
