@@ -1094,11 +1094,11 @@
             var urlParams = new URLSearchParams(window.location.search);
             var myParam = urlParams.get('Sehir')
             document.getElementById('EvliyaSehri').innerText = myParam + ' Evliyaları';
-
+           
             var dialog = document.querySelector('dialog');
             var dialogmap =document.getElementById("mapDialog");
-          //  var dialogmap= document.querySelector('dialog');
-            var query = firebase.database().ref("Evliyalar").orderByChild('Ilce');
+            //  var dialogmap= document.querySelector('dialog');
+            var query = firebase.database().ref("Evliyalar").orderByChild('Mevki')
             query.once("value")
                 .then(function (snapshot) {
                     snapshot.forEach(function (childSnapshot) {
@@ -1113,7 +1113,7 @@
                             var DT = childSnapshot.child("DT").val();
                             var OT = childSnapshot.child("OT").val();
 
-                            var Ilce = childSnapshot.child("Ilce").val();
+                            var Ilce = childSnapshot.child("Ilce").val() + "/" + childSnapshot.child("Mevki").val();
                           
                             var Bilgi = childSnapshot.child("Bilgi").val();
 
@@ -1140,7 +1140,7 @@
                             var tn1 = document.createTextNode("Doğum Tarihi :" + DT + " Vefat Tarihi :" + OT + "\n\r");
                             var span = document.createElement('span');
                             span.style.color = '#7f00ff';
-                            var tn2 = document.createTextNode("Kabrinn bulunduğu ilçe :" + Ilce);
+                            var tn2 = document.createTextNode("Mevki:" + Ilce);
                             span.appendChild(tn2);
                             var tn3 = document.createTextNode(Bilgi);
 
