@@ -262,38 +262,43 @@
                 <!--</section>-->
                 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
                     <div class="mdl-card mdl-cell mdl-cell--12-col">
-                        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing" id="EviliyaConteiner">
+                        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing" >
                             <h4 Id="EvliyaSehri" class="mdl-cell mdl-cell--12-col">Details</h4>
-                            <!--<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                            <div id="IlcelerDiv"></div>
+                          </div>
+                            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing" id="EviliyaConteiner">
+
+
+                                <!--<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                 <div class="section__circle-container__circle mdl-color--primary"></div>
             </div>
             <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                 <h5>Lorem ipsum dolor sit amet</h5>
                 Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
             </div>-->
-                            <!--<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                                <!--<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                 <div class="section__circle-container__circle mdl-color--primary"></div>
             </div>
             <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                 <h5>Lorem ipsum dolor sit amet</h5>
                 Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
             </div>-->
-                        </div>
-                        <!--<div class="mdl-card__actions">
+                            </div>
+                            <!--<div class="mdl-card__actions">
             <a href="#" class="mdl-button">Read our features</a>
         </div>-->
-                    </div>
-                    <!--<button class="mdl-button mdl-js-
+                        </div>
+                        <!--<button class="mdl-button mdl-js-
     Lorem ipsum dolor sit amet mdl-js-ripple-effect mdl-button--icon" id="btn2">
                           <i class="material-icons">more_vert</i>
                         </button>-->
-                    <!--<ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
+                        <!--<ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
       <li class="mdl-menu__item">Lorem</li>
       <li class="mdl-menu__item" disabled>Ipsum</li>
       <li class="mdl-menu__item">Dolor</li>
     </ul>-->
-                    <!--<p id="load">Firebase SDK Loading&hellip;</p>-->
-                </section>
+                        <!--<p id="load">Firebase SDK Loading&hellip;</p>-->
+</section>
 
                 <!--<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
                     <div class="mdl-card mdl-cell mdl-cell--12-col">
@@ -1085,6 +1090,8 @@
     <a href="index.html" target="_self" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">İl Seç</a>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script>
+        var ilceler = [];
+        var sehirAdi;
         document.addEventListener('DOMContentLoaded', function () {
             const loadEl = document.querySelector('#load');
             // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
@@ -1094,11 +1101,11 @@
             var urlParams = new URLSearchParams(window.location.search);
             var myParam = urlParams.get('Sehir')
             document.getElementById('EvliyaSehri').innerText = myParam + ' Evliyaları';
-           
+            sehirAdi = myParam;
             var dialog = document.querySelector('dialog');
             var dialogmap =document.getElementById("mapDialog");
             //  var dialogmap= document.querySelector('dialog');
-            var query = firebase.database().ref("Evliyalar").orderByChild('Mevki')
+            var query = firebase.database().ref("Evliyalar").orderByChild('Ilce')
             query.once("value")
                 .then(function (snapshot) {
                     snapshot.forEach(function (childSnapshot) {
@@ -1113,7 +1120,13 @@
                             var DT = childSnapshot.child("DT").val();
                             var OT = childSnapshot.child("OT").val();
 
-                            var Ilce = childSnapshot.child("Ilce").val() + "/" + childSnapshot.child("Mevki").val();
+                            var ilce = childSnapshot.child("Ilce").val();
+                            var mevki = ilce + "/" + childSnapshot.child("Mevki").val();
+                            if (ilceler.includes(ilce) == false) {
+                                ilceler.push(ilce);
+                               
+                            }
+                           
                           
                             var Bilgi = childSnapshot.child("Bilgi").val();
 
@@ -1140,7 +1153,7 @@
                             var tn1 = document.createTextNode("Doğum Tarihi :" + DT + " Vefat Tarihi :" + OT + "\n\r");
                             var span = document.createElement('span');
                             span.style.color = '#7f00ff';
-                            var tn2 = document.createTextNode("Mevki:" + Ilce);
+                            var tn2 = document.createTextNode("Mevki:" + mevki);
                             span.appendChild(tn2);
                             var tn3 = document.createTextNode(Bilgi);
 
@@ -1258,8 +1271,9 @@
 
                         }
                     });
+                    ilceButonlariUret();
                 });
-
+           
             // firebase.firestore().doc('/foo/bar').get().then(() => { });
             // firebase.functions().httpsCallable('yourFunction')().then(() => { });
             // firebase.messaging().requestPermission().then(() => { });
@@ -1308,6 +1322,203 @@
         function decode_utf8(s) {
             return decodeURIComponent(escape(s));
         }
+        function IlceyeGoereDoldur(IlceAdi) {
+           
+            document.getElementById('EviliyaConteiner').innerHTML ="";
+            var query = firebase.database().ref("Evliyalar").orderByChild('Ilce')
+            query.once("value")
+                .then(function (snapshot) {
+                    snapshot.forEach(function (childSnapshot) {
+                       
+
+                        var MySehir = childSnapshot.child("Sehir").val();
+                        var ilce = childSnapshot.child("Ilce").val();
+                       
+                        if (sehirAdi == MySehir) {
+                          
+                            if (ilce.toLowerCase() == IlceAdi.toLowerCase()) {
+                               
+                            var key = childSnapshot.key; // "ada"
+                            var Ad = childSnapshot.child("Ad").val();
+                            var DT = childSnapshot.child("DT").val();
+                            var OT = childSnapshot.child("OT").val();
+
+
+                            var mevki = ilce + "/" + childSnapshot.child("Mevki").val();
+                            if (ilceler.includes(ilce) == false) {
+                                ilceler.push(ilce);
+
+                            }
+
+
+                            var Bilgi = childSnapshot.child("Bilgi").val();
+
+                            //  document.getElementById('EviliyaConteiner').appendChild(button)
+                            var divInfo = document.createElement("div");
+
+                            divInfo.className = "section__text mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone";
+
+                            divInfo.style.borderWidth = '5px';
+                            divInfo.style.borderColor = '#cf7fab';
+                            var br = document.createElement("br");
+                            divInfo.appendChild(br);
+                            var title = document.createElement("h8");
+                            title.style.color = 'black';
+                            title.style.fontSize = '20px';
+                            title.textContent = Ad;
+                            divInfo.appendChild(title);
+                            var br = document.createElement("br");
+                            divInfo.appendChild(br);
+                            var br = document.createElement("br");
+                            divInfo.appendChild(br);
+                            var shortInfo = document.createElement("div");
+
+                            var tn1 = document.createTextNode("Doğum Tarihi :" + DT + " Vefat Tarihi :" + OT + "\n\r");
+                            var span = document.createElement('span');
+                            span.style.color = '#7f00ff';
+                            var tn2 = document.createTextNode("Mevki:" + mevki);
+                            span.appendChild(tn2);
+                            var tn3 = document.createTextNode(Bilgi);
+
+                            shortInfo.appendChild(tn1);
+                            var br = document.createElement("br");
+                            shortInfo.appendChild(br);
+                            var br = document.createElement("br");
+                            shortInfo.appendChild(br);
+                            shortInfo.appendChild(span);
+                            var br = document.createElement("br");
+                            shortInfo.appendChild(br);
+                            var br = document.createElement("br");
+                            shortInfo.appendChild(br);
+                            shortInfo.appendChild(tn3);
+
+                            //   shortInfo.appendChild(satir1);
+                            //   shortInfo.appendChild(satir2);
+                            //   shortInfo.appendChild(satir3);
+                            //  shortInfo.innerHTML =_info;
+
+                            divInfo.appendChild(shortInfo);
+
+
+                            var button = document.createElement("buton");
+                            var textNode = document.createTextNode("Detay");
+                            button.appendChild(textNode);
+                            button.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
+                            button.id = 'show-dialog' + key;
+
+                            button.addEventListener("click", function () {
+                                var query = firebase.database().ref("Detaylar").orderByKey();
+                                query.once("value")
+                                    .then(function (snapshot) {
+                                        snapshot.forEach(function (childSnapshot) {
+                                            var key = childSnapshot.key;
+
+                                            if (button.id == "show-dialog" + key) {
+                                                var baslik = childSnapshot.child("Baslik").val();
+                                                var hayati = childSnapshot.child("Hayati").val();
+
+
+                                                var shortInfo = document.getElementById('dialogInfo');
+                                                shortInfo.textContent = "";
+                                                shortInfo.textContent = hayati;
+                                                shortInfo.scrollTop = 0;
+                                                shortInfo.scrollIntoView();
+                                            };
+
+                                        })
+                                    });
+                                dialog.showModal();
+
+                                //var showDialogButton = document.querySelector('#show-dialog' + key);
+
+                                //showDialogButton.addEventListener('click', function () {
+
+
+
+                                //});
+                                dialog.querySelector('.close').addEventListener('click', function () {
+                                    dialog.close();
+                                });;
+
+                            });
+
+
+                            componentHandler.upgradeElement(button);
+
+                            var button1 = document.createElement("buton");
+                            var textNode = document.createTextNode("ZİYARET ET");
+                            button1.appendChild(textNode);
+                            button1.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
+                            button1.id = 'show-map' + key;
+                            componentHandler.upgradeElement(button1);
+                            button1.addEventListener("click", function () {
+
+                                document.getElementById('gmap_canvas').src = "";
+                                var query = firebase.database().ref("Detaylar").orderByKey();
+                                query.once("value")
+                                    .then(function (snapshot) {
+                                        snapshot.forEach(function (childSnapshot) {
+                                            var key = childSnapshot.key;
+
+                                            if (button1.id == "show-map" + key) {
+                                                var harita = childSnapshot.child("Harita").val();
+                                                document.getElementById('gmap_canvas').src = harita;
+
+
+
+
+                                            };
+
+                                        })
+                                    });
+                                dialogmap.showModal();
+
+
+                                dialogmap.querySelector('.close').addEventListener('click', function () {
+                                    dialogmap.close();
+                                });;
+
+                            });
+
+                            divInfo.appendChild(button);
+                            divInfo.appendChild(button1);
+                            var br = document.createElement("br");
+                            divInfo.appendChild(br);
+                            var br = document.createElement("br");
+                            divInfo.appendChild(br)
+                            document.getElementById('EviliyaConteiner').appendChild(divInfo)
+
+
+
+                        }
+
+                        }
+                    });
+                    
+                });
+        }
+        function ilceButonlariUret() {
+          
+            var i;
+           
+            for (i = 0; i < ilceler.length; i++) {
+                var text = ilceler[i];
+                
+                var button = document.createElement("buton");
+                var textNode = document.createTextNode(text);
+                button.appendChild(textNode);
+                var text = ilceler[i];
+                button.id = text;
+                button.addEventListener("click", function () {
+                   
+                    IlceyeGoereDoldur(button.id);
+                });
+                button.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
+                document.getElementById('IlcelerDiv').appendChild(button)
+            }
+            
+        }
+
     </script>
     <script>
         var dialog = document.querySelector('dialog');
