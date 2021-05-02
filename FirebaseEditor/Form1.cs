@@ -49,6 +49,7 @@ namespace FirebaseEditor
             public string OT { get; set; }
             public string Sehir { get; set; }
             public string Ilce { get; set; }
+            public string Mevki { get; set; }
             public string Bilgi { get; set; }
          
         }
@@ -70,6 +71,7 @@ namespace FirebaseEditor
                 OT = Ot.Text,
                 Sehir = Sehir.Text,
                 Ilce = Ilce.Text,
+                Mevki = Mevki.Text,
                 Bilgi = Bilgi.Text
               
             };

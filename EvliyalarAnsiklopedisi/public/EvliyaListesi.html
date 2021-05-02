@@ -43,6 +43,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
     <link rel="stylesheet" href="styles.css">
+
+  
+
+
+
     <style>
         #dialogInfo {
             /* max-width: 11920px;
@@ -147,11 +152,12 @@
             margin: 0 30px 0px;
         }
 
-            #message p {
-                line-height: 140%;
-                margin: 16px 0 24px;
-                font-size: 14px;
-            }
+        #message p {
+            line-height: 140%;
+            margin: 16px 0 24px;
+            font-size: 14px;
+        }
+
         .wrapper {
             text-align: center;
         }
@@ -168,11 +174,13 @@
     <script defer src="/__/firebase/8.2.6/firebase-analytics.js"></script>
     <script defer src="/__/firebase/8.2.6/firebase-remote-config.js"></script>
     <script defer src="/__/firebase/8.2.6/firebase-performance.js"-->
-      <!--
+    <!--
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+   
+  
 </head>
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
 
@@ -261,11 +269,12 @@
                 </ul>-->
                 <!--</section>-->
                 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-                    <div class="mdl-card mdl-cell mdl-cell--12-col">
-                        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing" >
+                    <div  class="mdl-card mdl-cell mdl-cell--12-col">
+                        <div style="border-width:5px; border-color:#cf7fab" class="section__text mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone" ;">
                             <h4 Id="EvliyaSehri" class="mdl-cell mdl-cell--12-col">Details</h4>
                             <div id="IlcelerDiv"></div>
-                          </div>
+                          
+                        </div>
                             <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing" id="EviliyaConteiner">
 
 
@@ -1105,7 +1114,9 @@
             var dialog = document.querySelector('dialog');
             var dialogmap =document.getElementById("mapDialog");
             //  var dialogmap= document.querySelector('dialog');
-            var query = firebase.database().ref("Evliyalar").orderByChild('Ilce')
+           var query = firebase.database().ref("Evliyalar").orderByChild('Ilce').where("Sehir", "==", "İstanbul")
+         //   var query = firebase.database().ref("Evliyalar").orderByChild('Ilce')
+
             query.once("value")
                 .then(function (snapshot) {
                     snapshot.forEach(function (childSnapshot) {
@@ -1113,7 +1124,8 @@
 
                         var MySehir = childSnapshot.child("Sehir").val();
 
-                        if (myParam == MySehir) {
+                        if (myParam == MySehir)
+                        {
 
                             var key = childSnapshot.key; // "ada"
                             var Ad = childSnapshot.child("Ad").val();
@@ -1323,9 +1335,12 @@
             return decodeURIComponent(escape(s));
         }
         function IlceyeGoereDoldur(IlceAdi) {
+         
+            var dialog = document.querySelector('dialog');
+            var dialogmap = document.getElementById("mapDialog");
            
             document.getElementById('EviliyaConteiner').innerHTML ="";
-            var query = firebase.database().ref("Evliyalar").orderByChild('Ilce')
+            var query = firebase.database().ref("Evliyalar")  .orderByChild('Ilce')
             query.once("value")
                 .then(function (snapshot) {
                     snapshot.forEach(function (childSnapshot) {
@@ -1337,7 +1352,7 @@
                         if (sehirAdi == MySehir) {
                           
                             if (ilce.toLowerCase() == IlceAdi.toLowerCase()) {
-                               
+                             
                             var key = childSnapshot.key; // "ada"
                             var Ad = childSnapshot.child("Ad").val();
                             var DT = childSnapshot.child("DT").val();
@@ -1450,17 +1465,21 @@
                             button1.appendChild(textNode);
                             button1.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
                             button1.id = 'show-map' + key;
-                            componentHandler.upgradeElement(button1);
+                                
+                        //    componentHandler.upgradeElement(button1);
                             button1.addEventListener("click", function () {
 
-                                document.getElementById('gmap_canvas').src = "";
+                                var ButtonId = this.id;
+                              
+                               // document.getElementById('gmap_canvas').src = "";
                                 var query = firebase.database().ref("Detaylar").orderByKey();
                                 query.once("value")
                                     .then(function (snapshot) {
                                         snapshot.forEach(function (childSnapshot) {
                                             var key = childSnapshot.key;
-
-                                            if (button1.id == "show-map" + key) {
+                                        
+                                            if (ButtonId == "show-map" + key) {
+                                              
                                                 var harita = childSnapshot.child("Harita").val();
                                                 document.getElementById('gmap_canvas').src = harita;
 
@@ -1495,25 +1514,30 @@
                         }
                     });
                     
-                });
+                })
+
+        
         }
         function ilceButonlariUret() {
+
           
             var i;
            
             for (i = 0; i < ilceler.length; i++) {
                 var text = ilceler[i];
-                
+              
                 var button = document.createElement("buton");
                 var textNode = document.createTextNode(text);
                 button.appendChild(textNode);
                 var text = ilceler[i];
                 button.id = text;
-                button.addEventListener("click", function () {
-                   
-                    IlceyeGoereDoldur(button.id);
-                });
                 button.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
+                button.addEventListener("click", function () {
+
+                  
+                    IlceyeGoereDoldur(this.id);
+                });
+                
                 document.getElementById('IlcelerDiv').appendChild(button)
             }
             

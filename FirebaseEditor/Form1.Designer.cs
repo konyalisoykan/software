@@ -50,6 +50,7 @@ namespace FirebaseEditor
             this.Sehir = new System.Windows.Forms.TextBox();
             this.Ilce = new System.Windows.Forms.TextBox();
             this.HaritaTextbox = new System.Windows.Forms.TextBox();
+            this.Mevki = new System.Windows.Forms.TextBox();
             HaritaGuncelle = new System.Windows.Forms.Button();
             DetayGuncelle = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -120,11 +121,11 @@ namespace FirebaseEditor
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(90, 304);
+            this.label5.Location = new System.Drawing.Point(19, 297);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 62);
+            this.label5.Size = new System.Drawing.Size(240, 62);
             this.label5.TabIndex = 4;
-            this.label5.Text = "İlçe";
+            this.label5.Text = "İlçe/Mevki";
             // 
             // label6
             // 
@@ -236,9 +237,9 @@ namespace FirebaseEditor
             // Ilce
             // 
             this.Ilce.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Ilce.Location = new System.Drawing.Point(211, 295);
+            this.Ilce.Location = new System.Drawing.Point(265, 295);
             this.Ilce.Name = "Ilce";
-            this.Ilce.Size = new System.Drawing.Size(667, 57);
+            this.Ilce.Size = new System.Drawing.Size(300, 57);
             this.Ilce.TabIndex = 24;
             // 
             // HaritaTextbox
@@ -249,11 +250,20 @@ namespace FirebaseEditor
             this.HaritaTextbox.Size = new System.Drawing.Size(1242, 57);
             this.HaritaTextbox.TabIndex = 25;
             // 
+            // Mevki
+            // 
+            this.Mevki.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Mevki.Location = new System.Drawing.Point(584, 295);
+            this.Mevki.Name = "Mevki";
+            this.Mevki.Size = new System.Drawing.Size(300, 57);
+            this.Mevki.TabIndex = 26;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1518, 722);
+            this.Controls.Add(this.Mevki);
             this.Controls.Add(this.HaritaTextbox);
             this.Controls.Add(this.Ilce);
             this.Controls.Add(this.Sehir);
@@ -304,6 +314,7 @@ namespace FirebaseEditor
         private System.Windows.Forms.TextBox Sehir;
         private System.Windows.Forms.TextBox Ilce;
         private System.Windows.Forms.TextBox HaritaTextbox;
+        private System.Windows.Forms.TextBox Mevki;
     }
 }
 
