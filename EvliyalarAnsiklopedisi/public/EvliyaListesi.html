@@ -1114,19 +1114,20 @@
             var dialog = document.querySelector('dialog');
             var dialogmap =document.getElementById("mapDialog");
             //  var dialogmap= document.querySelector('dialog');
-           var query = firebase.database().ref("Evliyalar").orderByChild('Ilce').where("Sehir", "==", "İstanbul")
-         //   var query = firebase.database().ref("Evliyalar").orderByChild('Ilce')
+          //  var query = firebase.database().ref("Evliyalar").orderByChild('Ilce').startAt('Ankara').endAt('Ankara')
+            var query = firebase.database().ref("Evliyalar").orderByChild('Ilce')
 
             query.once("value")
                 .then(function (snapshot) {
+                  
                     snapshot.forEach(function (childSnapshot) {
-
-
+                       
                         var MySehir = childSnapshot.child("Sehir").val();
-
+                       
                         if (myParam == MySehir)
                         {
 
+                           
                             var key = childSnapshot.key; // "ada"
                             var Ad = childSnapshot.child("Ad").val();
                             var DT = childSnapshot.child("DT").val();

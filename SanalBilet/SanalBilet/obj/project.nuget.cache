@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0dZ7xDPTuWQ7s6+rkADZun+zz+zxvl9ueyuB2RRDEpqFzt/CgOd38bcEwCWfB/klQRJsnNO/E5cj2EUV83AZ3w==",
+  "dgSpecHash": "ovvahjU0vXKKm6hyU+J/jtQfB5O6yUfNHmG8kFQS+rWO4GcIui1VREeRzVLmClLAyiBRPQdlGrdLFcAZ8yJJ+A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\skonyali\\source\\repos\\SanalBilet\\SanalBilet\\SanalBilet.csproj",
+  "projectFilePath": "C:\\SoykanData\\repos\\yazilim\\software\\SanalBilet\\SanalBilet\\SanalBilet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\skonyali\\.nuget\\packages\\microsoft.aspnet.signalr.utils\\2.4.1\\microsoft.aspnet.signalr.utils.2.4.1.nupkg.sha512",
     "C:\\Users\\skonyali\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\5.0.1\\microsoft.aspnetcore.connections.abstractions.5.0.1.nupkg.sha512",

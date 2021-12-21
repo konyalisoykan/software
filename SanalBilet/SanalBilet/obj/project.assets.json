@@ -556,20 +556,20 @@
   },
   "packageFolders": {
     "C:\\Users\\skonyali\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\skonyali\\source\\repos\\SanalBilet\\SanalBilet\\SanalBilet.csproj",
+      "projectUniqueName": "C:\\SoykanData\\repos\\yazilim\\software\\SanalBilet\\SanalBilet\\SanalBilet.csproj",
       "projectName": "SanalBilet",
-      "projectPath": "C:\\Users\\skonyali\\source\\repos\\SanalBilet\\SanalBilet\\SanalBilet.csproj",
+      "projectPath": "C:\\SoykanData\\repos\\yazilim\\software\\SanalBilet\\SanalBilet\\SanalBilet.csproj",
       "packagesPath": "C:\\Users\\skonyali\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\skonyali\\source\\repos\\SanalBilet\\SanalBilet\\obj\\",
+      "outputPath": "C:\\SoykanData\\repos\\yazilim\\software\\SanalBilet\\SanalBilet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
@@ -627,7 +627,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

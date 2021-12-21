@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="iso-8859-9">
-     <meta name="keywords" content="ehli sünnet,evliya, evliyalar ansiklopedisi,evliya rehberi,evliyalar rehberi,evliyalar ansiklopedisi,evliyalar rehberi,Hazreti Muhammed,Hazreti Muhammedin hayatı," />
+     <meta name="keywords" content="ehli sünnet,evliya, evliyalar ansiklopedisi,evliya rehberi,evliyalar rehberi,evliyalar ansiklopedisi,evliyalar rehberi,Hazreti Muhammed,Hazreti Muhammedin hayatı,">
     <title>Evliyalar Ansiklopedisi</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -39,8 +39,8 @@
             $("#Devam").click(
                 function () {
                     var id = $("#sehir").text();
-                    id = id[0].toLocaleUpperCase() + id.slice(1);
-
+                   // id = id[0].toLocaleUpperCase() + id.slice(1);
+                   
                     window.location = "EvliyaListesi.html?Sehir=" + id;
                 });
         })
