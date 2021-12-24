@@ -38,7 +38,6 @@ C:\SoykanData\repos\yazilim\software\FirebaseEditor\bin\Debug\net5.0-windows\Mic
 C:\SoykanData\repos\yazilim\software\FirebaseEditor\bin\Debug\net5.0-windows\System.Net.Http.Extensions.dll
 C:\SoykanData\repos\yazilim\software\FirebaseEditor\bin\Debug\net5.0-windows\System.Net.Http.Primitives.dll
 C:\SoykanData\repos\yazilim\software\FirebaseEditor\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
-C:\SoykanData\repos\yazilim\software\FirebaseEditor\obj\Debug\net5.0-windows\FirebaseEditor.csprojAssemblyReference.cache
 C:\SoykanData\repos\yazilim\software\FirebaseEditor\obj\Debug\net5.0-windows\FirebaseEditor.Form1.resources
 C:\SoykanData\repos\yazilim\software\FirebaseEditor\obj\Debug\net5.0-windows\FirebaseEditor.csproj.GenerateResource.cache
 C:\SoykanData\repos\yazilim\software\FirebaseEditor\obj\Debug\net5.0-windows\FirebaseEditor.GeneratedMSBuildEditorConfig.editorconfig
@@ -50,3 +49,4 @@ C:\SoykanData\repos\yazilim\software\FirebaseEditor\obj\Debug\net5.0-windows\Fir
 C:\SoykanData\repos\yazilim\software\FirebaseEditor\obj\Debug\net5.0-windows\ref\FirebaseEditor.dll
 C:\SoykanData\repos\yazilim\software\FirebaseEditor\obj\Debug\net5.0-windows\FirebaseEditor.pdb
 C:\SoykanData\repos\yazilim\software\FirebaseEditor\obj\Debug\net5.0-windows\FirebaseEditor.genruntimeconfig.cache
+C:\SoykanData\repos\yazilim\software\FirebaseEditor\obj\Debug\net5.0-windows\FirebaseEditor.csproj.AssemblyReference.cache

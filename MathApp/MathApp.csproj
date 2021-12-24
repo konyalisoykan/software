@@ -52,17 +52,80 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsimtodForn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsimtodForn.Designer.cs">
+      <DependentUpon>AsimtodForn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BirimCemberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BirimCemberForm.Designer.cs">
+      <DependentUpon>BirimCemberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BirinciDereceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BirinciDereceForm.Designer.cs">
+      <DependentUpon>BirinciDereceForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cizim.cs" />
+    <Compile Include="EsaysiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EsaysiForm.Designer.cs">
+      <DependentUpon>EsaysiForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="IntegralForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntegralForm.Designer.cs">
+      <DependentUpon>IntegralForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SinusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinusForm.Designer.cs">
+      <DependentUpon>SinusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TurevFırm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TurevFırm.Designer.cs">
+      <DependentUpon>TurevFırm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İkinciDereceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İkinciDereceForm.Designer.cs">
+      <DependentUpon>İkinciDereceForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AsimtodForn.resx">
+      <DependentUpon>AsimtodForn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BirimCemberForm.resx">
+      <DependentUpon>BirimCemberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BirinciDereceForm.resx">
+      <DependentUpon>BirinciDereceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EsaysiForm.resx">
+      <DependentUpon>EsaysiForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntegralForm.resx">
+      <DependentUpon>IntegralForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -73,6 +136,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SinusForm.resx">
+      <DependentUpon>SinusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TurevFırm.resx">
+      <DependentUpon>TurevFırm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İkinciDereceForm.resx">
+      <DependentUpon>İkinciDereceForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
