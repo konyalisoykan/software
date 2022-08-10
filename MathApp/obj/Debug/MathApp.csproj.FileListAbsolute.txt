@@ -25,10 +25,10 @@ C:\SoykanData\repos\yazilim\software\MathApp\obj\Debug\MathApp.exe
 C:\SoykanData\repos\yazilim\software\MathApp\obj\Debug\MathApp.pdb
 C:\SoykanData\repos\yazilim\software\MathApp\obj\Debug\MathApp.BirinciDereceForm.resources
 C:\SoykanData\repos\yazilim\software\MathApp\obj\Debug\MathApp.İkinciDereceForm.resources
-C:\SoykanData\repos\yazilim\software\MathApp\obj\Debug\MathApp.csproj.AssemblyReference.cache
 C:\SoykanData\repos\yazilim\software\MathApp\obj\Debug\MathApp.AsimtodForn.resources
 C:\SoykanData\repos\yazilim\software\MathApp\obj\Debug\MathApp.BirimCemberForm.resources
 C:\SoykanData\repos\yazilim\software\MathApp\obj\Debug\MathApp.SinusForm.resources
 C:\SoykanData\repos\yazilim\software\MathApp\obj\Debug\MathApp.TurevFırm.resources
 C:\SoykanData\repos\yazilim\software\MathApp\obj\Debug\MathApp.IntegralForm.resources
 C:\SoykanData\repos\yazilim\software\MathApp\obj\Debug\MathApp.EsaysiForm.resources
+C:\SoykanData\repos\yazilim\software\MathApp\obj\Debug\MathApp.csprojAssemblyReference.cache
