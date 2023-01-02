@@ -1,0 +1,15 @@
+C:\Users\skonyali\source\repos\BackendApps\BackendApps\bin\Debug\net7.0\BackendApps.exe
+C:\Users\skonyali\source\repos\BackendApps\BackendApps\bin\Debug\net7.0\BackendApps.deps.json
+C:\Users\skonyali\source\repos\BackendApps\BackendApps\bin\Debug\net7.0\BackendApps.runtimeconfig.json
+C:\Users\skonyali\source\repos\BackendApps\BackendApps\bin\Debug\net7.0\BackendApps.dll
+C:\Users\skonyali\source\repos\BackendApps\BackendApps\bin\Debug\net7.0\BackendApps.pdb
+C:\Users\skonyali\source\repos\BackendApps\BackendApps\obj\Debug\net7.0\BackendApps.csproj.AssemblyReference.cache
+C:\Users\skonyali\source\repos\BackendApps\BackendApps\obj\Debug\net7.0\BackendApps.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\skonyali\source\repos\BackendApps\BackendApps\obj\Debug\net7.0\BackendApps.AssemblyInfoInputs.cache
+C:\Users\skonyali\source\repos\BackendApps\BackendApps\obj\Debug\net7.0\BackendApps.AssemblyInfo.cs
+C:\Users\skonyali\source\repos\BackendApps\BackendApps\obj\Debug\net7.0\BackendApps.csproj.CoreCompileInputs.cache
+C:\Users\skonyali\source\repos\BackendApps\BackendApps\obj\Debug\net7.0\BackendApps.dll
+C:\Users\skonyali\source\repos\BackendApps\BackendApps\obj\Debug\net7.0\refint\BackendApps.dll
+C:\Users\skonyali\source\repos\BackendApps\BackendApps\obj\Debug\net7.0\BackendApps.pdb
+C:\Users\skonyali\source\repos\BackendApps\BackendApps\obj\Debug\net7.0\BackendApps.genruntimeconfig.cache
+C:\Users\skonyali\source\repos\BackendApps\BackendApps\obj\Debug\net7.0\ref\BackendApps.dll
