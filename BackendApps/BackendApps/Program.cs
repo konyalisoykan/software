@@ -20,7 +20,7 @@ namespace BackendApps
             Customer customer2 =(Customer) customer1.Clone();
             customer2.FirstName = "Soykan";
             Console.WriteLine("Customer1 fitsyname {0}", customer1.FirstName);
-            Console.WriteLine("Customer2 fitsyname {0}", customer2.FirstName);
+            Console.WriteLine("Customer2 FirstName {0}", customer2.FirstName);
             Console.ReadLine();
         }
     }
