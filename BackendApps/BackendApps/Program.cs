@@ -1,5 +1,6 @@
 ﻿using BackendApps.DesignPaterns.AbstractFactory;
 using BackendApps.DesignPaterns.Builder;
+using BackendApps.DesignPaterns.Decarotor;
 using BackendApps.DesignPaterns.Factory;
 using BackendApps.DesignPaterns.Fecade;
 using BackendApps.DesignPaterns.Prototype;
@@ -63,6 +64,12 @@ namespace BackendApps
             CreditManagerProxy _proxu = new CreditManagerProxy();
             Console.WriteLine(_proxu.Calculate());
             Console.WriteLine(_proxu.Calculate());
+
+            PersonalCar _personalCar = new PersonalCar { Make = "Opel", HirePrice = 2500, Model = "Astra" };
+            SpecialOffer _specialCar = new SpecialOffer(_personalCar);
+            _specialCar.DiscountPercentage = 10;
+            Console.WriteLine(_personalCar.HirePrice);
+            Console.WriteLine(_specialCar.HirePrice);
             Console.ReadLine();
         }
     }
