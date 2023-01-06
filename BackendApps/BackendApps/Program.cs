@@ -1,7 +1,9 @@
 ﻿using BackendApps.DesignPaterns.AbstractFactory;
 using BackendApps.DesignPaterns.Builder;
 using BackendApps.DesignPaterns.Factory;
+using BackendApps.DesignPaterns.Fecade;
 using BackendApps.DesignPaterns.Prototype;
+using BackendApps.DesignPaterns.Proxy;
 using BackendApps.DesignPaterns.Singleton;
 using static BackendApps.DesignPaterns.AbstractFactory.Factory2;
 
@@ -32,8 +34,35 @@ namespace BackendApps
             _diractor.GenerateProduct(builder2);
             var model2 = builder2.GetModel();
             Console.WriteLine("yeni müsteri için Name {0} normal fiuat {1} indirimli fiyat {2}", model2.Name, model2.UnitPrice, model2.DiscountedPrice);
+            BackendApps.DesignPaterns.Fecade.CıstomerManager cm = new CıstomerManager();
+            cm.Save();
+            BackendApps.DesignPaterns.Adapter.ProductManager _pd = new DesignPaterns.Adapter.ProductManager(new DesignPaterns.Adapter.Logger1()); ;
+            _pd.Save();
+            // Loglama aracını değiştirmek istersek adapterü kullanıyoruz
+            BackendApps.DesignPaterns.Adapter.ProductManager _pd2 = new DesignPaterns.Adapter.ProductManager(new DesignPaterns.Adapter.Log4NetAdaoter()); ;
+            _pd2.Save();
+            // hşyarerşik yapılarda kullanılan bir teknik
+            BackendApps.DesignPaterns.Composite.Employee soykan = new DesignPaterns.Composite.Employee { Name = "Soykan" };
+            BackendApps.DesignPaterns.Composite.Employee hatice = new DesignPaterns.Composite.Employee { Name = "Hatice" };
+            BackendApps.DesignPaterns.Composite.Employee elif = new DesignPaterns.Composite.Employee { Name = "Elif" };
+            soykan.AddSubIrdinate(hatice);
+            hatice.AddSubIrdinate(elif);
+            
+           Console.WriteLine(soykan.Name);
 
-
+            foreach (BackendApps.DesignPaterns.Composite.Employee emp in soykan)
+            {
+                Console.WriteLine(emp.Name);
+              
+                foreach (BackendApps.DesignPaterns.Composite.Employee subemp in hatice)
+                {
+                    Console.WriteLine(subemp.Name);
+                }
+            }
+            //2. calculate fonksiyonunda bekleme olmayacak
+            CreditManagerProxy _proxu = new CreditManagerProxy();
+            Console.WriteLine(_proxu.Calculate());
+            Console.WriteLine(_proxu.Calculate());
             Console.ReadLine();
         }
     }

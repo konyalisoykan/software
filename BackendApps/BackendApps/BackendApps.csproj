@@ -13,8 +13,4 @@
     <None Remove="DesignPaterns\AbstractFactory - Copy\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DesignPaterns\Fecade\" />
-  </ItemGroup>
-
 </Project>
