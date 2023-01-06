@@ -65,6 +65,7 @@ namespace BackendApps
             Console.WriteLine(_proxu.Calculate());
             Console.WriteLine(_proxu.Calculate());
 
+            //
             PersonalCar _personalCar = new PersonalCar { Make = "Opel", HirePrice = 2500, Model = "Astra" };
             SpecialOffer _specialCar = new SpecialOffer(_personalCar);
             _specialCar.DiscountPercentage = 10;
