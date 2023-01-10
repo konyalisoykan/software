@@ -1,9 +1,11 @@
 ﻿using BackendApps.DesignPaterns.AbstractFactory;
 using BackendApps.DesignPaterns.Bridge;
 using BackendApps.DesignPaterns.Builder;
+using BackendApps.DesignPaterns.ChainOfResponsibilty;
 using BackendApps.DesignPaterns.Decarotor;
 using BackendApps.DesignPaterns.Factory;
 using BackendApps.DesignPaterns.Fecade;
+using BackendApps.DesignPaterns.Memento;
 using BackendApps.DesignPaterns.Prototype;
 using BackendApps.DesignPaterns.Proxy;
 using BackendApps.DesignPaterns.Singleton;
@@ -24,7 +26,7 @@ namespace BackendApps
             ProductManager _productManager = new ProductManager(new Factory2());
             _productManager.GetAll();
             Customer customer1 = new Customer { FirstName = "Ali", LastName = "Veli", City = "ist" };
-            Customer customer2 =(Customer) customer1.Clone();
+            Customer customer2 = (Customer)customer1.Clone();
             customer2.FirstName = "Soykan";
             Console.WriteLine("Customer1 fitsyname {0}", customer1.FirstName);
             Console.WriteLine("Customer2 FirstName {0}", customer2.FirstName);
@@ -51,13 +53,13 @@ namespace BackendApps
             BackendApps.DesignPaterns.Composite.Employee elif = new DesignPaterns.Composite.Employee { Name = "Elif" };
             soykan.AddSubIrdinate(hatice);
             hatice.AddSubIrdinate(elif);
-            
-           Console.WriteLine(soykan.Name);
+
+            Console.WriteLine(soykan.Name);
 
             foreach (BackendApps.DesignPaterns.Composite.Employee emp in soykan)
             {
                 Console.WriteLine(emp.Name);
-              
+
                 foreach (BackendApps.DesignPaterns.Composite.Employee subemp in hatice)
                 {
                     Console.WriteLine(subemp.Name);
@@ -81,7 +83,7 @@ namespace BackendApps
             _customerMAnager.MessageMSenderBase = new SmsSender();
             _customerMAnager.Update();
 
-            BackendApps.DesignPaterns.Strategy.CustomerManager _customerMAneger=new DesignPaterns.Strategy.CustomerManager ();
+            BackendApps.DesignPaterns.Strategy.CustomerManager _customerMAneger = new DesignPaterns.Strategy.CustomerManager();
             _customerMAneger.CredştCalculateBase = new After2000Calculate();
             _customerMAneger.SaveCredit();
             _customerMAneger.CredştCalculateBase = new Brfore2000Calculate();
@@ -94,6 +96,29 @@ namespace BackendApps
             _observer.UpdatePrice();
             _observer.Detach(custObserver);
             _observer.UpdatePrice();
+            BackendApps.DesignPaterns.ChainOfResponsibilty.Manager _manager = new DesignPaterns.ChainOfResponsibilty.Manager();
+            VisePresident _visePresident = new VisePresident();
+            VisePresident _president = new VisePresident();
+
+            _manager.SetSuccessor(_visePresident);
+            _visePresident.SetSuccessor(_president);
+            Expeense _expense = new Expeense { Detail = "Eğitim", Amount = 125 };
+            _manager.HandleExpense(_expense);
+            Book _book = new Book
+            {
+                Isbn = "1234",
+                LastEdited = DateTime.Now,
+                Title = "Csharp",
+                Author = "Soykan"
+            };
+            _book.showBook();
+            CareTaker _history = new CareTaker();
+            _history.Memento = _book.CreateUndı();
+            _book.Isbn = "00000";
+            _book.Author="Nur";
+            _book.showBook();
+            _book.RestoreFromUndo(_history.Memento);
+            _book.showBook();
             Console.ReadLine();
         }
     }

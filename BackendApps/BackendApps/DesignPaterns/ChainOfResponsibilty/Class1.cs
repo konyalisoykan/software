@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BackendApps.DesignPaterns.ChainOfResponsibilty
 {
-    class Expeense
+    public  class Expeense
     {
         public string Detail { get; set; }
         public decimal Amount { get; set; }
@@ -56,7 +56,7 @@ namespace BackendApps.DesignPaterns.ChainOfResponsibilty
         {
             if (Expeense.Amount > 1000)
             {
-                Console.WriteLine("başkan yardımcısı   onylayabilir");
+                Console.WriteLine("başkan    onylayabilir");
             }
            
         }
