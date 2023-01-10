@@ -1,4 +1,5 @@
 ﻿using BackendApps.DesignPaterns.AbstractFactory;
+using BackendApps.DesignPaterns.Bridge;
 using BackendApps.DesignPaterns.Builder;
 using BackendApps.DesignPaterns.Decarotor;
 using BackendApps.DesignPaterns.Factory;
@@ -6,6 +7,8 @@ using BackendApps.DesignPaterns.Fecade;
 using BackendApps.DesignPaterns.Prototype;
 using BackendApps.DesignPaterns.Proxy;
 using BackendApps.DesignPaterns.Singleton;
+using BackendApps.DesignPaterns.Strategy;
+using System.Runtime.InteropServices;
 using static BackendApps.DesignPaterns.AbstractFactory.Factory2;
 
 namespace BackendApps
@@ -71,6 +74,26 @@ namespace BackendApps
             _specialCar.DiscountPercentage = 10;
             Console.WriteLine(_personalCar.HirePrice);
             Console.WriteLine(_specialCar.HirePrice);
+
+            BackendApps.DesignPaterns.Bridge.CustomerManager _customerMAnager = new DesignPaterns.Bridge.CustomerManager();
+            _customerMAnager.MessageMSenderBase = new EmailSender();
+            _customerMAnager.Update();
+            _customerMAnager.MessageMSenderBase = new SmsSender();
+            _customerMAnager.Update();
+
+            BackendApps.DesignPaterns.Strategy.CustomerManager _customerMAneger=new DesignPaterns.Strategy.CustomerManager ();
+            _customerMAneger.CredştCalculateBase = new After2000Calculate();
+            _customerMAneger.SaveCredit();
+            _customerMAneger.CredştCalculateBase = new Brfore2000Calculate();
+            _customerMAneger.SaveCredit();
+
+            BackendApps.Observar.CustomerObserver? custObserver = new Observar.CustomerObserver();
+            BackendApps.Observar.ProductManager _observer = new BackendApps.Observar.ProductManager();
+            _observer.Attach(custObserver);
+            _observer.Attach(new BackendApps.Observar.EmployeeObserver());
+            _observer.UpdatePrice();
+            _observer.Detach(custObserver);
+            _observer.UpdatePrice();
             Console.ReadLine();
         }
     }
