@@ -2,6 +2,7 @@
 using BackendApps.DesignPaterns.Bridge;
 using BackendApps.DesignPaterns.Builder;
 using BackendApps.DesignPaterns.ChainOfResponsibilty;
+using BackendApps.DesignPaterns.Command;
 using BackendApps.DesignPaterns.Decarotor;
 using BackendApps.DesignPaterns.Factory;
 using BackendApps.DesignPaterns.Fecade;
@@ -10,6 +11,7 @@ using BackendApps.DesignPaterns.Prototype;
 using BackendApps.DesignPaterns.Proxy;
 using BackendApps.DesignPaterns.Singleton;
 using BackendApps.DesignPaterns.Strategy;
+using BackendApps.DesignPaterns.Visitor;
 using BackendApps.Mediator;
 using BackendApps.State;
 using BackendApps.Template;
@@ -155,7 +157,7 @@ namespace BackendApps
             Mediator.Mediator _mediator = new BackendApps.Mediator.Mediator();
             Teacher _teacher = new Teacher(_mediator);
             _teacher.Name="soykan";
-           // _mediator.Teacher = _teacher;
+            _mediator.Teacher = _teacher;
 
             Student ahmet = new Student(_mediator);
             ahmet.Name = "Ahmet";
@@ -163,11 +165,35 @@ namespace BackendApps
 
             Student kerem = new Student(_mediator);
             kerem.Name = "kerem";
-          //  _mediator.Students = new List<Student> { ahmet, kerem };
-
+            _mediator.Students = new List<Student> { ahmet, kerem };
 
             _teacher.SendNewImage("image2");
             _teacher.ReveiveQuestion("Is ıt true", ahmet);
+
+            StockManager _stockManager =  new StockManager();
+            BuyStock _buyStock = new BuyStock(_stockManager);
+            SellStock _sellStock = new SellStock(_stockManager);
+
+            StockController _stockContrlller = new StockController();
+            _stockContrlller.TakeOrder(_buyStock);
+            _stockContrlller.TakeOrder(_sellStock);
+            _stockContrlller.TakeOrder(_buyStock);
+         // deperi söz gelimi database yolluyor
+            _stockContrlller.PlaceOrder();
+
+            BackendApps.DesignPaterns.Visitor.Manager SoykanKon = new DesignPaterns.Visitor.Manager { Name="Soykan",Salary=1000};
+            BackendApps.DesignPaterns.Visitor.Manager HaticeKon = new DesignPaterns.Visitor.Manager { Name = "Hatice", Salary = 1000 };
+            BackendApps.DesignPaterns.Visitor.Worker ahmetD = new DesignPaterns.Visitor.Worker { Name = "ahmet", Salary = 800 };
+            BackendApps.DesignPaterns.Visitor.Worker keremD = new DesignPaterns.Visitor.Worker { Name = "kerem", Salary = 800 };
+            SoykanKon.Subordinate.Add(HaticeKon);
+            HaticeKon.Subordinate.Add(ahmetD);
+            HaticeKon.Subordinate.Add(keremD);
+            OrginatinalStructor prganisationalStructer = new OrginatinalStructor(SoykanKon);
+            PayrollVisitor payrollvisitor = new PayrollVisitor();
+            PayriseVisitor PayriseVisiytpr = new PayriseVisitor();
+            prganisationalStructer.Accepr(payrollvisitor);
+            prganisationalStructer.Accepr(PayriseVisiytpr);
+
             Console.ReadLine();
 
         }
