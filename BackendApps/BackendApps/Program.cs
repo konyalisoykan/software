@@ -10,6 +10,11 @@ using BackendApps.DesignPaterns.Prototype;
 using BackendApps.DesignPaterns.Proxy;
 using BackendApps.DesignPaterns.Singleton;
 using BackendApps.DesignPaterns.Strategy;
+using BackendApps.Mediator;
+using BackendApps.State;
+using BackendApps.Template;
+using Microsoft.VisualBasic.FileIO;
+using System.Globalization;
 using System.Runtime.InteropServices;
 using static BackendApps.DesignPaterns.AbstractFactory.Factory2;
 
@@ -104,6 +109,7 @@ namespace BackendApps
             _visePresident.SetSuccessor(_president);
             Expeense _expense = new Expeense { Detail = "Eğitim", Amount = 125 };
             _manager.HandleExpense(_expense);
+          
             Book _book = new Book
             {
                 Isbn = "1234",
@@ -119,7 +125,51 @@ namespace BackendApps
             _book.showBook();
             _book.RestoreFromUndo(_history.Memento);
             _book.showBook();
+
+            ScoringAlgoritm _algoritm;
+            _algoritm = new MensScoringAlgoritm();
+            _algoritm.GemerateScore(8, new TimeSpan(0, 5, 20));
+           Console.WriteLine("mens sore "+ _algoritm.GemerateScore(8, new TimeSpan(0, 5, 20)).ToString());
+            _algoritm.CalsulateReduction(new TimeSpan(0, 5, 20));
+
+            _algoritm = new WomensScoringAlgoritm();
+            _algoritm.GemerateScore(8, new TimeSpan(0, 5, 20));
+            _algoritm.CalsulateReduction(new TimeSpan(0, 5, 20));
+            Console.WriteLine("womens sore " + _algoritm.GemerateScore(8, new TimeSpan(0, 5, 20)).ToString());
+           
+            _algoritm = new ChildrensScoringAlgoritm();
+            _algoritm.GemerateScore(8, new TimeSpan(0, 5, 20));
+            _algoritm.CalsulateReduction(new TimeSpan(0, 5, 20));
+            Console.WriteLine("Children  sore " + _algoritm.GemerateScore(8, new TimeSpan(0, 5, 20)).ToString());
+
+            Context _context = new Context();
+            
+            ModifiedState _ms = new ModifiedState();
+            _ms.DoAction(_context);
+            Console.WriteLine(_context.GetState().ToString());
+
+            AddeddState As = new AddeddState();
+            As.DoAction(_context);
+            Console.WriteLine(_context.GetState().ToString());
+
+            Mediator.Mediator _mediator = new BackendApps.Mediator.Mediator();
+            Teacher _teacher = new Teacher(_mediator);
+            _teacher.Name="soykan";
+           // _mediator.Teacher = _teacher;
+
+            Student ahmet = new Student(_mediator);
+            ahmet.Name = "Ahmet";
+           
+
+            Student kerem = new Student(_mediator);
+            kerem.Name = "kerem";
+          //  _mediator.Students = new List<Student> { ahmet, kerem };
+
+
+            _teacher.SendNewImage("image2");
+            _teacher.ReveiveQuestion("Is ıt true", ahmet);
             Console.ReadLine();
+
         }
     }
 }
